@@ -16,3 +16,5 @@
  RB_MissionToCivilize:0 "Mission To Civilize"
  CENTRALIZE_STATE_DESC:7 "§YCentralize State§!\nSpend $COST|Y$ of government progress and $POWER_COST|Y$£adm£ to centralize the $STATE|Y$ in the most developed province, giving the following bonuses to the state:\nLocal State Governing Cost: §G-50.0%§!\nState Maintenance: §G-20.0%§!\nLocal Prosperity Growth: §G+0.25§!\n\nIt will take $YEARS|0Y$ years."
  CONFIRM_CENTRALIZE_STATE_TEXT:7 "Are you sure you want to spend $COST|0Y$ of government progress and $POWER_COST|Y$£adm£ to centralize the $STATE|Y$ in the province of $PROVINCE|Y$?\nThe $STATE|Y$ will gain the following bonuses:\nLocal State Governing Cost: §G-50.0%§!\nState Maintenance: §G-20.0%§!\nLocal Prosperity Growth: §G+0.25§!\n\nIt will take $YEARS|0Y$ years."
+ NOG: "YesGay"
+ NOG_ADJ: "Gay"

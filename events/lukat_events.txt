@@ -1221,6 +1221,26 @@ country_event = {
 		override_country_name = CHINA_NAME
 	}
 	option = {
+		name = rename_country_ming.e
+		trigger = { OR = { tag = MNG tag = QNG } }
+		override_country_name = CELESTIAL_EMPIRE_NAME
+	}
+	option = {
+		name = rename_country_ming.f
+		trigger = { OR = { tag = MNG tag = QNG } }
+		override_country_name = MANDATE_OF_HEAVEN_NAME
+	}
+	option = {
+		name = rename_country_ming.g
+		trigger = { OR = { tag = MNG tag = QNG } }
+		override_country_name = ZHONGGUO_NAME
+	}
+	option = {
+		name = rename_country_ming.h
+		trigger = { OR = { tag = MNG tag = QNG } }
+		override_country_name = MIDDLE_KINGDOM_NAME
+	}
+	option = {
 		name = rename_country_qing.b
 		trigger = { tag = QNG }
 		override_country_name = GREAT_QING_NAME
@@ -1229,6 +1249,16 @@ country_event = {
 		name = rename_country_qing.c
 		trigger = { tag = QNG }
 		override_country_name = DAI_QING_NAME
+	}
+	option = {
+		name = rename_country_qing.a
+		trigger = { tag = QNG }
+		override_country_name = IMPERIAL_QING_NAME
+	}
+	option = {
+		name = rename_country_qing.d
+		trigger = { tag = QNG }
+		override_country_name = EMPIRE_OF_EIGHT_BANNERS_NAME
 	}
 	option = {
 		name = rename_country_yuan.b
@@ -1591,6 +1621,21 @@ country_event = {
 		override_country_name = SVERIGE_NAME
 	}
 	option = {
+		name = rename_country_scandinavia.a
+		trigger = { tag = SCA }
+		override_country_name = SWEDELAW_NAME
+	}
+	option = {
+		name = rename_country_scandinavia.b
+		trigger = { tag = SCA }
+		override_country_name = LION_OF_THE_NORSE_NAME
+	}
+	option = {
+		name = rename_country_scandinavia.c
+		trigger = { tag = SCA }
+		override_country_name = EMPIRE_OF_SCANDINAVIA_NAME
+	}
+	option = {
 		name = rename_country_muscovy.a 
 		trigger = { tag = MOS }
 		override_country_name = GRAND_PRINCIPALITY_OF_MOSCOW_NAME
@@ -1624,6 +1669,26 @@ country_event = {
 		name = rename_country_russia.e 
 		trigger = { tag = RUS }
 		override_country_name = HOLY_RUSSIAN_EMPIRE_NAME
+	}
+	option = {
+		name = rename_country_russia.f
+		trigger = { tag = RUS }
+		override_country_name = MOMMY_RUSSIA_NAME
+	}
+	option = {
+		name = rename_country_russia.g 
+		trigger = { tag = RUS }
+		override_country_name = MOTHER_RUSSIA_NAME
+	}
+	option = {
+		name = rename_country_russia.h 
+		trigger = { tag = RUS }
+		override_country_name = MATUSHKA_ROSSIYA_NAME
+	}
+	option = {
+		name = rename_country_russia.i
+		trigger = { tag = RUS }
+		override_country_name = THIRD_ROME_NAME
 	}
 	option = {
 		name = rename_country_styria.a
@@ -1806,6 +1871,21 @@ country_event = {
 		override_country_name = KNIGHTS_HOSPITALLER_NAME
 	}
 	option = {
+		name = rename_country_latin_empire.a
+		trigger = { tag = LAE }
+		override_country_name = FRANKOKRATIA_NAME
+	}
+	option = {
+		name = rename_country_latin_empire.b
+		trigger = { tag = LAE }
+		override_country_name = EMPIRE_OF_THE_LEVANT_NAME
+	}
+	option = {
+		name = rename_country_latin_empire.c
+		trigger = { tag = LAE }
+		override_country_name = EMPIRE_OF_THE_OUTREMER_NAME
+	}
+	option = {
 		name = rename_country_jerusalem.a
 		trigger = { tag = KOJ }
 		override_country_name = KINGDOM_OF_JERUSALEM_NAME
@@ -1814,5 +1894,35 @@ country_event = {
 		name = rename_country_jerusalem.b
 		trigger = { tag = KOJ }
 		override_country_name = KINGDOM_OF_HEAVEN_NAME
+	}
+	option = {
+		name = rename_country_tunis.a
+		trigger = { tag = TUN }
+		override_country_name = SULTANATE_OF_IFRIQA_NAME
+	}
+	option = {
+		name = rename_country_tunis.b
+		trigger = { tag = TUN }
+		override_country_name = THE_BARBARY_COAST_NAME
+	}
+	option = {
+		name = rename_country_tunis.c
+		trigger = { tag = TUN }
+		override_country_name = CARTHAGE_NAME
+	}
+	option = {
+		name = rename_country_morocco.a
+		trigger = { tag = MOR }
+		override_country_name = ALMOHAD_CALIPHATE_NAME
+	}
+	option = {
+		name = rename_country_morocco.b
+		trigger = { tag = MOR }
+		override_country_name = KINGDOM_OF_MOROCCO_NAME
+	}
+	option = {
+		name = rename_country_morocco.c
+		trigger = { tag = MOR }
+		override_country_name = GREATER_EMPIRE_OF_SUS_NAME
 	}
 }

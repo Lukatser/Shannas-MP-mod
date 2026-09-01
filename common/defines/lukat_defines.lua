@@ -14,7 +14,8 @@ NDefines.NDiplomacy.PO_RETURN_CORES_AE = 0.2
 NDefines.NDiplomacy.NUM_OF_GREAT_POWERS = 10
 NDefines.NDiplomacy.PEACE_COST_CHANGE_HRE_RELIGION = 300
 NDefines.NDiplomacy.AE_HRE_INTERNAL = 0.4
-NDefines.NDiplomacy.AE_PROVINCE_CAP = 50
+NDefines.NDiplomacy.AE_SAME_RELIGION_GROUP = 0.1
+NDefines.NDiplomacy.AE_PROVINCE_CAP = 30
 NDefines.NDiplomacy.PO_DEMAND_PROVINCES_AE = 0.8
 
 NDefines.NEconomy.COLONIST_DISTANCE_DIVISOR = 500
