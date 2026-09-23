@@ -43,7 +43,7 @@ country_decisions = {
                 tag = POL 
                 tag = MOS 
                 tag = RUS 
-                is_or_was_tag = { tag = STY } 
+                tag = HAB 
                 tag = MAM
                 tag = BUR
                 tag = LOT
