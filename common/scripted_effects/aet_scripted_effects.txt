@@ -1,0 +1,522 @@
+aet_flBuilding_applyCorrect = {
+
+	if = {
+		limit = {
+			development = 40
+		}
+
+		if = {
+			limit = {
+				development = 60
+			}
+
+			if = {
+				limit = {
+					development = 70
+				}
+
+				if = {
+					limit = {
+						development = 75
+					}
+
+					if = {
+						limit = {
+							has_building = conscription_center
+						}
+
+						remove_province_modifier = aet_flBuilding_dev70_75_T1
+						remove_province_modifier = aet_flBuilding_dev75_T0
+
+						add_province_modifier = {
+							name = aet_flBuilding_dev75_T1
+							duration = -1
+						}
+					} else = {
+						remove_province_modifier = aet_flBuilding_dev70_75_T0
+
+						add_province_modifier = {
+							name = aet_flBuilding_dev75_T0
+							duration = -1
+						}
+					}
+				} else = {
+
+					if = {
+						limit = {
+							has_building = conscription_center
+						}
+
+						remove_province_modifier = aet_flBuilding_dev65_70_T1
+						remove_province_modifier = aet_flBuilding_dev75_T1
+						remove_province_modifier = aet_flBuilding_dev70_75_T0
+
+						add_province_modifier = {
+							name = aet_flBuilding_dev70_75_T1
+							duration = -1
+						}
+					} else = {
+						remove_province_modifier = aet_flBuilding_dev65_70_T0
+						remove_province_modifier = aet_flBuilding_dev75_T0
+
+						add_province_modifier = {
+							name = aet_flBuilding_dev70_75_T0
+							duration = -1
+						}
+					}
+				}
+			} else = {
+
+				if = {
+					limit = {
+						development = 65
+					}
+
+					if = {
+						limit = {
+							has_building = conscription_center
+						}
+
+						remove_province_modifier = aet_flBuilding_dev60_65_T1
+						remove_province_modifier = aet_flBuilding_dev70_75_T1
+						remove_province_modifier = aet_flBuilding_dev65_70_T0
+
+						add_province_modifier = {
+							name = aet_flBuilding_dev65_70_T1
+							duration = -1
+						}
+					} else = {
+						remove_province_modifier = aet_flBuilding_dev60_65_T0
+						remove_province_modifier = aet_flBuilding_dev70_75_T0
+
+						add_province_modifier = {
+							name = aet_flBuilding_dev65_70_T0
+							duration = -1
+						}
+					}
+				} else = {
+
+					if = {
+						limit = {
+							has_building = conscription_center
+						}
+
+						remove_province_modifier = aet_flBuilding_dev55_60_T1
+						remove_province_modifier = aet_flBuilding_dev65_70_T1
+						remove_province_modifier = aet_flBuilding_dev60_65_T0
+
+						add_province_modifier = {
+							name = aet_flBuilding_dev60_65_T1
+							duration = -1
+						}
+					} else = {
+						remove_province_modifier = aet_flBuilding_dev55_60_T0
+						remove_province_modifier = aet_flBuilding_dev65_70_T0
+
+						add_province_modifier = {
+							name = aet_flBuilding_dev60_65_T0
+							duration = -1
+						}
+					}
+				}
+			}
+		} else = {
+
+			if = {
+				limit = {
+					development = 50
+				}
+
+				if = {
+					limit = {
+						development = 55
+					}
+
+					if = {
+						limit = {
+							has_building = conscription_center
+						}
+
+						remove_province_modifier = aet_flBuilding_dev50_55_T1
+						remove_province_modifier = aet_flBuilding_dev60_65_T1
+						remove_province_modifier = aet_flBuilding_dev55_60_T0
+
+						add_province_modifier = {
+							name = aet_flBuilding_dev55_60_T1
+							duration = -1
+						}
+					} else = {
+						remove_province_modifier = aet_flBuilding_dev50_55_T0
+						remove_province_modifier = aet_flBuilding_dev60_65_T0
+
+						add_province_modifier = {
+							name = aet_flBuilding_dev55_60_T0
+							duration = -1
+						}
+					}
+				} else = {
+
+					if = {
+						limit = {
+							has_building = conscription_center
+						}
+
+						remove_province_modifier = aet_flBuilding_dev45_50_T1
+						remove_province_modifier = aet_flBuilding_dev55_60_T1
+						remove_province_modifier = aet_flBuilding_dev50_55_T0
+
+						add_province_modifier = {
+							name = aet_flBuilding_dev50_55_T1
+							duration = -1
+						}
+					} else = {
+						remove_province_modifier = aet_flBuilding_dev45_50_T0
+						remove_province_modifier = aet_flBuilding_dev55_60_T0
+
+						add_province_modifier = {
+							name = aet_flBuilding_dev50_55_T0
+							duration = -1
+						}
+					}
+				}
+			} else = {
+
+				if = {
+					limit = {
+						development = 45
+					}
+
+					if = {
+						limit = {
+							has_building = conscription_center
+						}
+
+						remove_province_modifier = aet_flBuilding_dev40_45_T1
+						remove_province_modifier = aet_flBuilding_dev50_55_T1
+						remove_province_modifier = aet_flBuilding_dev45_50_T0
+
+						add_province_modifier = {
+							name = aet_flBuilding_dev45_50_T1
+							duration = -1
+						}
+					} else = {
+						remove_province_modifier = aet_flBuilding_dev40_45_T0
+						remove_province_modifier = aet_flBuilding_dev50_55_T0
+
+						add_province_modifier = {
+							name = aet_flBuilding_dev45_50_T0
+							duration = -1
+						}
+					}
+				} else = {
+
+					if = {
+						limit = {
+							has_building = conscription_center
+						}
+
+						remove_province_modifier = aet_flBuilding_dev35_40_T1
+						remove_province_modifier = aet_flBuilding_dev45_50_T1
+						remove_province_modifier = aet_flBuilding_dev40_45_T0
+
+						add_province_modifier = {
+							name = aet_flBuilding_dev40_45_T1
+							duration = -1
+						}
+					} else = {
+						remove_province_modifier = aet_flBuilding_dev35_40_T0
+						remove_province_modifier = aet_flBuilding_dev45_50_T0
+
+						add_province_modifier = {
+							name = aet_flBuilding_dev40_45_T0
+							duration = -1
+						}
+					}
+				}
+			}
+		}
+	} else = {
+
+		if = {
+			limit = {
+				development = 20
+			}
+
+			if = {
+				limit = {
+					development = 30
+				}
+
+				if = {
+					limit = {
+						development = 35
+					}
+
+					if = {
+						limit = {
+							has_building = conscription_center
+						}
+
+						remove_province_modifier = aet_flBuilding_dev30_35_T1
+						remove_province_modifier = aet_flBuilding_dev40_45_T1
+						remove_province_modifier = aet_flBuilding_dev35_40_T0
+
+						add_province_modifier = {
+							name = aet_flBuilding_dev35_40_T1
+							duration = -1
+						}
+					} else = {
+						remove_province_modifier = aet_flBuilding_dev30_35_T0
+						remove_province_modifier = aet_flBuilding_dev40_45_T0
+
+						add_province_modifier = {
+							name = aet_flBuilding_dev35_40_T0
+							duration = -1
+						}
+					}
+				} else = {
+
+					if = {
+						limit = {
+							has_building = conscription_center
+						}
+
+						remove_province_modifier = aet_flBuilding_dev25_30_T1
+						remove_province_modifier = aet_flBuilding_dev35_40_T1
+						remove_province_modifier = aet_flBuilding_dev30_35_T0
+
+						add_province_modifier = {
+							name = aet_flBuilding_dev30_35_T1
+							duration = -1
+						}
+					} else = {
+						remove_province_modifier = aet_flBuilding_dev25_30_T0
+						remove_province_modifier = aet_flBuilding_dev35_40_T0
+
+						add_province_modifier = {
+							name = aet_flBuilding_dev30_35_T0
+							duration = -1
+						}
+					}
+				}
+			} else = {
+
+				if = {
+					limit = {
+						development = 25
+					}
+
+					if = {
+						limit = {
+							has_building = conscription_center
+						}
+
+						remove_province_modifier = aet_flBuilding_dev20_25_T1
+						remove_province_modifier = aet_flBuilding_dev30_35_T1
+						remove_province_modifier = aet_flBuilding_dev25_30_T0
+
+						add_province_modifier = {
+							name = aet_flBuilding_dev25_30_T1
+							duration = -1
+						}
+					} else = {
+						remove_province_modifier = aet_flBuilding_dev20_25_T0
+						remove_province_modifier = aet_flBuilding_dev30_35_T0
+
+						add_province_modifier = {
+							name = aet_flBuilding_dev25_30_T0
+							duration = -1
+						}
+					}
+				} else = {
+
+					if = {
+						limit = {
+							has_building = conscription_center
+						}
+
+						remove_province_modifier = aet_flBuilding_dev15_20_T1
+						remove_province_modifier = aet_flBuilding_dev25_30_T1
+						remove_province_modifier = aet_flBuilding_dev20_25_T0
+
+						add_province_modifier = {
+							name = aet_flBuilding_dev20_25_T1
+							duration = -1
+						}
+					} else = {
+						remove_province_modifier = aet_flBuilding_dev15_20_T0
+						remove_province_modifier = aet_flBuilding_dev25_30_T0
+
+						add_province_modifier = {
+							name = aet_flBuilding_dev20_25_T0
+							duration = -1
+						}
+					}
+				}
+			}
+		} else = {
+
+			if = {
+				limit = {
+					development = 10
+				}
+
+				if = {
+					limit = {
+						development = 15
+					}
+
+					if = {
+						limit = {
+							has_building = conscription_center
+						}
+
+						remove_province_modifier = aet_flBuilding_dev10_15_T1
+						remove_province_modifier = aet_flBuilding_dev20_25_T1
+						remove_province_modifier = aet_flBuilding_dev15_20_T0
+
+						add_province_modifier = {
+							name = aet_flBuilding_dev15_20_T1
+							duration = -1
+						}
+					} else = {
+						remove_province_modifier = aet_flBuilding_dev10_15_T0
+						remove_province_modifier = aet_flBuilding_dev20_25_T0
+
+						add_province_modifier = {
+							name = aet_flBuilding_dev15_20_T0
+							duration = -1
+						}
+					}
+				} else = {
+
+					if = {
+						limit = {
+							has_building = conscription_center
+						}
+
+						remove_province_modifier = aet_flBuilding_dev5_10_T1
+						remove_province_modifier = aet_flBuilding_dev15_20_T1
+						remove_province_modifier = aet_flBuilding_dev10_15_T0
+
+						add_province_modifier = {
+							name = aet_flBuilding_dev10_15_T1
+							duration = -1
+						}
+					} else = {
+						remove_province_modifier = aet_flBuilding_dev5_10_T0
+						remove_province_modifier = aet_flBuilding_dev15_20_T0
+
+						add_province_modifier = {
+							name = aet_flBuilding_dev10_15_T0
+							duration = -1
+						}
+					}
+				}
+			} else = {
+
+				if = {
+					limit = {
+						development = 5
+					}
+
+					if = {
+						limit = {
+							has_building = conscription_center
+						}
+
+						remove_province_modifier = aet_flBuilding_dev0_5_T1
+						remove_province_modifier = aet_flBuilding_dev10_15_T1
+						remove_province_modifier = aet_flBuilding_dev5_10_T0
+
+						add_province_modifier = {
+							name = aet_flBuilding_dev5_10_T1
+							duration = -1
+						}
+					} else = {
+						remove_province_modifier = aet_flBuilding_dev0_5_T0
+						remove_province_modifier = aet_flBuilding_dev10_15_T0
+
+						add_province_modifier = {
+							name = aet_flBuilding_dev5_10_T0
+							duration = -1
+						}
+					}
+				} else = {
+
+					if = {
+						limit = {
+							has_building = conscription_center
+						}
+
+						remove_province_modifier = aet_flBuilding_dev5_10_T1
+						remove_province_modifier = aet_flBuilding_dev0_5_T0
+
+						add_province_modifier = {
+							name = aet_flBuilding_dev0_5_T1
+							duration = -1
+						}
+					} else = {
+						remove_province_modifier = aet_flBuilding_dev5_10_T0
+						remove_province_modifier = aet_flBuilding_dev0_5_T1
+
+						add_province_modifier = {
+							name = aet_flBuilding_dev0_5_T0
+							duration = -1
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+aet_flBuilding_removeAll = {
+	remove_province_modifier = aet_flBuilding_dev0_5_T0
+	remove_province_modifier = aet_flBuilding_dev0_5_T1
+
+	remove_province_modifier = aet_flBuilding_dev5_10_T0
+	remove_province_modifier = aet_flBuilding_dev5_10_T1
+
+	remove_province_modifier = aet_flBuilding_dev10_15_T0
+	remove_province_modifier = aet_flBuilding_dev10_15_T1
+
+	remove_province_modifier = aet_flBuilding_dev15_20_T0
+	remove_province_modifier = aet_flBuilding_dev15_20_T1
+
+	remove_province_modifier = aet_flBuilding_dev20_25_T0
+	remove_province_modifier = aet_flBuilding_dev20_25_T1
+
+	remove_province_modifier = aet_flBuilding_dev25_30_T0
+	remove_province_modifier = aet_flBuilding_dev25_30_T1
+
+	remove_province_modifier = aet_flBuilding_dev30_35_T0
+	remove_province_modifier = aet_flBuilding_dev30_35_T1
+
+	remove_province_modifier = aet_flBuilding_dev35_40_T0
+	remove_province_modifier = aet_flBuilding_dev35_40_T1
+
+	remove_province_modifier = aet_flBuilding_dev40_45_T0
+	remove_province_modifier = aet_flBuilding_dev40_45_T1
+
+	remove_province_modifier = aet_flBuilding_dev45_50_T0
+	remove_province_modifier = aet_flBuilding_dev45_50_T1
+
+	remove_province_modifier = aet_flBuilding_dev50_55_T0
+	remove_province_modifier = aet_flBuilding_dev50_55_T1
+
+	remove_province_modifier = aet_flBuilding_dev55_60_T0
+	remove_province_modifier = aet_flBuilding_dev55_60_T1
+
+	remove_province_modifier = aet_flBuilding_dev60_65_T0
+	remove_province_modifier = aet_flBuilding_dev60_65_T1
+
+	remove_province_modifier = aet_flBuilding_dev65_70_T0
+	remove_province_modifier = aet_flBuilding_dev65_70_T1
+
+	remove_province_modifier = aet_flBuilding_dev70_75_T0
+	remove_province_modifier = aet_flBuilding_dev70_75_T1
+
+	remove_province_modifier = aet_flBuilding_dev75_T0
+	remove_province_modifier = aet_flBuilding_dev75_T1
+}
