@@ -1,0 +1,191 @@
+aet_flBuilding_dev0_5_T0 = {
+	
+    land_forcelimit = 0
+
+}
+
+aet_flBuilding_dev0_5_T1 = {
+
+    land_forcelimit = 0
+
+}
+
+aet_flBuilding_dev5_10_T0 = {
+
+    land_forcelimit = 0.25
+
+}
+
+aet_flBuilding_dev5_10_T1 = {
+
+    land_forcelimit = 0.5
+
+}
+
+aet_flBuilding_dev10_15_T0 = {
+
+    land_forcelimit = 0.5
+
+}
+
+aet_flBuilding_dev10_15_T1 = {
+
+    land_forcelimit = 1
+
+}
+
+aet_flBuilding_dev15_20_T0 = {
+
+    land_forcelimit = 0.75
+
+}
+
+aet_flBuilding_dev15_20_T1 = {
+
+    land_forcelimit = 1.5
+
+}
+
+aet_flBuilding_dev20_25_T0 = {
+
+    land_forcelimit = 1
+
+}
+
+aet_flBuilding_dev20_25_T1 = {
+
+    land_forcelimit = 2
+
+}
+
+aet_flBuilding_dev25_30_T0 = {
+
+    land_forcelimit = 1.25
+
+}
+
+aet_flBuilding_dev25_30_T1 = {
+
+    land_forcelimit = 2.5
+
+}
+
+aet_flBuilding_dev30_35_T0 = {
+
+    land_forcelimit = 1.5
+
+}
+
+aet_flBuilding_dev30_35_T1 = {
+
+    land_forcelimit = 3
+
+}
+
+aet_flBuilding_dev35_40_T0 = {
+
+    land_forcelimit = 1.75
+
+}
+
+aet_flBuilding_dev35_40_T1 = {
+
+    land_forcelimit = 3.5
+
+}
+
+aet_flBuilding_dev40_45_T0 = {
+
+    land_forcelimit = 2
+
+}
+
+aet_flBuilding_dev40_45_T1 = {
+
+    land_forcelimit = 4
+
+}
+
+aet_flBuilding_dev45_50_T0 = {
+
+    land_forcelimit = 2.25
+
+}
+
+aet_flBuilding_dev45_50_T1 = {
+
+    land_forcelimit = 4.5
+
+}
+
+aet_flBuilding_dev50_55_T0 = {
+
+    land_forcelimit = 2.5
+
+}
+
+aet_flBuilding_dev50_55_T1 = {
+
+    land_forcelimit = 5
+
+}
+
+aet_flBuilding_dev55_60_T0 = {
+
+    land_forcelimit = 2.75
+
+}
+
+aet_flBuilding_dev55_60_T1 = {
+
+    land_forcelimit = 5.5
+
+}
+
+aet_flBuilding_dev60_65_T0 = {
+
+    land_forcelimit = 3
+
+}
+
+aet_flBuilding_dev60_65_T1 = {
+
+    land_forcelimit = 6
+
+}
+
+aet_flBuilding_dev65_70_T0 = {
+
+    land_forcelimit = 3.25
+
+}
+
+aet_flBuilding_dev65_70_T1 = {
+
+    land_forcelimit = 6.5
+
+}
+
+aet_flBuilding_dev70_75_T0 = {
+
+    land_forcelimit = 3.5
+
+}
+
+aet_flBuilding_dev70_75_T1 = {
+
+    land_forcelimit = 7
+
+}
+
+aet_flBuilding_dev75_T0 = {
+
+    land_forcelimit = 3.75
+
+}
+
+aet_flBuilding_dev75_T1 = {
+
+    land_forcelimit = 7.5
+
+}

@@ -1,3 +1,28 @@
+on_startup = { # Make AI actually choose them 
+	if = {
+		limit = {
+			NOT = { is_year = 1445 }
+		}
+		aet_ideas_removeAllIdeas = yes 
+	}
+}
+
+on_yearly_pulse = {
+	if = {
+		limit = {
+			has_idea_group = grandeur_ideas
+		}
+
+		aet_ideas_grandeurApplyModifiers = yes
+	}	
+}
+
+on_bankruptcy = {
+	events = {
+		aet_ideas.1
+	}
+}
+
 on_monthly_pulse = {
 	country_event = {
 		id = aet_custom_modifier_wrapping.1
@@ -18,4 +43,98 @@ on_monthly_pulse = {
 		id = aet_custom_modifier_wrapping.1
 		days = 22
 	}
+}
+
+on_colonial_liberation = {
+		if = {
+			limit = {
+				has_country_modifier = aet_ideas_exploitedSubject_0
+			}
+			set_country_flag = aet_ideas_exploitedSubject_0
+		} else_if = {
+			limit = {
+				has_country_modifier = aet_ideas_exploitedSubject_1
+			}
+			set_country_flag = aet_ideas_exploitedSubject_1
+		} else_if = {
+			limit = {
+				has_country_modifier = aet_ideas_exploitedSubject_2
+			}
+			set_country_flag = aet_ideas_exploitedSubject_2
+		}
+
+		aet_ideas_clearExploitationModifiers = yes 
+
+		# Mainly to keep the buffs in any potential wars 
+		if = {
+			limit = {
+				has_country_flag = aet_ideas_exploitedSubject_0
+			}
+			clr_country_flag = aet_ideas_exploitedSubject_0
+			add_country_modifier = {
+				name = aet_ideas_exploitedSubject_0
+				duration = 1800
+			}
+		} else_if = {
+			limit = {
+				has_country_flag = aet_ideas_exploitedSubject_1
+			}
+			clr_country_flag = aet_ideas_exploitedSubject_1
+			add_country_modifier = {
+				name = aet_ideas_exploitedSubject_1
+				duration = 1800
+			}			
+		} else_if = {
+			limit = {
+				has_country_flag = aet_ideas_exploitedSubject_2
+			}
+			clr_country_flag = aet_ideas_exploitedSubject_2
+			add_country_modifier = {
+				name = aet_ideas_exploitedSubject_2
+				duration = 1800
+			}			
+		}
+}
+
+on_five_year_pulse_2 = {
+	every_owned_province = {
+		limit = {
+			OR = {
+				has_building = regimental_camp
+				has_building = conscription_center
+			}
+		}
+		aet_flBuilding_removeAll = yes
+		aet_flBuilding_applyCorrect = yes
+	}
+}
+
+
+on_dip_tech_taken = {
+	aet_ideas_applyTradeRangeModifier = yes 
+}
+
+on_concentrate_development = {
+	aet_flBuilding_applyCorrect = yes 
+}
+
+on_dip_development = {
+	aet_flBuilding_applyCorrect = yes
+}
+on_dip_exploited = {
+	aet_flBuilding_applyCorrect = yes
+}
+
+on_mil_development = {
+    aet_flBuilding_applyCorrect = yes
+}
+on_mil_exploited = {
+    aet_flBuilding_applyCorrect = yes
+}
+
+on_adm_development = {
+    aet_flBuilding_applyCorrect = yes
+}
+on_adm_exploited = {
+    aet_flBuilding_applyCorrect = yes
 }
