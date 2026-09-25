@@ -2938,8 +2938,20 @@ grandeur_ideas = {
 	}
 
 	grandeur_ideas_6 = {
-		diplomatic_reputation = 2
-		improve_relation_modifier = 0.2
+		
+		# Power Projection: 25 
+		effect = {
+			add_power_projection = { 
+				type = 25_permanent_power_projection
+				amount = 25 
+			}
+		}
+		removed_effect = {
+			remove_power_projection = { 
+				key = 25_permanent_power_projection
+				amount = 25 
+			}
+		}
 
 		effect = {
 			aet_ideas_grandeurApplyModifiers_hidden = yes 
@@ -2950,13 +2962,8 @@ grandeur_ideas = {
 	}
 
 	bonus = {
-		# Power Projection: 25 
-		effect = {
-			add_power_projection = { 
-				type = 25_permanent_power_projection
-				amount = 25 
-			}
-		}
+		diplomatic_reputation = 2
+		improve_relation_modifier = 0.2
 	}
 
 	ai_will_do = {
