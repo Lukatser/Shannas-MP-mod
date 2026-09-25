@@ -1609,3 +1609,17 @@ aet_ideas_applyNationalismModifierGlobal = {
 #
 #	clr_country_flag = aet_ideas.z.0
 #}
+
+
+add_dev_from_building = {
+	if = {
+		limit = {
+			FROM = { full_idea_group = economic_ideas }
+			NOT = { gained_dev_from_eco_building = { building = $building$ } }
+		}
+		add_base_$type$ = $value$
+		hidden_effect = {
+			set_province_flag = built_eco_dev_$building$
+		}
+	}
+}

@@ -335,7 +335,6 @@ technology = { #Land Clearance
 	
 	#Land Clearance
 	production_efficiency 	=	0.02
-	allowed_idea_groups = 9
 	furnace = yes
 }
 
@@ -404,7 +403,6 @@ technology = { #Improved Production
 	}
 	
 	#Improved Farm Animals
-	allowed_idea_groups = 10
 	production_efficiency 	=	0.02
 }
 
@@ -421,7 +419,7 @@ technology = { #Separation of Powers
 		enlightenment = 0.3
 	}
 	
-	allowed_idea_groups 	= 	11
+	allowed_idea_groups 	= 	9
 }
 
 technology = { #Modern Bureaucracy
@@ -475,7 +473,7 @@ technology = { #Rights of Man
 		industrialization = 0.3
 	}
 
-	allowed_idea_groups = 12
+	allowed_idea_groups = 10
 	enlightened_despotism = yes
 	bureaucratic_despotism = yes
 }

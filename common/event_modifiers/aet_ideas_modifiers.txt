@@ -480,3 +480,8 @@ aet_ideas_nationalismProvinceModifier_1_uncontrolled = {
 	defensiveness = -0.33
 	local_attacker_dice_roll_bonus = 1
 }
+aet_ideas_industrial_investment = {
+	build_cost = -0.10
+	build_time = -0.20
+	production_efficiency = 0.10
+}

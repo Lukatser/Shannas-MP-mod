@@ -138,3 +138,15 @@ on_adm_development = {
 on_adm_exploited = {
     aet_flBuilding_applyCorrect = yes
 }
+
+on_loan_repaid = {
+	on_loan_repaid_estate_privileges_effect = yes
+	if = {
+		limit = { 
+			THIS = {
+				fiscal_ideas = 2 
+			}
+		}
+		THIS = { add_inflation = -0.05 }
+	}
+}
