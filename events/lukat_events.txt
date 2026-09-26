@@ -1361,11 +1361,6 @@ country_event = {
 		override_country_name = FRANKISCH_EMPIRE_NAME
 	}
 	option = {
-		name = rename_country_france.f
-		trigger = { tag = FRA }
-		override_country_name = FRANCIA_NAME
-	}
-	option = {
 		name = rename_country_milan.a
 		trigger = { tag = MLO }
 		override_country_name = AUREA_AMBROSIANA_RESPUBLICA_MEDIOLANENSIS_NAME
