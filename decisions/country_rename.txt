@@ -62,6 +62,8 @@ country_decisions = {
                 tag = KOJ
                 tag = TUN
                 tag = MOR
+                tag = BAV
+                
             }
             NOT = {
                 ai = yes
