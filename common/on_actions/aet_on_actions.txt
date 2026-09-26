@@ -150,3 +150,12 @@ on_loan_repaid = {
 		THIS = { add_inflation = -0.05 }
 	}
 }
+
+on_yearly_pulse_2 = {
+	aet_ages_refreshPulse = yes 
+}
+
+on_new_age = {
+	aet_ages_removeAgeTimedModifiers = yes 
+	aet_ages_refreshPulse = yes
+}
