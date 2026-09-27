@@ -2010,6 +2010,10 @@ country_event = {
 				has_government_attribute = republican_virtues
 			}
 			define_ruler = {
+				adm = 2
+				dip = 2
+				mil = 2
+
 				change_adm = 1
 				change_dip = 1
 				change_mil = 1
@@ -2017,9 +2021,10 @@ country_event = {
 		}
 		else = {
 			define_ruler = {
-				change_adm = 3
-				change_dip = 3
-				change_mil = 3
+				adm = 2
+				dip = 2
+				mil = 2
+
 				female = yes
 			}
 		}
