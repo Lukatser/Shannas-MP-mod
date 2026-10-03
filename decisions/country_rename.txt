@@ -62,6 +62,7 @@ country_decisions = {
                 tag = KOJ
                 tag = TUN
                 tag = MOR
+                tag = KON
                 tag = BAV
                 
             }

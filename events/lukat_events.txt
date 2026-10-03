@@ -1336,6 +1336,21 @@ country_event = {
 		override_country_name = ALAMANNIA_NAME
 	}
 	option = {
+		name = rename_country_switzerland.d
+		trigger = { tag = SWI }
+		override_country_name = PAGONIA_UNITA_ALPINORUM_NAME
+	}
+	option = {
+		name = rename_country_switzerland.e
+		trigger = { tag = SWI }
+		override_country_name = REPUBLIK_DELLE_ALPES_NAME
+	}
+	option = {
+		name = rename_country_switzerland.f
+		trigger = { tag = SWI }
+		override_country_name = CIVITATUM_RAETIAE_ET_NORICUM_NAME
+	}
+	option = {
 		name = rename_country_france.a
 		trigger = { tag = FRA }
 		override_country_name = FRANCIA_NAME
@@ -1384,6 +1399,26 @@ country_event = {
 		name = rename_country_zimbabwe.b
 		trigger = { OR = { tag = GZI tag = ZIM } }
 		override_country_name = THE_EMPIRE_OF_THE_SWAHILI_COAST_NAME
+	}
+	option = {
+		name = rename_country_kongo.a
+		trigger = { tag = KON }
+		override_country_name = KINGDOM_OF_KONGO_NAME
+	}
+	option = {
+		name = rename_country_kongo.b
+		trigger = { tag = KON }
+		override_country_name = CHRISTIAN_REALM_OF_KONGO_NAME
+	}
+	option = {
+		name = rename_country_kongo.c
+		trigger = { tag = KON }
+		override_country_name = DEMOCRATIC_PEOPLES_REPUBLIC_OF_KONGO_NAME
+	}
+	option = {
+		name = rename_country_kongo.d
+		trigger = { tag = KON }
+		override_country_name = UNITED_KONGOLESE_STATES_NAME
 	}
 	option = {
 		name = rename_country_frankfurt.a
@@ -1539,6 +1574,26 @@ country_event = {
 		name = rename_country_netherlands.e
 		trigger = { tag = NED }
 		override_country_name = BENELUX_UNIE_NAME
+	}
+	option = {
+		name = rename_country_netherlands.f
+		trigger = { tag = NED }
+		override_country_name = VERENIGDE_PROVINCIEN_DER_CARAIBEN_NAME
+	}
+	option = {
+		name = rename_country_netherlands.g
+		trigger = { tag = NED }
+		override_country_name = VRIJE_HANDELSSTAAT_NAME
+	}
+	option = {
+		name = rename_country_netherlands.h
+		trigger = { tag = NED }
+		override_country_name = GROOT_KOOPMANSRIJK_NAME
+	}
+	option = {
+		name = rename_country_netherlands.i
+		trigger = { tag = NED }
+		override_country_name = VERENIGDE_KOOPMANSSTATEN_NAME
 	}
 	option = {
 		name = rename_country_arabia.a
