@@ -1646,6 +1646,11 @@ country_event = {
 		override_country_name = MOTHER_OF_THE_WORLD_NAME
 	}
 	option = {
+		name = rename_country_mamluks.h
+		trigger = { tag = MAM }
+		override_country_name = MOMMYLUKS_NAME
+	}
+	option = {
 		name = rename_country_sweden.a
 		trigger = { tag = SWE }
 		override_country_name = SVERIGE_NUMMER_ETT_NAME
@@ -1769,6 +1774,21 @@ country_event = {
 		name = rename_country_styria.g
 		trigger = { tag = HAB }
 		override_country_name = DANUBIAN_CONFEDERATION_NAME
+	}
+	option = {
+		name = rename_country_hungary.a
+		trigger = { tag = HUN }
+		override_country_name = THE_DANUBIAN_CROWNLANDS_NAME
+	}
+	option = {
+		name = rename_country_hungary.b
+		trigger = { tag = HUN }
+		override_country_name = EMPIRE_OF_CARPATHIA_NAME
+	}
+	option = {
+		name = rename_country_hungary.c
+		trigger = { tag = HUN }
+		override_country_name = CONFEDERATION_OF_THE_DANUBE_NAME
 	}
 	option = {
 		name = rename_country_florence.a
@@ -2019,5 +2039,10 @@ country_event = {
 		name = rename_country_bavaria.c
 		trigger = { tag = BAV }
 		override_country_name = VOLKSSTAAT_BAYERN_NAME
+	}
+	option = {
+		name = rename_country_bavaria.d
+		trigger = { tag = BAV }
+		override_country_name = FEMBOYVARIA_NAME
 	}
 }
