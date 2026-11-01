@@ -112,3 +112,7 @@ aet_executeInEventTarget = {
 		event_target:4096_$string$ = { $action$ = yes }
 	}	
 }
+
+aet_eliteGuards_refreshScaledModifiers = {}
+aet_eliteGuards_removeBuffModifiers = {}
+aet_eliteGuards_cleanUpBuffFlags = {}

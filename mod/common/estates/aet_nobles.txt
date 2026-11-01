@@ -1,0 +1,6 @@
+estate_nobles = {
+	privileges = {
+		# Elite Guards
+		estate_nobles_aet_aristocratic_noble_support
+	}
+}

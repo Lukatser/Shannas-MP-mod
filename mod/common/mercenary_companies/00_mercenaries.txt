@@ -36,6 +36,7 @@ merc_lombard_free_company = {
 		}
 	}
 	modifier = { 
+		mercenary_manpower = -0.5
 		infantry_power = 0.05
 	}
 }
@@ -78,6 +79,7 @@ merc_tuscan_free_company = {
 		}
 	}
 	modifier = { 
+		mercenary_manpower = -0.5
 		infantry_power = 0.05
 	}
 }
@@ -148,6 +150,7 @@ merc_knights_templar = {
 		owns = 379
 	}
 	modifier = {
+		mercenary_manpower = -0.5
 		cavalry_power = 0.15
 		shock_damage = 0.05
 	}
@@ -172,6 +175,7 @@ merc_swiss_guard = {
 	}
     cost_modifier = 1.5
 	modifier = {
+		mercenary_manpower = -0.5
 		discipline = 0.025
 	}
 }
@@ -201,7 +205,9 @@ merc_bande_nere = {
 			NOT = { has_global_flag = new_european_mercs }
 		}
 	}
-	modifier = {}
+	modifier = {
+		mercenary_manpower = -0.5
+	}
 }
 
 # Schwarze Garde (Black Bands, Germany)
@@ -232,6 +238,9 @@ merc_schwarze_garde = {
 			NOT = { has_global_flag = new_european_mercs }
 		}
 	}
+	modifier = {
+		mercenary_manpower = -0.5
+	}
 }
 
 # Doppelsoeldner (Swabia)
@@ -259,6 +268,7 @@ merc_doppelsoeldner = {
 	modifier = {
         infantry_power = 0.1
         discipline = 0.025
+		mercenary_manpower = -0.5
 	}
 }
 
@@ -290,6 +300,7 @@ merc_reislaufer = {
 	}
 	modifier = {
         shock_damage_received = -0.05
+		mercenary_manpower = -0.5
 	}
 }
 
@@ -327,7 +338,7 @@ merc_hessian_jaegerkorps = {
 		fire_damage_received = -0.1
 		shock_damage_received = -0.1
 		discipline = 0.025
-
+		mercenary_manpower = -0.5
 	}
 }
 
@@ -346,6 +357,9 @@ merc_routiers = {
 			}
 		}
 		current_age = age_of_discovery
+	}
+	modifier = {
+		mercenary_manpower = -0.5
 	}
 }
 
@@ -368,6 +382,9 @@ merc_bascoli = {
 		}
 		current_age = age_of_discovery
 	}
+	modifier = {
+		mercenary_manpower = -0.5
+	}
 }
 	
 # Levends (Dalmatia)
@@ -385,7 +402,9 @@ merc_levends = {
 			region = balkan_region
 		}
 	}
-	modifier = { }
+	modifier = {
+		mercenary_manpower = -0.5
+	}
 }
 
 # Stratioti (Durres)
@@ -401,7 +420,9 @@ merc_stratioti = {
 			region = balkan_region
 		}
 	}
-	modifier = { }
+	modifier = {
+		mercenary_manpower = -0.5
+	}
 }
 
 # Morlachs (Lika)
@@ -423,7 +444,9 @@ merc_morlachs = {
 			has_country_modifier = glut_of_mercs
 		}
 	}
-	modifier = { }
+	modifier = { 
+		mercenary_manpower = -0.5
+	}
 }
 
 # Guardia Corsa (Cosica)
@@ -442,7 +465,9 @@ merc_guardia_corsa = {
 			any_owned_province = { area = corsica_sardinia_area }
 		}
 	}
-	modifier = { }
+	modifier = { 
+		mercenary_manpower = -0.5
+	}
 }
 
 # Hadjduks (Transylvania)
@@ -470,7 +495,9 @@ merc_hadjuks = {
 			}
 		}
 	}
-	modifier = { }
+	modifier = { 
+		mercenary_manpower = -0.5
+	}
 }
 
 # Gallowglasses (Ireland, Renaissance + Reformation)
@@ -506,6 +533,7 @@ merc_gallowglasses = {
 	modifier = {
         discipline = 0.025
         shock_damage_received = -0.05
+		mercenary_manpower = -0.5
 	}
 }
 
@@ -531,6 +559,7 @@ merc_redshanks = {
 	}
 	modifier = {
 		shock_damage = 0.05
+		mercenary_manpower = -0.5
 	}
 }
 
@@ -564,6 +593,7 @@ merc_scottish_guard = {
 	}
 	modifier = {
         fire_damage_received = -0.05
+		mercenary_manpower = -0.5
 	}
 }
 
@@ -613,6 +643,9 @@ merc_armatoles = {
 			}
 		}
 	}
+	modifier = {
+		mercenary_manpower = -0.5
+	}
 }
 
 merc_white_company = {
@@ -630,7 +663,9 @@ merc_white_company = {
 		}
 		current_age = age_of_discovery
 	}
-	modifier = { }
+	modifier = { 
+		mercenary_manpower = -0.5
+	}
 }
 
 merc_flemish_company = {
@@ -665,6 +700,7 @@ merc_flemish_company = {
 	}
 	modifier = {
         infantry_power = 0.05
+		mercenary_manpower = -0.5
 	}
 }
 
@@ -682,6 +718,7 @@ merc_forlorn_hope = {
 		fire_damage_received = -0.1
 		shock_damage_received = -0.1
 		land_morale = 0.1
+		mercenary_manpower = -0.5
 	}
 }
 
@@ -707,6 +744,7 @@ merc_buccaneer_battalion = {
 	modifier = {
 		discipline = -0.025
 		movement_speed = 0.2
+		mercenary_manpower = -0.5
 	}
 }
 
@@ -738,6 +776,7 @@ merc_bandeirantes = {
 	modifier = {
 		discipline = -0.025
 		land_attrition = -0.25
+		mercenary_manpower = -0.5
 	}
 }
 
@@ -766,7 +805,9 @@ merc_huai_army = {
 			has_country_modifier = glut_of_mercs
 		}
 	}
-	modifier = { }
+	modifier = { 
+		mercenary_manpower = -0.5
+	}
 }
 
 # Xiang Army (China, Hunan, Xiang River)
@@ -794,7 +835,9 @@ merc_xiang_army = {
 			has_country_modifier = glut_of_mercs
 		}
 	}
-	modifier = { }
+	modifier = { 
+		mercenary_manpower = -0.5
+	}
 }
 
 # Lang Bing/Wolf Troops (Guangxi)
@@ -819,6 +862,7 @@ merc_wolf_troops = {
 	}
 	modifier = {
         shock_damage = 0.1
+		mercenary_manpower = -0.5
 	}
 }
 
@@ -841,7 +885,9 @@ merc_shanxi_guard = {
 			}
 		}
 	}
-	modifier = { }
+	modifier = { 
+		mercenary_manpower = -0.5
+	}
 }
 
 # Mercenaries from Yongning, where the She-An Rebellion started
@@ -862,7 +908,9 @@ merc_yongning_warriors = {
 			}
 		}
 	}
-	modifier = { }
+	modifier = { 
+		mercenary_manpower = -0.5
+	}
 }
 
 # Kanto Ronin
@@ -875,7 +923,9 @@ merc_kanto_ronin = {
 		is_allowed_to_recruit_mercenaries = yes
 		capital_scope = { region = japan_region }
 	}
-	modifier = { }
+	modifier = { 
+		mercenary_manpower = -0.5
+	}
 }
 
 # Kyushu Wokou
@@ -894,7 +944,9 @@ merc_kyushu_wokou = {
 			}
 		}
 	}
-	modifier = { }
+	modifier = { 
+		mercenary_manpower = -0.5
+	}
 }
 
 # Shikoku Yojimbo
@@ -907,7 +959,9 @@ merc_shikoku_yojimbo = {
 		is_allowed_to_recruit_mercenaries = yes	
 		capital_scope = { region = japan_region }
 	}
-	modifier = { }
+	modifier = { 
+		mercenary_manpower = -0.5
+	}
 }
 
 merc_purbiyas = {
@@ -920,7 +974,9 @@ merc_purbiyas = {
 		is_allowed_to_recruit_mercenaries = yes
 		capital_scope = { superregion = india_superregion }
 	}
-	modifier = { }
+	modifier = { 
+		mercenary_manpower = -0.5
+	}
 }
 
 # Gurkhas
@@ -943,6 +999,7 @@ merc_gorkhalis = {
 	modifier = {
         infantry_power = 0.05
         shock_damage = 0.05
+		mercenary_manpower = -0.5
 	}
 }
 
@@ -985,7 +1042,7 @@ merc_tamil_company = {
 			}
 		}
 	}
-	modifier = { }
+	modifier = { mercenary_manpower = -0.5 }
 }
 
 merc_company_of_the_ganges = {
@@ -1003,7 +1060,7 @@ merc_company_of_the_ganges = {
 			}
 		}
 	}
-	modifier = { }
+	modifier = { mercenary_manpower = -0.5 }
 }
 
 # Banjaras
@@ -1019,7 +1076,7 @@ merc_banjara_company = {
 		is_allowed_to_recruit_mercenaries = yes
 		capital_scope = { superregion = india_superregion }
 	}
-	modifier = { }
+	modifier = { mercenary_manpower = -0.5 }
 }
 
 # Bukhara Band
@@ -1042,7 +1099,7 @@ merc_bukhara_band = {
 			}
 		}
 	}
-	modifier = { }
+	modifier = { mercenary_manpower = -0.5 }
 }
 
 # Mesopotamian Mamluks
@@ -1069,8 +1126,7 @@ merc_mesopotamian_mamluks = {
 			}
 		}
 	}
-    modifier = {
-        cavalry_shock = 1.0
+modifier = { mercenary_manpower = -0.5       cavalry_shock = 1.0
     }
 }
 
@@ -1096,8 +1152,7 @@ merc_nile_mamluks = {
 			}
 		}
 	}
-    modifier = {
-        cavalry_power = 0.1
+modifier = { mercenary_manpower = -0.5       cavalry_power = 0.1
         discipline = 0.025
     }
 }
@@ -1117,7 +1172,7 @@ merc_delhi_mamluks = {
 			superregion = india_superregion
 		}
 	}
-    modifier = { }
+    modifier = { mercenary_manpower = -0.5 }
 }
 
 merc_zeybeks = {
@@ -1136,7 +1191,7 @@ merc_zeybeks = {
 			}
 		}
 	}
-    modifier = { }
+    modifier = { mercenary_manpower = -0.5 }
 }
 
 merc_sekban = {
@@ -1151,7 +1206,7 @@ merc_sekban = {
 			capital_scope = { region = anatolia_region }
 		}
 	}
-    modifier = { }
+    modifier = { mercenary_manpower = -0.5 }
 }
 
 merc_zanj_company = {
@@ -1176,7 +1231,7 @@ merc_zanj_company = {
 			has_country_modifier = glut_of_mercs
 		}
 	}
-    modifier = { }
+    modifier = { mercenary_manpower = -0.5 }
 }
 
 merc_madagascar_company = {
@@ -1204,7 +1259,7 @@ merc_madagascar_company = {
 			}
 		}
 	}
-    modifier = { }
+    modifier = { mercenary_manpower = -0.5 }
 }
 
 merc_sahel_company = {
@@ -1224,6 +1279,7 @@ merc_sahel_company = {
 		}
 	}
     modifier = {
+		mercenary_manpower = -0.5
 		movement_speed = 0.1
 		land_attrition = -0.25
 	}
@@ -1246,8 +1302,9 @@ merc_asafo_company = {
 			}
 		}
 	}
-    modifier = {
-        land_morale = 0.05
+	modifier = { 
+		mercenary_manpower = -0.5       
+		land_morale = 0.05
 	}
 }
 
@@ -1276,7 +1333,7 @@ merc_nubian_company = {
 			has_country_modifier = glut_of_mercs
 		}
 	}
-    modifier = { }
+    modifier = { mercenary_manpower = -0.5 }
 }
 
 merc_tonkinese_army = {
@@ -1302,6 +1359,7 @@ merc_tonkinese_army = {
 		}
 	}
     modifier = {
+		mercenary_manpower = -0.5
 		land_attrition = -0.2
 		reinforce_speed = 0.2
 	}
@@ -1338,8 +1396,7 @@ merc_mongol_mercenaries = {
 			}
 		}
 	}
-    modifier = {
-        cavalry_power = 0.2
+modifier = { mercenary_manpower = -0.5       cavalry_power = 0.2
     }
 }
 
@@ -1365,6 +1422,7 @@ merc_royal_circassian_guards = {
 		government = monarchy
 	}
     modifier = {
+		mercenary_manpower = -0.5
 		prestige_from_land = 0.15
 	}
 }
@@ -1399,7 +1457,7 @@ merc_bedouin_auxiliaries = {
 			has_country_modifier = glut_of_mercs
 		}
 	}
-    modifier = { }
+    modifier = { mercenary_manpower = -0.5 }
 }
 
 merc_kurdish_company = {
@@ -1425,7 +1483,7 @@ merc_kurdish_company = {
 			}
 		}
 	}
-    modifier = { }
+    modifier = { mercenary_manpower = -0.5 }
 }
 
 merc_laz_auxiliaries = {
@@ -1440,7 +1498,7 @@ merc_laz_auxiliaries = {
 			tag = BYZ
 		}
 	}
-    modifier = { }
+    modifier = { mercenary_manpower = -0.5 }
 }
 
 merc_tabarestan_company = {
@@ -1452,7 +1510,7 @@ merc_tabarestan_company = {
 		is_allowed_to_recruit_mercenaries = yes
 		capital_scope = { superregion = persia_superregion }
 	}
-    modifier = { }
+    modifier = { mercenary_manpower = -0.5 }
 }
 
 merc_novgorod_company = {
@@ -1464,7 +1522,7 @@ merc_novgorod_company = {
 		is_allowed_to_recruit_mercenaries = yes
 		capital_scope = { superregion = eastern_europe_superregion }
 	}
-    modifier = { }
+    modifier = { mercenary_manpower = -0.5 }
 }
 
 merc_crimean_company = {
@@ -1479,7 +1537,7 @@ merc_crimean_company = {
 			religion = tengri_pagan_reformed
 		}
 	}
-    modifier = { }
+    modifier = { mercenary_manpower = -0.5 }
 }
 
 merc_buryat_band = {
@@ -1500,8 +1558,7 @@ merc_buryat_band = {
 			}
 		}
 	}
-    modifier = {
-        movement_speed = 0.1
+modifier = { mercenary_manpower = -0.5       movement_speed = 0.1
 	}
 }
 
@@ -1520,7 +1577,7 @@ merc_lithuanian_company = {
 			}
 		}
 	}
-    modifier = { }
+    modifier = { mercenary_manpower = -0.5 }
 }
 
 merc_frisian_free_company = {
@@ -1551,8 +1608,7 @@ merc_frisian_free_company = {
 			}
 		}
 	}
-    modifier = {
-        reserves_organisation = 0.05
+modifier = { mercenary_manpower = -0.5       reserves_organisation = 0.05
 		land_morale = 0.05
 	}
 }
@@ -1572,7 +1628,7 @@ merc_finnish_company = {
 			has_country_modifier = glut_of_mercs
 		}
 	}
-    modifier = { }
+    modifier = { mercenary_manpower = -0.5 }
 }
 
 merc_almogavars = {
@@ -1587,8 +1643,7 @@ merc_almogavars = {
 		current_age = age_of_discovery
 		NOT = { has_government_attribute = has_improved_almogavars }
 	}
-    modifier = {
-        movement_speed = 0.15
+modifier = { mercenary_manpower = -0.5       movement_speed = 0.15
 	}
 }
 
@@ -1603,8 +1658,7 @@ merc_scouting_almogavars = {
 		is_allowed_to_recruit_mercenaries = yes
 		has_government_attribute = has_improved_almogavars
 	}
-    modifier = {
-        movement_speed = 0.25
+modifier = { mercenary_manpower = -0.5       movement_speed = 0.25
 		discipline = -0.05
 	}
 }
@@ -1621,6 +1675,7 @@ merc_skirmishing_almogavars = {
 		has_government_attribute = has_improved_almogavars
 	}
     modifier = {
+		mercenary_manpower = -0.5
 	}
 }
 
@@ -1636,6 +1691,7 @@ merc_veteran_almogavars = {
 		has_government_attribute = has_improved_almogavars
 	}
     modifier = {
+		mercenary_manpower = -0.5
 		infantry_power = 0.1
 	}
 }
@@ -1653,7 +1709,7 @@ merc_moorish_battalion = {
 			has_country_modifier = glut_of_mercs
 		}
 	}
-    modifier = { }
+    modifier = { mercenary_manpower = -0.5 }
 }
 
 merc_kutai_company = {
@@ -1674,7 +1730,7 @@ merc_kutai_company = {
 			has_country_modifier = glut_of_mercs
 		}
 	}
-    modifier = { }
+    modifier = { mercenary_manpower = -0.5 }
 }
 
 merc_miquelet_company = {
@@ -1692,6 +1748,7 @@ merc_miquelet_company = {
 		}
 	}
     modifier = {
+		mercenary_manpower = -0.5
 		movement_speed = 0.1
 		land_attrition = -0.15
 	}
@@ -1722,7 +1779,7 @@ merc_free_company_of_volunteers = {
 			}
 		}
 	}
-    modifier = { }
+    modifier = { mercenary_manpower = -0.5 }
 }
 
 merc_crabats = {
@@ -1749,7 +1806,7 @@ merc_crabats = {
 			}
 		}
 	}
-	modifier = { }
+	modifier = { mercenary_manpower = -0.5 }
 }
 
 merc_free_swiss_guard = {
@@ -1773,6 +1830,7 @@ merc_free_swiss_guard = {
 		NOT = { tag = PAP }
 	}
 	modifier = {
+		mercenary_manpower = -0.5
         discipline = 0.05
 	}
 }
@@ -1804,6 +1862,7 @@ merc_colonial_rangers = {
 		}
 	}
     modifier = {
+		mercenary_manpower = -0.5
 		movement_speed = 0.1
         land_morale = 0.1
 	}
@@ -1832,7 +1891,7 @@ merc_independent_cossack_host = {
 			has_country_modifier = glut_of_mercs
 		}
 	}
-    modifier = { }
+    modifier = { mercenary_manpower = -0.5 }
 }
 
 merc_kazakh_company = {
@@ -1854,7 +1913,7 @@ merc_kazakh_company = {
 			has_country_modifier = glut_of_mercs
 		}
 	}
-    modifier = { }
+    modifier = { mercenary_manpower = -0.5 }
 }
 
 merc_yaka_free_warriors = {
@@ -1871,7 +1930,7 @@ merc_yaka_free_warriors = {
 			}
 		}
 	}
-    modifier = { }
+    modifier = { mercenary_manpower = -0.5 }
 }
 
 merc_great_lakes_free_warriors = {
@@ -1889,7 +1948,7 @@ merc_great_lakes_free_warriors = {
 			has_country_modifier = glut_of_mercs
 		}
 	}
-    modifier = { }
+    modifier = { mercenary_manpower = -0.5 }
 }
 
 merc_thai_company = {
@@ -1903,7 +1962,7 @@ merc_thai_company = {
 			region = indo_china_region
 		}
 	}
-    modifier = { }
+    modifier = { mercenary_manpower = -0.5 }
 }
 
 merc_yucatan_company = {
@@ -1918,7 +1977,7 @@ merc_yucatan_company = {
 			country_or_non_sovereign_subject_holds = root
 		}
 	}
-    modifier = { }
+    modifier = { mercenary_manpower = -0.5 }
 }
 
 merc_misquito_coast_company = {
@@ -1933,7 +1992,7 @@ merc_misquito_coast_company = {
 			country_or_non_sovereign_subject_holds = root
 		}
 	}
-    modifier = { }
+    modifier = { mercenary_manpower = -0.5 }
 }
 
 merc_navajo_raiders = {
@@ -1956,7 +2015,7 @@ merc_navajo_raiders = {
 			}
 		}
 	}
-    modifier = { }
+    modifier = { mercenary_manpower = -0.5 }
 }
 
 merc_chonnonton_warriors = {
@@ -1982,7 +2041,7 @@ merc_chonnonton_warriors = {
 			}
 		}
 	}
-    modifier = { }
+    modifier = { mercenary_manpower = -0.5 }
 }
 
 merc_inuit_warriors = {
@@ -2005,7 +2064,7 @@ merc_inuit_warriors = {
 			}
 		}
 	}
-    modifier = { shock_damage = 0.1 }
+    modifier = { mercenary_manpower = -0.5 shock_damage = 0.1 }
 }
 
 merc_free_mohawks = {
@@ -2026,6 +2085,7 @@ merc_free_mohawks = {
 		}
 	}
     modifier = {
+		mercenary_manpower = -0.5
 		land_morale = 0.05
 	}
 }
@@ -2050,7 +2110,7 @@ merc_muscogee_mercenaries = {
 			}
 		}
 	}
-    modifier = { }
+    modifier = { mercenary_manpower = -0.5 }
 }
 
 merc_quito_company = {
@@ -2070,7 +2130,7 @@ merc_quito_company = {
 			}
 		}
 	}
-    modifier = { }
+    modifier = { mercenary_manpower = -0.5 }
 }
 
 merc_silver_company = {
@@ -2093,7 +2153,7 @@ merc_silver_company = {
 			}
 		}
 	}
-    modifier = { }
+    modifier = { mercenary_manpower = -0.5 }
 }
 
 merc_dahomey_amazons = {
@@ -2121,8 +2181,7 @@ merc_dahomey_amazons = {
 			}
 		}
 	}
-    modifier = {
-        may_recruit_female_generals = yes
+modifier = { mercenary_manpower = -0.5       may_recruit_female_generals = yes
         female_advisor_chance = 1.0
         shock_damage = 0.05
         shock_damage_received = -0.05
@@ -2140,6 +2199,7 @@ merc_gascon_musket_company = {
 		NOT = { current_age = age_of_discovery }
 	}
 	modifier = {
+		mercenary_manpower = -0.5
         infantry_fire = 0.5
 	}
 }
@@ -2161,7 +2221,7 @@ merc_tyrolean_guard = {
 			}
 		}
 	}
-	modifier = { }
+	modifier = { mercenary_manpower = -0.5 }
 }
 
 merc_mongol_banner = {
@@ -2187,6 +2247,7 @@ merc_mongol_banner = {
 	}
 	cost_modifier = 3.3
 	modifier = {
+		mercenary_manpower = -0.5
         cavalry_shock =1.0
 	}
 }
@@ -2203,6 +2264,7 @@ merc_swiss_canton_mercenaries = {
 	}
 	cost_modifier = 2.25
 	modifier = {
+		mercenary_manpower = -0.5
 		discipline = 0.05
 	}
 }
@@ -2221,6 +2283,7 @@ merc_japanese_volunteers = {
 		mission_completed = mnd_siam_japan
 	}
 	modifier = {
+		mercenary_manpower = -0.5
 		infantry_power = 0.1
         discipline = 0.025
 	}
@@ -2239,8 +2302,7 @@ merc_militant_order_of_saint_joan = {
 		is_allowed_to_recruit_mercenaries = yes
 		has_country_flag = militant_order_of_saint_joan
 	}
-    modifier = {
-        may_recruit_female_generals = yes
+modifier = { mercenary_manpower = -0.5       may_recruit_female_generals = yes
         female_advisor_chance = 1.0
         fire_damage = 0.2
 		discipline = 0.05

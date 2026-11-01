@@ -5021,3 +5021,91 @@ estate_nobles_austrian_nobility_privileges = {
 		factor = 1
 	}
 }
+
+estate_nobles_aet_eliteGuards_aristocratic_reinforce = {
+	icon = privilege_demand_more_troops
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		aet_eliteGuards_anyEnabled = yes
+	}
+	can_select = {
+		full_idea_group = aristocracy_ideas
+	}
+
+	penalties = {
+		
+	}
+	benefits = {
+		nobles_privilege_slots = 1
+	}
+
+	influence_scaled_conditional_modifier = {	#Modifier that are applied if the specified conditions are true. At 100% Influence you gain 100% of the modifier.
+		trigger = {
+			NOT = {
+				estate_loyalty = {
+					estate = estate_nobles
+					loyalty = 30
+				}
+			}
+		}
+		modifier = {
+			is_revolutionary_guard_modifier = yes 
+			reinforce_speed = -1.0
+			reinforce_cost_modifier = 1.0
+		}
+	}
+	influence_scaled_conditional_modifier = {	#Modifier that are applied if the specified conditions are true. At 100% Influence you gain 100% of the modifier.
+		trigger = {
+			NOT = {
+				estate_loyalty = {
+					estate = estate_nobles
+					loyalty = 30
+				}
+			}
+		}
+		modifier = {
+			stability_cost_modifier = 1
+			stability_cost_to_declare_war = 2
+			land_morale = -0.10
+		}
+	}	
+	influence_scaled_conditional_modifier = {	#Modifier that are applied if the specified conditions are true. At 100% Influence you gain 100% of the modifier.
+		trigger = {
+			estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 30
+			}
+			NOT = {
+				estate_loyalty = {
+					estate = estate_nobles
+					loyalty = 60
+				}
+			}
+		}
+		modifier = {
+			is_revolutionary_guard_modifier = yes 
+			reinforce_speed = 0.5
+			reinforce_cost_modifier = 0.5
+		}
+	}
+	influence_scaled_conditional_modifier = {	#Modifier that are applied if the specified conditions are true. At 100% Influence you gain 100% of the modifier.
+		trigger = {
+			estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 60
+			}
+		}
+		modifier = {
+			is_revolutionary_guard_modifier = yes 
+			reinforce_speed = 1.0
+			reinforce_cost_modifier = 1.0
+		}
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}

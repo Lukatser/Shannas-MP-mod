@@ -257,7 +257,7 @@ barracks = {
 	cost = 100
 	time = 12
 	modifier = {
-		local_manpower_modifier = 0.25
+		local_manpower_modifier = 0.5
 	}
 	on_built = {
 		if = {
@@ -622,6 +622,7 @@ courthouse = {
 		local_state_maintenance_modifier = -0.25
 		local_autonomy = -0.1
 		local_governing_cost = -0.25
+		min_local_autonomy = -5
 		allowed_num_of_buildings = 1
 	}
 	on_built = {
@@ -1440,7 +1441,7 @@ training_fields = {
 #	}
 
 	modifier = {
-		local_manpower_modifier = 0.5
+		local_manpower_modifier = 1
 	}
 	
 	on_built = {
@@ -1791,6 +1792,7 @@ town_hall = {
 		local_state_maintenance_modifier = -0.5
 		local_autonomy = -0.2
 		local_governing_cost = -0.5
+		min_local_autonomy = -10
 		allowed_num_of_buildings = 1
 	}
 
@@ -1899,7 +1901,7 @@ drydock = {
 	}
 
 	modifier = {
-		local_sailors_modifier = 0.5
+		local_sailors_modifier = 1
 		local_has_man_of_war = yes
 		local_has_galleass = yes
 	}

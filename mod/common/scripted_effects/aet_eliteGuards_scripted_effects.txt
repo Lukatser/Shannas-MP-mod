@@ -324,6 +324,8 @@ aet_eliteGuards_cleanup = {
 			value = 0
 		}
 
+		clr_country_flag = aet_eliteGuards_commonSetupDone
+
 		remove_country_modifier = aet_eliteGuardsFL_0
 		remove_country_modifier = aet_eliteGuardsFL_1
 		remove_country_modifier = aet_eliteGuardsFL_2
