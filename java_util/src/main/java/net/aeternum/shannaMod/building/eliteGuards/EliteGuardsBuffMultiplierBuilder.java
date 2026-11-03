@@ -1,4 +1,4 @@
-package net.aeternum.shannaMod.eliteGuards;
+package net.aeternum.shannaMod.building.eliteGuards;
 
 import net.aeternum.shannaMod.Config;
 import net.aeternum.shannaMod.generation.BinLookupGenerator;

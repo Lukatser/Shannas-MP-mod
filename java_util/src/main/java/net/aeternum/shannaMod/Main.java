@@ -1,6 +1,6 @@
 package net.aeternum.shannaMod;
 
-import net.aeternum.shannaMod.eliteGuards.EliteGuardsBuffMultiplierBuilder;
+import net.aeternum.shannaMod.building.eliteGuards.EliteGuardsBuffMultiplierBuilder;
 
 import java.io.IOException;
 import java.nio.file.Path;
