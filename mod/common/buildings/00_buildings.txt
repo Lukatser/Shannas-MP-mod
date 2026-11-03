@@ -377,13 +377,14 @@ shipyard = {
 		has_port = yes
 	}
 	modifier = {
-		naval_forcelimit = 1
+		aet_flBuildings_naval_forcelimit_from_development = 0.10
 		ship_recruit_speed = -0.25
 		local_ship_repair = 0.25
 		local_has_man_of_war = yes
 		local_has_galleass = yes
 	}
 	on_built = {
+		aet_flBuildings_refresh_naval_force_limit = yes
 		add_development_from_building = {
 			building = shipyard
 			type = production
@@ -815,7 +816,7 @@ regimental_camp = {
 	cost = 200
 	time = 12
 	modifier = {
-		land_forcelimit = 0.125
+		aet_flBuildings_land_forcelimit_from_development = 0.05
 	}
 
 #	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
@@ -841,7 +842,7 @@ regimental_camp = {
 #		}
 #	}
 	on_built = {
-		aet_flBuilding_applyCorrect = yes 
+		aet_flBuildings_refresh_land_forcelimit = yes 
 		add_development_from_building = {
 			building = regimental_camp
 			type = manpower
@@ -1368,7 +1369,7 @@ grand_shipyard = {
 		has_port = yes
 	}
 	modifier = {
-		naval_forcelimit = 2
+		aet_flBuildings_naval_forcelimit_from_development = 0.2
 		ship_recruit_speed = -0.50
 		local_ship_repair = 0.50
 		local_has_man_of_war = yes
@@ -1376,6 +1377,7 @@ grand_shipyard = {
 	}
 
 	on_built = {
+		aet_flBuildings_refresh_naval_force_limit = yes
 		add_development_from_upgrading_or_building = {
 			building = grand_shipyard
 			obsolete_building = shipyard
@@ -1983,10 +1985,10 @@ conscription_center = {
 #	}
 
 	modifier = {
-		land_forcelimit = 0.25
+		aet_flBuildings_land_forcelimit_from_development = 0.10
 	}
 	on_built = {
-		aet_flBuilding_applyCorrect = yes 
+		aet_flBuildings_refresh_land_forcelimit = yes 
 		add_development_from_upgrading_or_building = {
 			building = conscription_center
 			obsolete_building = regimental_camp

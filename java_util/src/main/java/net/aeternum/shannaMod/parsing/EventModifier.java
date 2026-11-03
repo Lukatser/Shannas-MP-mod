@@ -9,6 +9,8 @@ public record EventModifier (
         String name,
         List<Modifier> modifiers
 ) implements Comparable<EventModifier> {
+    public static final EventModifier NULLMODIFIER = new EventModifier("null", List.of());
+
     @Override
     @NonNull
     public String toString() {
@@ -80,5 +82,9 @@ public record EventModifier (
         if(!isSuffixed()) throw new IllegalStateException("The suffix has not been set");
         String suffix = canonicSuffixNaming(getSuffix());
         return name.substring(0, name.length() - suffix.length());
+    }
+
+    public EventModifier scale(Double multiplier) {
+        return new EventModifier(name, modifiers.stream().map(m -> m.scale(multiplier)).toList());
     }
 }

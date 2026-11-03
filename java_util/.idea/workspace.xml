@@ -5,15 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5eff02d8-4d86-4ec3-b210-8fac24901221" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/aeternum/shannaMod/building/FLBuildings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/aeternum/shannaMod/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/aeternum/shannaMod/Config.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/aeternum/shannaMod/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/aeternum/shannaMod/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/aeternum/shannaMod/eliteGuards/EliteGuardsBuffMultiplierBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/aeternum/shannaMod/building/eliteGuards/EliteGuardsBuffMultiplierBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/aeternum/shannaMod/eliteGuards/MercModifierBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/aeternum/shannaMod/building/eliteGuards/MercModifierBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mod/common/event_modifiers/aet_eliteGuards_scaled_modifiers.generated.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../mod/common/event_modifiers/aet_eliteGuards_scaled_modifiers.generated.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mod/common/scripted_effects/aet_eliteGuards_scaledModifiers_scripted_effects.generated.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../mod/common/scripted_effects/aet_eliteGuards_scaledModifiers_scripted_effects.generated.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mod/common/static_modifiers/00_static_modifiers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../mod/common/static_modifiers/00_static_modifiers.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mod/common/triggered_modifiers/rw.triggered_modifiers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../mod/common/triggered_modifiers/rw.triggered_modifiers.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/aeternum/shannaMod/building/FLBuildings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/aeternum/shannaMod/building/FLBuildings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/aeternum/shannaMod/building/eliteGuards/EliteGuardsBuffMultiplierBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/aeternum/shannaMod/building/eliteGuards/EliteGuardsBuffMultiplierBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/aeternum/shannaMod/parsing/EventModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/aeternum/shannaMod/parsing/EventModifier.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +19,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="98" />
+    <option name="cachedIndexableFilesCount" value="28" />
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -58,6 +57,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "aeternum-boii"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:aeternum-boii/Shannas-MP-mod.git",
+    "accountId": "40dd6fa9-fd4f-4de4-9ed7-c42252d7b65f"
+  }
+}]]></component>
   <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$" gradleHome="C:\Users\Simon\.gradle\wrapper\dists\gradle-9.8.0-bin\3m7h6ceboy5k31n8kzwzuxssm\gradle-9.8.0" javaHome="C:\Program Files\Java\latest\jdk-26" gradleVersion="9.8.0" />
   <component name="McpProjectServerCommands">
     <commands />
@@ -65,61 +76,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000000004820828" />
-      <entry key="MS500" value="1.0137409673546791" />
-      <entry key="S2" value="1.4677855710469294" />
-      <entry key="S5" value="2.5515178578580207" />
-      <entry key="S10" value="3.6688098958507984" />
-      <entry key="S30" value="5.174654016242737" />
-      <entry key="S60" value="6.773761992993321" />
-      <entry key="M2" value="11.573386505409076" />
-      <entry key="M5" value="26.35507022362963" />
-      <entry key="M10" value="45.81445797535005" />
-      <entry key="M15" value="58.71336236043656" />
-      <entry key="M30" value="78.12617634773653" />
-      <entry key="H1" value="91.44128685495359" />
-      <entry key="H2" value="100.26883301734543" />
-      <entry key="H4" value="111.5694870517913" />
-      <entry key="D1" value="152.54903987160588" />
-      <entry key="W1" value="168.8102236861106" />
+      <entry key="MS100" value="3.705428724350928E-5" />
+      <entry key="MS500" value="0.13035782442982452" />
+      <entry key="S2" value="0.8211167009317595" />
+      <entry key="S5" value="1.8763237105624457" />
+      <entry key="S10" value="3.324134746547115" />
+      <entry key="S30" value="7.7867288771288035" />
+      <entry key="S60" value="12.631471677034048" />
+      <entry key="M2" value="20.82742138789324" />
+      <entry key="M5" value="40.38512288827845" />
+      <entry key="M10" value="69.30658159322562" />
+      <entry key="M15" value="97.74327578616507" />
+      <entry key="M30" value="171.78453909011264" />
+      <entry key="H1" value="261.68462493180414" />
+      <entry key="H2" value="338.5990697131061" />
+      <entry key="H4" value="395.2088790722497" />
+      <entry key="D1" value="483.34991456231694" />
+      <entry key="W1" value="509.95550572252665" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="1.592957855212856E-128" />
-      <entry key="S2" value="1.4176411625733288E-32" />
-      <entry key="S5" value="2.7060732119860977E-13" />
-      <entry key="S10" value="8.712646551552064E-7" />
-      <entry key="S30" value="0.029275570566271746" />
-      <entry key="S60" value="0.521089898069957" />
-      <entry key="M2" value="2.607483604910126" />
-      <entry key="M5" value="7.75594973881195" />
-      <entry key="M10" value="11.88849263225254" />
-      <entry key="M15" value="13.945196303210205" />
-      <entry key="M30" value="16.56758121351576" />
-      <entry key="H1" value="18.166019632562254" />
-      <entry key="H2" value="19.25198018545249" />
-      <entry key="H4" value="21.142856275290697" />
-      <entry key="D1" value="29.112600793019432" />
-      <entry key="W1" value="32.36071473687736" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.000000000000001" />
+      <entry key="S5" value="1.000001564775472" />
+      <entry key="S10" value="1.0017551835091048" />
+      <entry key="S30" value="1.1912652108267348" />
+      <entry key="S60" value="1.6526067437602086" />
+      <entry key="M2" value="2.8051252827382163" />
+      <entry key="M5" value="7.664014796740229" />
+      <entry key="M10" value="15.136108285395908" />
+      <entry key="M15" value="21.492962268417916" />
+      <entry key="M30" value="36.01331835837568" />
+      <entry key="H1" value="52.12669142247806" />
+      <entry key="H2" value="65.33268240560417" />
+      <entry key="H4" value="75.02245208596396" />
+      <entry key="D1" value="91.00098514165937" />
+      <entry key="W1" value="96.03742866934725" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.0035356590732082E-7" />
-      <entry key="MS500" value="0.050042254765445625" />
-      <entry key="S2" value="0.8418171937942387" />
-      <entry key="S5" value="2.123899453873629" />
-      <entry key="S10" value="3.374470520905797" />
-      <entry key="S30" value="5.071887949752273" />
-      <entry key="S60" value="7.203226585659416" />
-      <entry key="M2" value="14.082933285230355" />
-      <entry key="M5" value="34.01071608433423" />
-      <entry key="M10" value="57.62160722816443" />
-      <entry key="M15" value="72.59225507882415" />
-      <entry key="M30" value="94.65211761148544" />
-      <entry key="H1" value="109.58370153283344" />
-      <entry key="H2" value="119.50806890616764" />
-      <entry key="H4" value="132.70525535198797" />
-      <entry key="D1" value="181.65998329337086" />
-      <entry key="W1" value="201.17067414943543" />
+      <entry key="MS100" value="3.8689106103148384E-5" />
+      <entry key="MS500" value="0.1671625313147679" />
+      <entry key="S2" value="1.161269838681987" />
+      <entry key="S5" value="2.3752640888305314" />
+      <entry key="S10" value="3.9059016865844685" />
+      <entry key="S30" value="8.670146685253595" />
+      <entry key="S60" value="14.045216324361117" />
+      <entry key="M2" value="23.445951016128795" />
+      <entry key="M5" value="47.90270021063394" />
+      <entry key="M10" value="84.31056809676726" />
+      <entry key="M15" value="119.11027723010503" />
+      <entry key="M30" value="207.68862762176585" />
+      <entry key="H1" value="313.73046068519153" />
+      <entry key="H2" value="403.880549348266" />
+      <entry key="H4" value="470.20183607940527" />
+      <entry key="D1" value="574.3449659893095" />
+      <entry key="W1" value="605.992042277476" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -134,39 +145,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.FileSorter.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Gradle.java_util [:net.aeternum.shannaMod.Main.main()].executor": "Run",
-    "Gradle.java_util [:net.aeternum.shannaMod.building.FLBuildings.main()].executor": "Run",
-    "Gradle.java_util [:net.aeternum.shannaMod.parsing.FileSorter.main()].executor": "Run",
-    "Gradle.java_util [build].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "elitesRework",
-    "ignore.virus.scanning.warn.message": "true",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "profiler.jvm",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.FileSorter.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java_util [:net.aeternum.shannaMod.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java_util [:net.aeternum.shannaMod.building.FLBuildings.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java_util [:net.aeternum.shannaMod.parsing.FileSorter.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java_util [build].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;elitesRework&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;profiler.jvm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="net.aeternum.shannaMod.building" />
@@ -249,8 +260,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-2df11533d9fe-intellij.indexing.shared.core-IU-262.11879.100" />
-        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.11879.100" />
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.27258.27" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.27258.27" />
       </set>
     </attachedChunks>
   </component>
@@ -267,6 +278,7 @@
       <workItem from="1793164221137" duration="1410000" />
       <workItem from="1793606224179" duration="218000" />
       <workItem from="1793606495880" duration="5026000" />
+      <workItem from="1793693503876" duration="5512000" />
     </task>
     <servers />
   </component>

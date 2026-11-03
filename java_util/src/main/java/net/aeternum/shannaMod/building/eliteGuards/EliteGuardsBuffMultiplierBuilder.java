@@ -4,6 +4,7 @@ import net.aeternum.shannaMod.Config;
 import net.aeternum.shannaMod.generation.BinLookupGenerator;
 import net.aeternum.shannaMod.generation.ScaledModifierGenerator;
 import net.aeternum.shannaMod.parsing.EventModifier;
+import org.jspecify.annotations.NonNull;
 
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -22,8 +23,8 @@ public class EliteGuardsBuffMultiplierBuilder {
     private static final String buffModifier = "aet_eliteGuards_buffMultiplier";
     private final Config cfg;
 
-    public EliteGuardsBuffMultiplierBuilder(Path commonPath, int bitWidth, double step, Path configPath, Config cfg) {
-        this.commonPath = commonPath;
+    public EliteGuardsBuffMultiplierBuilder(int bitWidth, double step, Path configPath, @NonNull Config cfg) {
+        this.commonPath = cfg.commonPath();
         this.configPath = configPath;
 
         modifiers = new ArrayList<>(1 << (bitWidth - 1));
@@ -35,11 +36,11 @@ public class EliteGuardsBuffMultiplierBuilder {
         }
     }
 
-    public EliteGuardsBuffMultiplierBuilder(Path commonPath, int bitWidth, double step) {
-        this(commonPath, bitWidth, step, null, Config.readDefaultConfig());
+    public EliteGuardsBuffMultiplierBuilder(int bitWidth, double step) {
+        this(bitWidth, step, null, Config.readDefaultConfig());
     }
-    public EliteGuardsBuffMultiplierBuilder(Path commonPath, int bitWidth) {
-        this(commonPath, bitWidth, 0.10, null, Config.readDefaultConfig());
+    public EliteGuardsBuffMultiplierBuilder(int bitWidth) {
+        this(bitWidth, 0.10, null, Config.readDefaultConfig());
     }
 
     public EliteGuardsBuffMultiplierBuilder generateScaledModifiers() {

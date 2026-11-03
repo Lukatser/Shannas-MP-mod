@@ -6,10 +6,8 @@ import java.io.IOException;
 import java.nio.file.Path;
 
 public class Main {
-    static void main() throws IOException {
-        Path p = Path.of("..","mod","common");
-
-        EliteGuardsBuffMultiplierBuilder builder = new EliteGuardsBuffMultiplierBuilder(p, 5)
+    static void main() {
+        EliteGuardsBuffMultiplierBuilder builder = new EliteGuardsBuffMultiplierBuilder(5)
                 .generateScaledModifiers()
                 .writeScaledModifiers()
                 .writeLogic();
