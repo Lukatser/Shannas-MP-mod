@@ -177,7 +177,7 @@ rock_of_gibraltar = {
 			factor = 1000
 		}
 		province_modifiers = {
-            hostile_fleet_attrition = 0.02
+            hostile_fleet_attrition = 2
 			blockade_force_required = 0.5
 		}
 		area_modifier = {
@@ -201,7 +201,7 @@ rock_of_gibraltar = {
 			factor = 2500
 		}
 		province_modifiers = {
-            hostile_fleet_attrition = 0.05
+            hostile_fleet_attrition = 5
 			block_slave_raid = yes 
 			local_sailors_modifier = 0.33
 		}
@@ -226,7 +226,7 @@ rock_of_gibraltar = {
 			factor = 5000
 		}
 		province_modifiers = {
-            hostile_fleet_attrition = 0.1
+            hostile_fleet_attrition = 10
 			local_garrison_size = 0.5
 			local_warscore_cost_modifier = 0.15
 		}
