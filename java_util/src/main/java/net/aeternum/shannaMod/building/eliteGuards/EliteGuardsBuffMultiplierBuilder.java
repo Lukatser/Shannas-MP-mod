@@ -6,8 +6,10 @@ import net.aeternum.shannaMod.generation.ScaledModifierGenerator;
 import net.aeternum.shannaMod.parsing.EventModifier;
 import org.jspecify.annotations.NonNull;
 
+import javax.sound.sampled.AudioFormat;
 import java.io.BufferedWriter;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.*;
@@ -20,6 +22,7 @@ public class EliteGuardsBuffMultiplierBuilder {
     private static final Path scaledModifierSource = Path.of("event_modifiers", "aet_eliteGuards_scaled_modifiers.txt");
     private static final Path scaledModifierTarget = Path.of("event_modifiers", "aet_eliteGuards_scaled_modifiers.generated.txt");
     private static final Path logicTarget = Path.of("scripted_effects", "aet_eliteGuards_scaledModifiers_scripted_effects.generated.txt");
+    private static final Path localisationTarget = Path.of("localisation", "aet_eliteGuards_scaledModifiers_localisation.generated_l_english.yml");
     private static final String buffModifier = "aet_eliteGuards_buffMultiplier";
     private final Config cfg;
 
@@ -146,5 +149,38 @@ public class EliteGuardsBuffMultiplierBuilder {
         return this;
     }
 
+    public EliteGuardsBuffMultiplierBuilder writeLocalisation() {
+        try (BufferedWriter writer = Files.newBufferedWriter(
+                commonPath.resolve("..").resolve(localisationTarget),
+                StandardCharsets.UTF_8)) {
+            writer.write('\uFEFF');
+            writer.write("l_english:\n");
+            List<EventModifier> combined = new ArrayList<>(scaledModifiers.values().stream().flatMap(List::stream).toList());
+            for (EventModifier modifier : combined) {
+                String name = getModifierLocalisedName(modifier.getSuffixlessName());
+                writer.write(" " + modifier.name() + ":0 \"" + name + "\"\n");
+            }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        return this;
+    }
 
+    private @NonNull String getModifierLocalisedName(String name) {
+        name = name.replace("aet_eliteGuards_", "");
+        name = name.replace("_", " ");
+
+        StringBuilder sb = new StringBuilder();
+        for(int i = 0; i < name.length(); i++) {
+            char c = name.charAt(i);
+            if(Character.isUpperCase(c)) {
+                sb.append(' ');
+                sb.append(c);
+            } else if (i == 0 || name.charAt(i - 1) == ' ') {
+                sb.append(Character.toUpperCase(c));
+            } else sb.append(c);
+        }
+
+        return sb.toString();
+    }
 }

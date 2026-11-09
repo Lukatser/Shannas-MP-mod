@@ -44,34 +44,16 @@ cliffs_of_dover = {
 				culture_group = gaelic
 			}
 		}
-		OR = {
-			NOT = { is_year = 1460 }
-			owner = { 
-				NOT = { has_country_flag = eng_took_gbr_branch }
-			} 
-		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
 		owner = {
 			OR = {
-				AND = {
-					OR = {
-						tag = ENG 
-						was_tag = ENG 
-					}
-					has_country_flag = eng_took_ave_branch
-				}
-				AND = {
-					OR = {
-						culture_group = british
-						culture_group = gaelic
-					}
-					NOT = {
-						has_mission = eng_war_france
-					}
-				}				
+				tag = ENG 
+				was_tag = ENG 				
+				culture_group = british
+				culture_group = gaelic
 			}
 		}		
 	}
@@ -117,7 +99,7 @@ cliffs_of_dover = {
 
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
-		upgrade_time = { months = 120 }
+		upgrade_time = { months = 12 }
 
 		#cost to upgrade to this level (0 for tier 0)
 		cost_to_upgrade = { factor = 500 }
@@ -145,7 +127,7 @@ cliffs_of_dover = {
 
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
-		upgrade_time = { months = 120 }
+		upgrade_time = { months = 24 }
 
 		#cost to upgrade to this level (0 for tier 0)
 		cost_to_upgrade = { factor = 500 }
@@ -171,12 +153,16 @@ cliffs_of_dover = {
 		}		
 
 		#what effects happen when this tier is achieved
-		on_upgraded = {}
+		on_upgraded = {
+			87 = {
+				add_province_triggered_modifier = aet_cliffsOfDover
+			}
+		}
 	}
 
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
-		upgrade_time = { months = 120 }
+		upgrade_time = { months = 24 }
 
 		#cost to upgrade to this level (0 for tier 0)
 		cost_to_upgrade = { factor = 500 }

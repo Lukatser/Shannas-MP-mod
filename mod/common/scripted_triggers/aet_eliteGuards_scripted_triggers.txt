@@ -69,7 +69,7 @@ aet_eliteGuards_upgradeTrigger_cav = {
 	}
 }
 aet_eliteGuards_upgradeTrigger_cav_allow = {
-	aet_eliteGuards_upgradeTrigger_inf = {
+	aet_eliteGuards_upgradeTrigger_cav = {
 		modifier = $modifier$
 	}
 
@@ -95,7 +95,7 @@ aet_eliteGuards_upgradeTrigger_arty = {
 	}
 }
 aet_eliteGuards_upgradeTrigger_arty_allow = {
-	aet_eliteGuards_upgradeTrigger_inf = {
+	aet_eliteGuards_upgradeTrigger_arty = {
 		modifier = $modifier$
 	}
 
@@ -150,7 +150,7 @@ aet_eliteGuard_lightCavPersistentRequirements = {
 }
 
 aet_eliteGuard_lightCavCossackPersistentRequirements = {
-	num_of_cossacks = 1
+	has_estate = estate_cossacks
 }
 aet_eliteGuard_cavArcherPersistentRequirements = {
 	OR = {

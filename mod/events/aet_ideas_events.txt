@@ -1594,6 +1594,240 @@ country_event = {
 	}
 }
 
+province_event = {
+	id = aet_ideas.20
+	title = aet_ideas.20.t
+	desc = aet_ideas.20.d
+
+	picture = COLONIZATION_eventPicture
+
+	mean_time_to_happen = {
+		months = 1200
+
+		modifier = {
+			factor = 0.5
+			unrest = 5
+		}
+
+		modifier = {
+			factor = 0.9
+			local_autonomy = 0.2
+		}
+
+		modifier = {
+			factor = 0.7
+			local_autonomy = 0.4
+		}
+
+		modifier = {
+			factor = 0.5
+			local_autonomy = 0.6
+		}
+	}
+
+	trigger = {
+		continent = north_america
+		NOT = { has_province_flag = aet_ideas_totemistFired }
+		owner = { NOT = { has_country_flag = aet_ideas_totemistEventsActive } }
+		is_city = yes
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_province_flag = aet_ideas_totemistFired
+			set_province_flag = aet_ideas_totemismEvent_marker
+			owner = { 
+				set_country_flag = aet_ideas_totemistEventsActive 
+
+				every_owned_province = {
+					limit = {
+						continent = north_america
+						NOT = { has_province_flag = aet_ideas_totemistFired }
+					}
+					random = {
+						chance = 20
+
+						set_province_flag = aet_ideas_totemistFired
+						set_province_flag = aet_ideas_totemismEvent_marker
+					}
+				}
+			}
+		}
+	}
+
+	option = { # Supress this movement immediately 
+		name = aet_ideas.20.a
+
+		owner = { 
+			every_owned_province = {
+				limit = {
+					has_province_flag = aet_ideas_totemismEvent_marker
+				}
+
+				clr_province_flag = aet_ideas_totemismEvent_marker
+
+				add_province_modifier = {
+					name = aet_ideas_totemism_suppressedTotemistMovement
+					duration = 3650
+				}
+
+				random_list = {
+					20 = {
+						spawn_rebels = {
+							type = aet_native_rebels
+							size = 1
+							religion = totemism
+							win = yes
+							unrest = 5
+						}
+					}
+					20 = {
+						change_religion = totemism
+						spawn_rebels = {
+							type = religious_rebels
+							size = 1
+							religion = totemism
+							win = yes
+							unrest = 10
+						}
+					}
+					20 = {
+						change_religion = totemism
+						add_unrest = 5
+					}
+					50 = {
+						add_unrest = 2
+					}
+				}
+			} 
+			every_owned_province = {
+				limit = {
+					religion = totemism
+				}
+
+				add_unrest = 5
+			}
+
+			add_country_modifier = {
+				name = aet_ideas_growingReligiousIntolerance
+				duration = 3650
+			}
+		}
+	}
+
+	option = { # Tolerate this movement for now
+		name = aet_ideas.20.b
+
+		owner = {
+			every_owned_province = {
+				limit = {
+					has_province_flag = aet_ideas_totemismEvent_marker
+				}
+
+				clr_province_flag = aet_ideas_totemismEvent_marker
+
+				add_province_modifier = {
+					name = aet_ideas_totemism_toleratedTotemistMovement
+					duration = 3650
+				}
+
+				random_list = {
+					30 = {
+						change_religion = totemism
+						add_unrest = 2
+					}
+					50 = {
+						add_unrest = 1
+					}
+				}
+			} 		
+
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -15
+			}
+		}
+	}
+
+	option = { # Endorse this movement
+		name = aet_ideas.20.c
+
+		owner = {
+			random_owned_province = {
+				limit = {
+					has_province_flag = aet_ideas_totemismEvent_marker
+				}
+
+				clr_province_flag = aet_ideas_totemismEvent_marker
+
+				add_province_modifier = {
+					name = aet_ideas_totemism_supportedTotemistMovement
+					duration = 3650
+				}
+
+				change_religion = totemism
+				add_reform_center = totemism 
+			}
+
+			every_owned_province = {
+				limit = {
+					has_province_flag = aet_ideas_totemismEvent_marker
+				}
+
+				clr_province_flag = aet_ideas_totemismEvent_marker
+
+				add_province_modifier = {
+					name = aet_ideas_totemism_supportedTotemistMovement
+					duration = 3650
+				}
+
+				random_list = {
+					50 = {
+						change_religion = totemism
+						add_unrest = 2
+					}
+					50 = {
+						add_unrest = 1
+					}
+				}
+			} 		
+
+			add_stability = -1
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -30
+			}
+		}
+	}	
+
+	after = {
+		hidden_effect = {
+			owner = { 
+				clr_country_flag = aet_ideas_totemistEventsActive
+
+				every_owned_province = {
+					limit = {
+						has_province_flag = aet_ideas_totemismEvent_marker
+					}
+
+					clr_province_flag = aet_ideas_totemismEvent_marker
+				}
+
+				every_owned_province = {
+					limit = {
+						NOT = { has_province_flag = aet_ideas_totemistFired }
+					}
+					random = {
+						chance = 80
+
+						set_province_flag = aet_ideas_totemistFired
+					}
+				}
+			}
+		}
+	}
+}
+
 #country_event = { # This concept works quite well, but it does need a LOT of time during startup (like good 10 minutes)
 #	id = aet_ideas.3
 #

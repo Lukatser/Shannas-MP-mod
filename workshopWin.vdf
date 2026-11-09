@@ -1,0 +1,10 @@
+"workshopitem"
+{
+    "appid"              "236850"
+    "publishedfileid"    "3807628916"
+    "contentfolder"      "E:\\github\\Lukat-MP-mod\\mod"
+    "previewfile"        "E:\\github\\Lukat-MP-mod\\mod\\thumbnail.png"
+    "title"              "Shanna Mod Alpha Branch"
+    "description"        "This is the alpha branch of the Shanna Mod, basically featuring the nightly build"
+    "changenote"         "see docs/changelogs.md"
+}

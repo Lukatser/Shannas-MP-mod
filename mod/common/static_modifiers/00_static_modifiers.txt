@@ -742,6 +742,7 @@ inflation = {
 	trade_company_investment_cost = 0.01				#1% for each inflation step
 	state_maintenance_modifier = 0.01					#1% for each inflation step
 	monthly_russian_modernization = -0.01
+	liberty_desire = 0.5
 }
 
 bankruptcy = {
@@ -796,6 +797,7 @@ peace = {
 	monthly_cultural_unity = 0.1
 	monthly_blood = -0.05
 	monthly_authority_power = 0.1
+	liberty_desire = -5
 }
 
 unconditional_surrender = {
@@ -2488,6 +2490,8 @@ reverse_average_subject_liberty_desire = { #100% LD => 0% modifier
 average_global_autonomy = { #100% autonomy => 100% modifier
 	monthly_ottoman_decadence = 0.25
 	monthly_divine_authority = -0.5
+	liberty_desire_from_subject_development = 0.33
+	liberty_desire = 10
 }
 
 reverse_average_global_autonomy = { #100% autonomy => 0% modifier

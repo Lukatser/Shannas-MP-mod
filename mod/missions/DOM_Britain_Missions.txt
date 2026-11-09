@@ -2072,7 +2072,10 @@ ave_row_3 = {
 		}
 		position = 4
 		provinces_to_highlight = {
-			region = france_region
+			OR = {
+				region = france_region
+				culture_group = french
+			}
 			owner = {
 				NOT = { tag = ROOT }
 				NOT = { is_subject_of = ROOT }
@@ -2086,20 +2089,13 @@ ave_row_3 = {
 		}		
 		trigger = { 
 			not_in_mission_preview_mode = { key = GBR }
-			france_region = {
-				custom_trigger_tooltip = {
-					tooltip = ave_the_angevin_empire_at
-					owner = {
-						OR = {
-							tag = ROOT
-							is_subject_of = ROOT
-							overlord = {
-								is_subject_of = ROOT
-							}
-						}
-					}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					region = france_region
+					culture_group = french
 				}
-				type = all
+				NOT = { controlled_by = REB }
+				value = 40
 			}
 			if = {
 				limit = {

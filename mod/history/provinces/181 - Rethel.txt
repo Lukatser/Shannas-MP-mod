@@ -1,7 +1,7 @@
 # 181 Rethel
 
-owner = NEV
-controller = NEV
+owner = BUR
+controller = BUR
 capital = "Rethel"
 is_city = yes
 culture = wallonian
@@ -13,6 +13,7 @@ trade_goods = cloth
 base_manpower = 2
 add_core = NEV 
 add_core = CHP
+add_core = BUR
 fort_15th = yes
 discovered_by = eastern
 discovered_by = western

@@ -7,7 +7,6 @@ import net.aeternum.shannaMod.parsing.EventModifier;
 import net.aeternum.shannaMod.parsing.Modifier;
 import org.jetbrains.annotations.Contract;
 import org.jspecify.annotations.NonNull;
-import org.w3c.dom.events.Event;
 
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -21,19 +20,6 @@ import java.util.function.Consumer;
 import java.util.stream.Collectors;
 
 public class FLBuildings {
-    static void main() {
-        FLBuildings flb = fromDefaultConfig()
-                .setBuildingModifier(new String[]{"regimental_camp", "conscription_center"}, "land_forcelimit")
-                .buildModifiers(4, 0.05, 5)
-                .writeModifiers()
-                .writeLogic();
-        flb.setBuildingModifier(new String[]{"shipyard", "grand_shipyard"}, "naval_force_limit")
-                .buildModifiers(4, 0.10, 5)
-                .writeModifiers()
-                .writeLogic();
-    }
-
-
     private final Path modifierPath;
     private final Path logicPath;
 

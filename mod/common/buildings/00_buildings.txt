@@ -384,7 +384,7 @@ shipyard = {
 		local_has_galleass = yes
 	}
 	on_built = {
-		aet_flBuildings_refresh_naval_force_limit = yes
+		aet_flBuildings_refresh_naval_forcelimit = yes
 		add_development_from_building = {
 			building = shipyard
 			type = production
@@ -1377,7 +1377,7 @@ grand_shipyard = {
 	}
 
 	on_built = {
-		aet_flBuildings_refresh_naval_force_limit = yes
+		aet_flBuildings_refresh_naval_forcelimit = yes
 		add_development_from_upgrading_or_building = {
 			building = grand_shipyard
 			obsolete_building = shipyard

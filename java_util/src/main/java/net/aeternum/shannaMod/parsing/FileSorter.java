@@ -1,6 +1,7 @@
 package net.aeternum.shannaMod.parsing;
 
-import java.io.BufferedWriter;
+import org.jspecify.annotations.NonNull;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -9,22 +10,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class FileSorter {
-    static void main() {
-        Path p = Path.of("..", "mod", "common", "ideas", "00_basic_ideas.txt");
-        String s = sortFile(p,
-                Pattern.compile("^[^#\\s}]+"),
-                Pattern.compile("(?<=category = )\\w\\w\\w"),
-                Pattern.compile("^[^#\\s}]+")
-                );
-        try(BufferedWriter w = Files.newBufferedWriter(p)) {
-            w.write(s);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-
-    public static String sortFile(Path file, Pattern blockIdentifier, Pattern firstLevelComparator, Pattern secondLevelComparator) {
+    public static @NonNull String sortFile(Path file, Pattern blockIdentifier, Pattern firstLevelComparator, Pattern secondLevelComparator) {
         String[] fileLines;
         try {
             fileLines = Files.readAllLines(file).toArray(new String[0]);

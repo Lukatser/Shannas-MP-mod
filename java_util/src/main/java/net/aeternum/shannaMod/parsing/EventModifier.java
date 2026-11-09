@@ -1,5 +1,6 @@
 package net.aeternum.shannaMod.parsing;
 
+import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jspecify.annotations.NonNull;
 
@@ -56,7 +57,7 @@ public record EventModifier (
         return name.endsWith("_n") || name.endsWith("_p");
     }
 
-    public Double getSuffix() {
+    public @NonNull Double getSuffix() {
         if(!isSuffixed()) throw new IllegalStateException("The suffix has not been set");
         int sign = name.endsWith("_n") ? -1 : 1;
         String suffix = "";
@@ -78,13 +79,14 @@ public record EventModifier (
         return Double.parseDouble(suffix) * sign;
     }
 
-    public String getSuffixlessName() {
+    public @NonNull String getSuffixlessName() {
         if(!isSuffixed()) throw new IllegalStateException("The suffix has not been set");
         String suffix = canonicSuffixNaming(getSuffix());
         return name.substring(0, name.length() - suffix.length());
     }
 
-    public EventModifier scale(Double multiplier) {
+    @Contract("_ -> new")
+    public @NonNull EventModifier scale(Double multiplier) {
         return new EventModifier(name, modifiers.stream().map(m -> m.scale(multiplier)).toList());
     }
 }

@@ -36,6 +36,13 @@ country_event = {
 	option = {
 		name = GE_reform_cycle_republic.201.a
 			
-		set_global_flag = aet_debug
+		if = {
+			limit = {
+				has_global_flag = aet_debug
+			}
+			clr_global_flag = aet_debug 
+		} else = {
+			set_global_flag = aet_debug
+		}
 	}
 }

@@ -52,43 +52,53 @@
 # aet_eliteGuards_fullcost > aet_getEliteGuardActionCost - 100
 
 aet_eliteGuards_enable_infantry = {
-	aet_eliteGuards_initialSetup = {
-		conditional = yes 
-	} 
-	add_country_modifier = {
-		name = aet_eliteGuards_infEnable
-		duration = -1
-	}
-	change_variable = {
-		which = aet_eliteGuards_inf_enable
-		value = 1
+	custom_tooltip = aet_eliteGuards_enable_infantry_tt
+	hidden_effect = {
+		aet_eliteGuards_initialSetup = {
+			conditional = yes 
+		} 
+		add_country_modifier = {
+			name = aet_eliteGuards_infEnable
+			duration = -1
+		}
+		change_variable = {
+			which = aet_eliteGuards_inf_enable
+			value = 1
+		}
 	}
 }
 
 aet_eliteGuards_enable_cavalry = {
-	aet_eliteGuards_initialSetup = {
-		conditional = yes 
-	} 	
-	add_country_modifier = {
-		name = aet_eliteGuards_cavEnable
-		duration = -1
-	}
-	change_variable = {
-		which = aet_eliteGuards_cav_enable
-		value = 1
+	custom_tooltip = aet_eliteGuards_enable_cavalry_tt
+	hidden_effect = {
+		aet_eliteGuards_initialSetup = {
+			conditional = yes 
+		} 
+		add_country_modifier = {
+			name = aet_eliteGuards_cavEnable
+			duration = -1
+		}
+		change_variable = {
+			which = aet_eliteGuards_cav_enable
+			value = 1
+		}
 	}
 }
 
 aet_eliteGuards_enable_artillery = {
-	aet_eliteGuards_initialSetup = {
-		conditional = yes 
-	} 	add_country_modifier = {
-		name = aet_eliteGuards_artyEnable
-		duration = -1
-	}
-	change_variable = {
-		which = aet_eliteGuards_arty_enable
-		value = 1
+	custom_tooltip = aet_eliteGuards_enable_artillery_tt
+	hidden_effect = {
+		aet_eliteGuards_initialSetup = {
+			conditional = yes 
+		} 
+		add_country_modifier = {
+			name = aet_eliteGuards_artyEnable
+			duration = -1
+		}
+		change_variable = {
+			which = aet_eliteGuards_arty_enable
+			value = 1
+		}
 	}
 }
 

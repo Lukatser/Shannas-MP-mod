@@ -11,4 +11,8 @@ spriteTypes = {
 		name = "GFX_great_project_rock_of_gibraltar"
 		texturefile = "gfx//interface//great_projects//great_project_rock_of_gibraltar.dds"
 	}
+	spriteType = {
+		name = "GFX_great_project_cliffs_of_dover"
+		texturefile = "gfx//interface//great_projects//great_project_cliffs_of_dover.dds"
+	}	
 }

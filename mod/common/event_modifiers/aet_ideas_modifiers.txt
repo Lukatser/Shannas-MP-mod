@@ -581,3 +581,28 @@ harmonized_buddhism_group = {
 	advisor_cost = -0.10
 	production_efficiency = 0.10
 }
+
+aet_ideas_totemism_suppressedTotemistMovement = {
+	local_unrest = 5
+	local_tax_modifier = -0.25
+	trade_goods_size_modifier = -0.25
+	local_friendly_movement_speed = -0.75
+	local_religious_unity_contribution = 0.5
+}
+
+aet_ideas_totemism_toleratedTotemistMovement = {
+	min_local_autonomy = 20
+	local_missionary_strength = -0.01
+}
+
+aet_ideas_totemism_supportedTotemistMovement = {
+	local_unrest = -5
+	local_missionary_strength = -1
+	local_religious_unity_contribution = -0.5
+}
+
+aet_ideas_growingReligiousIntolerance = {
+	global_missionary_strength - 0.005
+	tolerance_heretic = -1
+	tolerance_heathen = -3
+}

@@ -1,0 +1,16 @@
+estate_special = {
+	modifier_definition = {
+		type = privileges
+		key = aet_flBuildings_naval_forcelimit_from_development
+		trigger = {
+			always = yes
+		}
+	}
+	modifier_definition = {
+		type = privileges
+		key = aet_flBuildings_land_forcelimit_from_development 
+		trigger = {
+			always = yes
+		}
+	}
+}

@@ -846,12 +846,6 @@ aet_englishLongbowmen = {
 			tag = ENG
 			was_tag = ENG
 		}
-		NOT = { has_country_flag = eng_took_gbr_branch }
-
-		OR = {
-			has_country_flag = eng_took_ave_branch
-			NOT = { is_year = 1460 }
-		}
 	}
 
 	modifier = {

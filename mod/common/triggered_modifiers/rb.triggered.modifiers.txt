@@ -46,6 +46,7 @@ RB_ClampDiscovery = { # This should all be on_new_age
 		current_age = age_of_discovery
 	}
 	governing_capacity_modifier = -0.1
+	liberty_desire_from_subject_development = 0.33
 }
 
 RB_ClampReformation = {
@@ -56,6 +57,7 @@ RB_ClampReformation = {
 		current_age = age_of_reformation
 	}
 	governing_capacity_modifier = -0.05
+	liberty_desire_from_subject_development = 0.16
 }
 
 RB_ClampAbsolutism = {
@@ -66,6 +68,7 @@ RB_ClampAbsolutism = {
 		current_age = age_of_absolutism
 	}
 	governing_capacity_modifier = 0.05
+	liberty_desire_from_subject_development = -0.16
 }
 
 RB_ClampRevolutions = {
@@ -76,6 +79,7 @@ RB_ClampRevolutions = {
 		current_age = age_of_revolutions
 	}
 	governing_capacity_modifier = 0.1
+	liberty_desire_from_subject_development = -0.33
 }
 
 RB_MissionToCivilize = { # why isn't this a subject modifier 
@@ -85,7 +89,6 @@ RB_MissionToCivilize = { # why isn't this a subject modifier
 	trigger = {
 		is_colonial_nation = yes
 	}
-	global_unrest = -7.0 # Let's keep Mexico from imploding.
 	governing_capacity_modifier = 0.5 # They need a large boost.
 }
 

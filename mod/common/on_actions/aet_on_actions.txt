@@ -52,40 +52,40 @@ on_five_year_pulse_2 = {
 		aet_flBuildings_land_forcelimit_removeAllModifiers = yes
 		aet_flBuildings_refresh_land_forcelimit = yes
 		aet_flBuildings_naval_force_limit_removeAllModifiers = yes
-		aet_flBuildings_refresh_naval_force_limit = yes
+		aet_flBuildings_refresh_naval_forcelimit = yes
 	}
 }
 
 on_concentrate_development = {
 	aet_flBuildings_refresh_land_forcelimit = yes 
-	aet_flBuildings_refresh_naval_force_limit = yes
+	aet_flBuildings_refresh_naval_forcelimit = yes
 }
 
 on_dip_development = {
 	aet_flBuildings_refresh_land_forcelimit = yes 
-	aet_flBuildings_refresh_naval_force_limit = yes
+	aet_flBuildings_refresh_naval_forcelimit = yes
 }
 on_dip_exploited = {
 	aet_flBuildings_refresh_land_forcelimit = yes 
-	aet_flBuildings_refresh_naval_force_limit = yes
+	aet_flBuildings_refresh_naval_forcelimit = yes
 }
 
 on_mil_development = {
 	aet_flBuildings_refresh_land_forcelimit = yes 
-	aet_flBuildings_refresh_naval_force_limit = yes
+	aet_flBuildings_refresh_naval_forcelimit = yes
 }
 on_mil_exploited = {
 	aet_flBuildings_refresh_land_forcelimit = yes 
-	aet_flBuildings_refresh_naval_force_limit = yes
+	aet_flBuildings_refresh_naval_forcelimit = yes
 }
 
 on_adm_development = {
 	aet_flBuildings_refresh_land_forcelimit = yes 
-	aet_flBuildings_refresh_naval_force_limit = yes
+	aet_flBuildings_refresh_naval_forcelimit = yes
 }
 on_adm_exploited = {
 	aet_flBuildings_refresh_land_forcelimit = yes 
-	aet_flBuildings_refresh_naval_force_limit = yes
+	aet_flBuildings_refresh_naval_forcelimit = yes
 }
 
 on_yearly_pulse_2 = {
