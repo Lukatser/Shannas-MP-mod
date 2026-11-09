@@ -6,7 +6,7 @@ There have been tries to establish proper changelogs before but those usually we
 Changelogs are also seperately saved in the folder changelogs. These are merely provided as utility for the discord server, and might be shorter than the changelogs in this file. 
 
 Versions contained in this file (descending):
- - [v4.0.0](#v400--back-to-top) *not yet released*
+ - [v4.0.0-rc.1](#v400-rc1--back-to-top) *(08.11.2026)*
  - [v3.25.2](#v3252--back-to-top) *(22.10.2026)*
  - [v3.25.1](#v3251--back-to-top) *(06.10.2026)*
  - [v3.24.3](#v3243--back-to-top) *(03.10.2026)*
@@ -671,13 +671,906 @@ New options:
 - Force Limit buildings apply their buff when they don't exist sometimes ([Example](https://discord.com/channels/1402647007117574164/1427011291104673986/1561095753919631370))
 
 
-## v4.0.0 <small>[↑ Back to top](#changelogs)</small>
-
-*Not yet released.*
+## v4.0.0-rc.1 <small>[↑ Back to top](#changelogs)</small>
 
 ### Ideas Rework
 
+- Changed tech cost reduction from ideas to vanilla / 1.5 
+- Changed idea cost to vanilla / 1.5
+- Slightly reduced ld from tariffs
+- Reduced Mana Type Share in Idea Groups to 0.34 from 0.5 
+- Increased Free Idea Cost to 6 from 4 
+
+#### Dominions 
+Dominions are a new colonial subject type. This is the strongest subject type in the game for the subject, featuring fully unlocked diplomacy (even against overlord / overlord subjects) and strong buffs to the subjects economy. The subject can end the relation at any time, the overlord cannot. 
+
+Subject Modifier
+- colonists = 1
+- merchants = 1
+- trade_range_modifier = 0.25
+- global_trade_power = 0.33
+- monthly_reform_progress_modifier = 0.25	
+- stability_cost_modifier = -0.10
+- burghers_loyalty_modifier = 0.10
+- burghers_influence_modifier = 0.10
+
+Overlord Modifier 
+
+- stability_cost_modifier = 0.10
+- global_foreign_trade_power = 0.05
+- trade_efficiency = 0.02
+- burghers_loyalty_modifier = 0.02
+- burghers_influence_modifier = 0.02
+
+#### Administrative Ideas
+- Administrative Councils 
+  - Reduced Advisor Cost Reduction from 0.25 to 0.20
+- Adaptability 
+  - Removed War Taxes Cost
+
+#### Christian Ideas (new idea group)
+
+- Bonus:
+  - Backrow Artillery Damage: +10%
+
+- Study of Scripture:
+  - Papal Influence: +2
+  - Devotion: +0.25
+  - Monthly Fervor Increase: +0.25
+  - Church Power Modifier: +10%
+  - Yearly Patriarch Authority: +0.005
+
+- Inquisition:
+  - Global Heretic Missionary Strength: +2%
+  - Global Missionary Strength: +2%
+
+- Devoutness:
+  - Tolerance of Own Religion: +2
+
+- Work Is Worship:
+  - Production Efficiency: +15%
+
+- Spread the Word of God:
+  - Global Heathen Missionary Strength: +1%
+  - Global Missionary Strength: +1%
+
+- Proselytize the Masses:
+  - Missionaries: +1
+  - Missionary Maintenance Cost: -33%
+
+- Deus Vult:
+  - Casus Belli Against Religious Enemies: Yes
+
+#### Decentralised Ideas (new idea group) 
+
+- Decentralised Ideas:
+  - Category: Administrative
+
+- Decentralised Ideas 1:
+  - Trade Company Investment Cost: -20%
+
+- Decentralised Ideas 2:
+  - Trade Company Governing Cost: -15%
+
+- Decentralised Ideas 3:
+  - Global Provincial Trade Power Modifier: +33%
+
+- Decentralised Ideas 4:
+  - Minimum Autonomy in Territories: -10%
+
+- Decentralised Ideas 5:
+  - Trade Steering: +33%
+  - Trade Range: +300
+
+- Decentralised Ideas 6:
+  - Mercantilism Cost: -25%
+  - Global Foreign Trade Power: +10%
+
+- Decentralised Ideas 7:
+  - Reasons to Transfer Trade Power: +25
+  - Embargo Efficiency: +25%
+  - Allows establishing Trade Protectorates
+
+- Bonus:
+  - Free Concentrate Development
+  - Liberty Desire on Other Continents: -5
+
+#### Dharmic Ideas (new idea group) 
+
+- Requirements:
+  - Must be part of the Dharmic religion group.
+  - Cannot have Humanist Ideas or Religious Ideas.
+  - Debug mode can bypass the religion requirement.
+
+- Accept Small Religious Differences:
+  - Religious Unity: +15%
+  - Improve Relations Modifier: +25%
+
+- Open Theological Debate:
+  - Missionaries: +1
+  - Global Missionary Strength: +3%
+
+- Teachings of Buddha:
+  - Idea Cost: -7.5%
+
+- Follow the Gurus:
+  - Same Religion Advisor Cost: -15%
+
+- Melting Pot of Cultures:
+  - Number of Accepted Cultures: +2
+  - Promote Culture Cost: -20%
+
+- The Land Provides:
+  - Build Cost: -15%
+
+- Dharmashastra:
+  - Governing Capacity Modifier: +10%
+
+- Bonus:
+  - Development Cost: -10%
+
+#### Eastern Ideas (new idea group) 
+
+- Requirements:
+  - Must be part of the Buddhist religion group.
+  - Cannot have Humanist Ideas or Religious Ideas.
+  - Debug mode can bypass the religion requirement.
+
+- Harmony Through Conversion:
+  - Global Heretic Missionary Strength: +4%
+
+- Defending the Land:
+  - Defensiveness: +10%
+
+- Monuments to Heaven:
+  - Great Project Upgrade Cost: -10%
+  - Great Project Upgrade Time: -10%
+
+- Early Urbanization:
+  - Expand Infrastructure Cost: -20%
+  - Centralize State Cost: -20%
+
+- Divine Right to Rule:
+  - Legitimacy: +1
+  - Meritocracy: +0.5
+  - Horde Unity: +0.5
+  - Republican Tradition: +0.5
+  - Prestige Decay: -0.5%
+
+- Counter Western Religion:
+  - Missionaries: +1
+  - Global Missionary Strength: +2%
+
+- Legalism:
+  - State Governing Cost: -15%
+  - Yearly Karma Decay: +0.2
+
+- Bonus:
+  - Development Cost: -10%
+
+#### Industrial Ideas (replaces eco ideas) 
+
+- Bureaucracy:
+  - Global Prosperity Growth: +25%
+
+- National Bank:
+  - Global Allowed Number of Buildings: +1
+
+- Merchant Passes:
+  - Production Efficiency: +10%
+
+- Efficient Mining:
+  - Expand Infrastructure Cost: -15%
+
+- Debt and Loans:
+  - State Maintenance Modifier: -15%
+
+- Nationalistic Enthusiasm:
+  - Build Cost: -12.5%
+  - Build Time: -12.5%
+
+- Smithian Economics:
+  - Development from Manufactories: +1
+
+- Bonus:
+  - Global Trade Goods Size Modifier: +10%
+
+#### Expansion Ideas
+
+- Bonus:
+  - Colony Cost Modifier: -15% → removed
+  - Colony Development Boost: +1 → added
+
+- Additional Colonists:
+  - Colonists: +1 → unchanged
+  - Temporary Colonist removal effect: removed
+
+- Additional Diplomats:
+  - Diplomats: +1 → unchanged
+  - Envoy Travel Time: -20% → moved here from Vice Roys
+
+- Faster Colonists:
+  - Global Colonial Growth: +20 → unchanged
+
+- Vice Roys:
+  - Global Tariffs: +10% → removed
+  - Envoy Travel Time: -20% → moved to Additional Diplomats
+  - Liberty Desire on Other Continents: -5 → -10
+  - Trade Company Investment Cost: -5% → added
+
+- General Colonization Law:
+  - Colonists: +1 → unchanged
+  - Colonist Placement Chance: +5% → unchanged
+  - Temporary Colonist removal effect: removed
+
+- Additional Merchants:
+  - Merchants: +1 → removed
+  - Colony Cost Modifier: -15% → added
+  - Minimum Autonomy in Territories: -5% → added
+
+- Competitive Merchants:
+  - Global Trade Power: +20% → removed
+  - Global Provincial Trade Power Modifier: +25% → added
+  - Temporary Colonist removal effect: added
+
+#### Fiscal Ideas (new idea group)
+
+- Fiscal Ideas 1:
+  - Embracement Cost: -15%
+
+- Fiscal Ideas 2:
+  - Inflation Reduction: +0.1
+
+- Fiscal Ideas 3:
+  - Yearly Corruption: -0.1
+
+- Fiscal Ideas 4:
+  - Global Tax Modifier: +15%
+  - War Taxes Cost Modifier: -100%
+
+- Fiscal Ideas 5:
+  - Burghers Influence Modifier: -5%
+  - Mercantilism Cost: -25%
+
+- Fiscal Ideas 6:
+  - Inflation Action Cost: -25%
+  - Gold Depletion Chance Modifier: -33%
+  - Monthly Gold Inflation Modifier: -50%
+
+- Fiscal Ideas 7:
+  - Interest: -1
+
+- Bonus:
+  - Trade Efficiency: +10%
+
+#### Humanist Ideas
+
+- Requirements:
+  - `religous_ideas` corrected to `religious_ideas`.
+
+- Bonus:
+  - Yearly Harmony: +0.25 → removed.
+
+- Cultural Ties:
+  - Promote Culture Cost: -50% → -33%.
+
+- Humanist Tolerance:
+  - Global Manpower Modifier: +10% → removed.
+  - Manpower in Accepted Culture Provinces: +25% → added.
+
+- Benevolence:
+  - Improve Relation Modifier: +50% → +33%.
+  - Trade Steering: +15% → added.
+
+- Tolerance Idea:
+  - Number of Parliament Issues: 5 → removed.
+  - All Power Cost: -2.5% → added.
+
+#### Infrastructure Ideas
+
+- Bonus:
+  - Development Cost: -15% → Development Cost Modifier: -5%.
+
+- Organised Construction:
+  - Build Cost: -10% → Development Cost: -10%.
+
+- Efficient Construction Plans:
+  - Moved to the end of the idea group. Effects unchanged.
+
+- Fort Logistics:
+  - Fort Maintenance Modifier: -25% → -20%.
+  - Defensiveness: +10% → added.
+
+- Regulation Bureau:
+  - Build Time: -25% → -20%.
+  - Great Project Upgrade Time: -20% → unchanged.
+
+#### Innovativeness Ideas
+
+- Bonus:
+  - Advisor Cost: -35% → -20%.
+  - Added conditional advisor cost reductions:
+    - Innovativeness > 50: -10%.
+    - Innovativeness > 75: -5%.
+
+- Empiricism:
+  - Innovativeness Gain: +0.5 → +0.65.
+
+- Scientific Revolution:
+  - Embracement Cost: -10% → moved to Print Culture.
+  - Technology Cost: -10% → unchanged.
+
+- Print Culture:
+  - Embracement Cost: -10% → added.
+  - Global Institution Spread: +25% → unchanged.
+
+#### Internal Affair Ideas (new idea group)
+
+- Internal Affair Ideas 1:
+  - All Estate Influence Modifier: -5%
+  - All Estate Loyalty Equilibrium: +5%
+
+- Internal Affair Ideas 2:
+  - Global Autonomy: -5%
+  - Minimum Autonomy: -5
+
+- Internal Affair Ideas 3:
+  - Prestige Decay: -1%
+
+- Internal Affair Ideas 4:
+  - Legitimacy: +1
+  - Republican Tradition: +0.5
+  - Horde Unity: +1
+  - Devotion: +1
+  - Meritocracy: +1
+
+- Internal Affair Ideas 5:
+  - Global Monthly Devastation: -0.1
+
+- Internal Affair Ideas 6:
+  - Local Unrest: -1
+  - Free Estate Privilege Revocation: Allowed
+
+- Internal Affair Ideas 7:
+  - Great Project Upgrade Cost: -15%
+  - Great Project Upgrade Time: -15%
+
+- Bonus:
+  - Core Creation Cost: -15%
+
+#### Jewish Ideas (new idea group)
+
+- Requirements:
+  - Must be part of the Jewish religion group.
+  - Cannot have Humanist Ideas or Religious Ideas.
+  - Debug mode can bypass the religion requirement.
+
+- Jewish Ideas 1:
+  - Interest: -1
+
+- Jewish Ideas 2:
+  - Missionaries: +1
+  - Missionary Maintenance Cost: -50%
+
+- Jewish Ideas 3:
+  - Prestige per Development from Conversion: +0.10
+  - Church Power Modifier: +25%
+
+- Jewish Ideas 4:
+  - Land Morale: +7.5%
+
+- Jewish Ideas 5:
+  - Tolerance of the True Faith: +3
+
+- Jewish Ideas 6:
+  - Global Missionary Strength: +3%
+
+- Jewish Ideas 7:
+  - Build Cost: +10%
+  - Discipline: +2.5%
+
+- Bonus:
+  - Church Loyalty Modifier: +10%
+
+#### Muslim Ideas (new idea group)
+
+- Requirements:
+  - Must be part of the Muslim religion group or follow Sikhism.
+  - Cannot have Humanist Ideas or Religious Ideas.
+  - Debug mode can bypass the religion requirement.
+
+- Jizya:
+  - Global Tax Modifier: +10%
+  - Tolerance of the True Faith: +1
+
+- Illuminate the Unbelievers:
+  - Global Missionary Strength: +4%
+
+- Silk Road Trade:
+  - Province Trade Power Modifier: +20%
+
+- Imam Schools:
+  - Missionaries: +1
+  - Monthly Piety Accelerator: +0.005
+
+- Gate Between East and West:
+  - Merchants: +1
+
+- Call Upon the Believers:
+  - Manpower in True Faith Provinces: +15%
+
+- Jihad:
+  - Casus Belli on Religious Enemies
+
+- Bonus:
+  - Core Creation Cost: -10%
+
+#### Religious Ideas
+
+- Requirements:
+  - Must be part of the Zoroastrian or Pagan religion group, or follow Shinto.
+  - Cannot have Humanist Ideas.
+  - Debug mode can bypass the religion requirement.
+  - Confucianism is no longer specifically excluded.
+
+- Idea names:
+  - All ideas now have `_1` appended to their internal names.
+
+- Inquisition:
+  - Papal Influence: +2 → removed.
+  - Devotion: +0.25 → removed.
+  - Monthly Fervor Increase: +0.25 → removed.
+  - Church Power Modifier: +10% → removed.
+  - Monthly Piety Accelerator: +0.001 → removed.
+  - Yearly Karma Decay: +0.1 → removed.
+  - Yearly Doom Reduction: +1 → retained.
+  - Yearly Authority: +0.15 → retained.
+  - Prestige per Development from Conversion: +0.1 → retained.
+  - Yearly Patriarch Authority: +0.005 → removed.
+
+#### Statecraft Ideas (new idea group)
+
+- Statecraft Ideas 1:
+  - Stability Cost Modifier: -10%
+
+- Statecraft Ideas 2:
+  - Monarch Administrative Power: +1
+  - National Focus Years: -5
+
+- Statecraft Ideas 3:
+  - Expand Administration Cost: -2.0
+  - Centralize State Cost: -25%
+
+- Statecraft Ideas 4:
+  - Monthly Reform Progress: +0.25
+
+- Statecraft Ideas 5:
+  - Max Absolutism: +10
+  - Max Absolutism Effect: +5%
+
+- Statecraft Ideas 6:
+  - Imperial Authority: +0.1
+  - Imperial Mandate: +0.1
+  - Monthly Splendor: +2
+
+- Statecraft Ideas 7:
+  - Administrative Efficiency: +1.7%
+
+- Bonus:
+  - Free Policy: +1
+
+#### Court Ideas
+
+- Long Echo:
+  - Candidate Random Bonus: +1 → added.
+
+- Recognize Hierarchy:
+  - All Estate Loyalty Equilibrium: +10% → removed.
+  - Estate Interaction Cooldown Modifier: -15% → added here from Palace of Splendor.
+
+- Welcoming Ceremonies:
+  - Free Concentrate Development: removed.
+  - Autonomy Change Time: -30% → added.
+  - Prestige: +2 → +1.
+
+- Tranquil Coordination:
+  - Free Estate Privilege Revocation: removed.
+
+- Respected Authority:
+  - No changes.
+
+- Palace of Splendor:
+  - Estate Interaction Cooldown Modifier: -15% → moved to Recognize Hierarchy.
+  - Free Estate Privilege Revocation: added here from Tranquil Coordination.
+  - Monthly Splendor: +2 → unchanged.
+
+- Court Embassies:
+  - Max Absolutism: +25 → +20.
+  - Max Absolutism Effect: +25% → +20%.
+
+- Bonus:
+  - Imperial Mandate: +0.2 → +0.15.
+  - All other bonus effects unchanged.
+
+#### Diplomatic Ideas
+
+- Foreign Embassies:
+  - Diplomatic Advisor Cost: -25% → -20%.
+
+- Cabinet:
+  - Improve Relation Modifier: +25% → added.
+
+- Benign Diplomats:
+  - Improve Relation Modifier: +25% → removed.
+  - Envoy Travel Time: -15% → added.
+
+#### Exploitation Ideas
+
+- Exploitation Ideas 1:
+  - Global Tariffs: +25%
+
+- Exploitation Ideas 2:
+  - Treasure Fleet Income: +40%
+  - Expel Minorities Cost: -40%
+
+- Exploitation Ideas 3:
+  - Reduced Liberty Desire: -15 (This means +15 liberty desire in subjects!) 
+  - Colonial Subject:
+    - Goods Produced: +20%
+
+- Exploitation Ideas 4:
+  - Trade Steering: +20%
+  - Global Foreign Trade Power: +33%
+
+- Exploitation Ideas 5:
+  - Build Cost: -0.1%
+  - Unlocks a decision to build in colonial subjects utilizing the combined local construction cost, your own global construction cost, the colonies global construction cost and a 20% bonus on top
+
+- Exploitation Ideas 6:
+  - Goods Produced: +0.001
+  - Colonial Subject Effect:
+    - Goods Produced: +0.2
+    - Land Force Limit: -25%
+    - Naval Force Limit: -15% 
+
+- Exploitation Ideas 7:
+  - Global Provincial Trade Power Modifier: +0.1%
+  - Colonial Subject Effect:
+    - Global Provincial Trade Power Modifier: +25% 
+  - Unlocks a decision to steal 6 months of income of a colony each year, costing liberty desire and applying brutal modifiers to the colony. If liberty desire exceeds 65 during this, colonial nations can jointly revolt with strong buffs. Alternatively the revolt can be stopped by granting them Dominion status
+
+- Bonus:
+  - Global Ship Trade Power: +25%
+  - Mercantilism Cost: -25%
+  - Native Assimilation: +15%
+
 ### Elite Guards
+
+- Repurposed Revolutionary Guards as Elite Guards 
+ - Base Modifiers: 
+   - infantry_power = -2
+	- cavalry_power = -2
+	- artillery_power = -2
+	- drill_gain_modifier = 1
+	- shock_damage_received = -0.05
+	- fire_damage_received = -0.05
+	- land_maintenance_modifier = 0.25
+- Provided an API to 'enable' each unit type seperately, and interact with them as if they were three different special units
+- Added Custom Modifiers interacting with the entire system:
+ - aet_eliteGuards_forceLimit - De Iure Force Limit 
+ - aet_eliteGuards_forceLimit_infGfx - gfx helper for ideas
+ - aet_eliteGuards_forceLimit_cavGfx - gfx helper for ideas
+ - aet_eliteGuards_forceLimit_artyGfx - gfx helper for ideas
+ - aet_eliteGuards_forceLimit_infGfx - multiplier of scalable buffs (most of them)
+- Added a nobility priviledge scaling with influence
+ - while loyal provides reinforce speed and cost (up to 1, -1)
+ - while disloyal provides reinforce speed and cost (up to -1, 1) as well as stability cost, land morale and stability cost to declare war (up to 1, -0.10, 2)
+- Temporarily removed the GE Elite Guards priviledge and government reform (planned to be restored soon)
+
+#### On Actions
+
+Modifying how Elite Guards work via decisions costs Action Points. Up to 5 Action Points can be stored. You regain one Action Point per year. Currently you have stored `[ROOT.aet_eliteGuards_actions_bank.GetValue]` Action Points.
+
+If you take an action while you are below 0 stored Action Points, it will cost 20 × 2^n Military Power, where `n` is the number of actions you have taken while below 0 stored Action Points. This cost is capped at 600 Military Power.
+
+#### On their force limit
+
+The force limit of Elite Guards is not hard capped, but it is soft capped. The de facto force limit can be changed via the decisions Increase Elite Guards Forcelimit and Decrease Elite Guards Forcelimit. Doing so costs a half action.
+
+Depending on the de facto force limit compared to the Elite Guards Forcelimit, the following modifiers will be applied:
+
+- (-inf; 0.5] — Elite Guards
+  - Elite Guards Buff Multiplier: +40%
+  - Infantry Cost: -35%
+  - Cavalry Cost: -35%
+  - Artillery Cost: -35%
+  - Land Maintenance: -35%
+
+- (0.5; 0.70] — Elite Guards
+  - Elite Guards Buff Multiplier: +30%
+  - Infantry Cost: -35%
+  - Cavalry Cost: -35%
+  - Artillery Cost: -35%
+  - Land Maintenance: -35%
+
+- (0.70; 0.80] — Elite Guards
+  - Elite Guards Buff Multiplier: +10%
+
+- [1.25; 1.35) — Elite Guards
+  - Elite Guards Buff Multiplier: -10%
+  - Infantry Cost: +25%
+  - Cavalry Cost: +25%
+  - Artillery Cost: +25%
+  - Land Maintenance: +25%
+
+- [1.35; 1.5) — Elite Guards
+  - Elite Guards Buff Multiplier: -30%
+  - Infantry Cost: +50%
+  - Cavalry Cost: +50%
+  - Artillery Cost: +50%
+  - Land Maintenance: +50%
+
+- [1.35; 1.5) — Country
+  - Land Forcelimit: -5%
+
+- [1.5; 1.75) — Elite Guards
+  - Elite Guards Buff Multiplier: -40%
+  - Infantry Cost: +50%
+  - Cavalry Cost: +50%
+  - Artillery Cost: +50%
+  - Land Maintenance: +50%
+
+- [1.5; 1.75) — Country
+  - Land Forcelimit: -10%
+
+- [1.75; 2) — Elite Guards
+  - Elite Guards Buff Multiplier: -50%
+  - Infantry Cost: +75%
+  - Cavalry Cost: +75%
+  - Artillery Cost: +75%
+  - Land Maintenance: +75%
+
+- [1.75; 2) — Country
+  - Land Forcelimit: -10%
+  - Governing Capacity: -25%
+  - All Power Cost: +5%
+
+- [2; +inf) — Elite Guards
+  - Elite Guards Buff Multiplier: -50%
+  - Infantry Cost: +100%
+  - Cavalry Cost: +100%
+  - Artillery Cost: +100%
+  - Land Maintenance: +100%
+
+- [2; +inf) — Country
+  - Land Forcelimit: -10%
+  - Governing Capacity: -25%
+  - All Power Cost: +5%
+  - Yearly Corruption: +1
+  - Minimum Autonomy: +20
+
+#### On possible Modifiers
+
+##### Constant Payment (damage dealt)
+
+- Unique: `pluto_morale`
+- Requirements: Plutocratic Ideas and either Infantry or Artillery must be enabled.
+- Morale Damage Dealt: +10%
+
+##### Constant Payment (damage received)
+
+- Unique: `pluto_morale`
+- Requirements: Plutocratic Ideas and either Infantry or Artillery must be enabled.
+- Morale Damage Received: -10%
+
+##### Integration of Mercenary Bands
+
+- Requirements: Plutocratic Ideas or Mercenary Ideas, and either Infantry or Artillery must be enabled.
+- Regiment Manpower Usage: -20%
+
+The cost of these modifiers is:
+
+`num_of_modifiers × (1 + merc_cost_modifier) × (1 + merc_maintenance_modifier) × 0.5` Land Maintenance
+
+##### Offensive Shock
+
+- Unique: `offensive_dealt`
+- Requirements: Offensive Ideas and Infantry must be enabled.
+- Shock Damage Dealt: +10%
+- Reinforcement Cost: +33%
+- Land Maintenance: +25%
+
+##### Offensive Fire
+
+- Unique: `offensive_dealt`
+- Requirements: Offensive Ideas and Infantry must be enabled.
+- Fire Damage Dealt: +10%
+- Reinforcement Cost: +33%
+- Land Maintenance: +25%
+
+##### Offensive Assault
+
+- Requirements: Offensive Ideas and Infantry must be enabled.
+- Assault Fort Ability: +50%
+- Reinforcement Cost: +5%
+
+##### Heavy Cavalry Focus
+
+- Unique: `cavalry_focus`
+- Requirements: Cavalry must be enabled.
+- Elite Guards:
+  - Shock Damage: +35%
+  - Morale Damage: +35%
+  - Fire Damage: -5%
+  - Morale Damage Received: -20%
+  - Shock Damage Received: -5%
+  - Fire Damage Received: -5%
+  - Cavalry Cost: +200%
+  - Land Maintenance: +100%
+  - Recover Army Morale Speed: -35%
+  - Reinforce Speed: -75%
+- Country:
+  - Elite Guards Forcelimit: -7.5%
+  - Nobles Influence: +10%
+
+##### Light Cavalry Focus
+
+- Unique: `cavalry_focus`
+- Requirements: Cavalry must be enabled.
+- Elite Guards:
+  - Shock Damage: +10%
+  - Cavalry Flanking: +50%
+  - Cavalry Cost: -5%
+- Country:
+  - Cavalry-to-Infantry Ratio: +5%
+  - Cavalry Power: +5%
+  - Cavalry Cost: -10%
+
+##### Integrate the Cossacks into our Elite Cavalry
+
+- Requirements: Light Cavalry Focus and the Cossacks estate (`estate_cossacks`) must be present.
+- Elite Guards:
+  - Shock Damage: +2.5%
+  - Cavalry Cost: -5%
+- Country:
+  - Cavalry-to-Infantry Ratio: +2.5%
+  - Cavalry Power: +2.5%
+  - Cavalry Cost: -5%
+  - Allowed Cossack Fraction: -1
+  - Elite Guards Forcelimit: +10%
+
+##### Horse Archer Focus
+
+- Unique: `cavalry_focus`
+- Requirements: Cavalry must be enabled, and the country must be Horde, East Slavic, Hungarian, Nomad, or Teuton.
+- Elite Guards:
+  - Cavalry Fire: +50%
+  - Fire Damage: +10%
+  - Cavalry Flanking: +100%
+- Country:
+  - Movement Speed: +10%
+
+##### Nomadic Horse Archery Focus
+
+- Requirements: Cavalry must be enabled and the country must have completed the Horde Government Ideas group.
+- Elite Guards:
+  - Cavalry Fire: +150%
+  - Fire Damage: +15%
+  - Cavalry Cost: -15%
+- Country:
+  - Movement Speed: +10%
+
+##### Quantity Focus
+
+- Requirements: Infantry must be enabled and the Quantity Ideas group must be completed.
+- Country:
+  - Elite Guards Buff Multiplier: -10%
+  - Elite Guards Forcelimit: +7.5%
+
+### General Adjustments
+- Fixed a bug, where Totemist Ancestors did not apply their buffs properly
+- Fixed a bug, where Manpower reductions got applied chained multiplicatively, resulting in a manpower reduction to .25 of vanilla instead of the intended 0.5
+
+#### Buildings
+- Added Custom Modifiers for Loc
+ - aet_flBuildings_land_forcelimit_from_development
+ - aet_flBuildings_land_forcelimit_from_development
+- Added Localisation for Land Force Limit Buildings
+- Reworked how Land Force Limit Buildings apply their buffs, improving readability and maintainability 
+- Applied the same system used with Land Force Limit Buildings to Naval Force Limit Buildings
+- Added -5 min_local_autonomy to courthouses
+- Added -10 min_local_autonomy to town houses
+
+#### Defines
+- Reduced AI drilling budget to 0% of surplus 
+- Allowed AI to hire cav mercs
+- Increased Merc Company max size to 300 from 80
+- Increased Merc Company Army Tradition to 60 from 55 
+- Increased Merc Company Base Cost to 15 from 10 
+- Increased Merc Company Starting Morale to Vanilla 
+
+#### Crown Land
+- Removed crownland bracket [100; 9998]
+- Added min_autonomy 30 / 20 / 15 / 10 / 5 / -1 / -2 / -5 / -10 / -20 
+- Added dev_cost 0 / 0 / 0 / 0 / 0 / -1 / -2 / -5 / -10 / -10  
+
+#### England 
+
+- Added a Strait from Dover to Calais 
+- Added a monument in dover called 'Cliffs of Dover'
+ - Can be used by England, having been England, being british or gaelic 
+ - Level 1: 
+  - local_defender_dice_roll_bonus = 1
+  - hostile_disembark_speed = 0.25
+  - local_defensiveness = 0.25
+  - Region: local_warscore_cost_modifier = 0.5
+ - Level 2: 
+  - hostile_disembark_speed = 0.50
+  - local_defender_dice_roll_bonus = 2
+  - Area: local_defensiveness = 0.25
+  - Region: local_warscore_cost_modifier = 0.75
+  - Calais: local_defensiveness = 0.33
+  - Calais: local_assault_fort_ability = -0.75
+ - Level 3: 
+  - local_defender_dice_roll_bonus = 1
+  - hostile_disembark_speed = 0.75
+  - hostile_fleet_attrition = 5
+  - Area: hostile_disembark_speed = 0.25
+  - Area: local_defender_dice_roll_bonus = 1
+  - Area: local_defensiveness = 0.33
+  - Region: local_warscore_cost_modifier = 1
+  - Calais: local_defensiveness = 0.33
+  - Calais: local_assault_fort_ability = -0.75
+- Added a province tm to Normandy for England providing 7.5% morale of armies while England holds more than 5 provinces being in France or French 
+- Added a mercenary company unique to England to balance out French Vassals
+
+#### The Rock of Gibraltar 
+
+Altered the Rock of Gibraltar changing its identity from a defensive monument to a naval monument. 
+New Modifiers:
+- Tier 1
+ - Province
+  - hostile_fleet_attrition = 2 
+  - blockade_force_required = 0.5 
+ - Country 
+  - coast_raid_range = 1
+  - allowed_galleass_fraction = 0.05
+  - allowed_man_of_war_fraction = 0.05
+  - allowed_galleon_fraction = 0.05
+- Tier 2 
+ - Province
+  - hostile_fleet_attrition = 5
+  - block_slave_raid = yes 
+  - local_sailors_modifier = 0.33
+ - Area 
+  - blockade_force_required = 0.5
+ - Country 
+  - coast_raid_range = 2
+  - allowed_galleass_fraction = 0.10
+  - allowed_man_of_war_fraction = 0.10
+  - allowed_galleon_fraction = 0.10
+- Tier 3 
+ - Province 
+  - hostile_fleet_attrition = 10
+  - local_garrison_size = 0.5
+  - local_warscore_cost_modifier = 0.15
+ - Area 
+  - blockade_force_required = 0.75
+  - block_slave_raid = yes
+  - local_sailors_modifier = 0.33
+ - Country 
+  - coast_raid_range = 3
+  - number_of_cannons_modifier = 0.05
+  - allowed_galleass_fraction = 0.2
+  - allowed_man_of_war_fraction = 0.2
+  - allowed_galleon_fraction = 0.2
+ - Spawns in Ships regardless of them being unlocked to the country   
+  - 5 light Man'o wars 
+  - 5 heavy Man'o wars
+  - 5 heavy Galleons `
+
+#### Hohenzollern Castle 
+Opened up the trigger slightly to nations usually having 'von Hohenzollern' dynasty. 
 
 ### Development
 
