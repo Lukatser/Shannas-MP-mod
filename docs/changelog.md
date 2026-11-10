@@ -1176,9 +1176,6 @@ Overlord Modifier
 - Tranquil Coordination:
   - Free Estate Privilege Revocation: removed.
 
-- Respected Authority:
-  - No changes.
-
 - Palace of Splendor:
   - Estate Interaction Cooldown Modifier: -15% → moved to Recognize Hierarchy.
   - Free Estate Privilege Revocation: added here from Tranquil Coordination.
@@ -1244,27 +1241,724 @@ Overlord Modifier
   - Mercantilism Cost: -25%
   - Native Assimilation: +15%
 
+#### Exploration Ideas
+
+- Colonial Ventures:
+  - Remove Temporary Colonist: removed → moved to Global Empire.
+
+- Factories:
+  - Trade Company Governing Cost: -10% → removed.
+  - Trade Company Investment Cost: -10% → removed.
+  - Global Tariffs: +25% → added.
+
+- Global Empire:
+  - Colony Development Boost: +1 → removed.
+  - Global Foreign Trade Power: +20% → added.
+  - Remove Temporary Colonist: added here from Colonial Ventures.
+  - Treasure Fleet Income: +25% → unchanged.
+
+#### Grandeur Ideas
+
+*All effects in this group scale with your Prestige level (unless stated otherwise):*
+- *0–25: ×0.5 | 25–50: ×1 | 50–75: ×1.5 | 75–100: ×2*
+
+- Grandeur Ideas 1:
+  - Monthly Splendor: +2
+
+- Grandeur Ideas 2 (scales *inversely* with Prestige):
+  - Prestige from Land: +1
+  - Prestige from Naval: +1
+
+- Grandeur Ideas 3:
+  - Province Warscore Cost: -12.5%
+
+- Grandeur Ideas 4:
+  - Legitimacy: +1
+  - Horde Unity: +1
+  - Devotion: +1
+  - Meritocracy: +0.5
+  - Republican Tradition: +0.5
+
+- Grandeur Ideas 5:
+  - Great Project Upgrade Cost: -12.5%
+  - Great Project Upgrade Time: -12.5%
+
+- Grandeur Ideas 6:
+  - Advisor Cost: -15%
+
+- Grandeur Ideas 7:
+  - Diplomatic Reputation: +2
+  - Power Projection: +25 (permanent)
+
+- Bonus:
+  - Improve Relation Modifier: +20%
+
+#### Influence Ideas
+
+- Additional Loyalist Recruitment:
+  - Reduced Liberty Desire: +25 → removed → moved to Marcher Lords.
+  - Vassal Manpower Bonus: +25% → removed.
+  - Monthly Favor Modifier: +0.5 → added.
+
+- Marcher Lords:
+  - Vassal Force Limit Bonus: +25% → unchanged.
+  - Reduced Liberty Desire: +25 → added here from Additional Loyalist Recruitment.
+
+#### Maritime Ideas
+
+- Merchant Traditions:
+  - Global Ship Repair: +25% → +33%.
+  - Naval Tradition from Trade: +1 → unchanged.
+
+- Merchant Marine:
+  - Global Sailors Modifier: +65% → +100%.
+  - Allowed Marine Fraction: +35% → removed.
+  - Global Ship Trade Power: +25% → added here from Grand Navy.
+
+- Sheltered Ports:
+  - Global Ship Repair: +10% → removed.
+  - Capture Ship Chance: +15% → removed.
+  - Sailor Maintenance Modifier: -25% → added.
+
+- Grand Navy:
+  - Global Ship Trade Power: +25% → moved to Merchant Marine.
+  - Naval Force Limit Modifier: +50% → unchanged.
+
+- Ships Penny:
+  - Global Ship Cost: -20% → -25%.
+
+- Sea Hawks:
+  - Free Navy Leader Pool: +2 → removed.
+  - Admiral Cost: -25% → removed.
+  - Light Ship Power: +20% → added.
+
+#### Nationalism Ideas
+
+- Nationalism Ideas 1:
+  - War Exhaustion: -5%
+
+- Nationalism Ideas 2:
+  - Culture Conversion Cost: -25%
+  - Culture Conversion Time: -40%
+
+- Nationalism Ideas 3:
+  - Global Regiment Cost: -5%
+  - Province Warscore Cost: -7.5%
+
+- Nationalism Ideas 4:
+  - Defensiveness: -17%
+  - Global Tax Modifier: -10%
+  - In Owned Primary Culture Provinces:
+    - Defensiveness: +33%
+    - Tax Efficiency: +25%
+
+- Nationalism Ideas 5:
+  - Enemy Core Creation: +25%
+  - Global Trade Goods Size Modifier: -10%
+  - In Owned Primary Culture Provinces:
+    - Hostile Movement Speed: -25% (inverts when you lose control of the province)
+    - Goods Produced: +25%
+
+- Nationalism Ideas 6:
+  - Manpower in Own Culture Provinces: +33%
+
+- Nationalism Ideas 7:
+  - Core Decay on Your Own: -50%
+  - Unlocks an age-scaled Nationalism CB.
+
+- Bonus:
+  - Development Cost in Primary Culture: -7.5%
+  - Enemy Core Creation: +50%
+
+#### Societal Ideas
+
+- Societal Ideas 1:
+  - Stability Cost Modifier: -15%
+  - Number of Parliament Issues: +3
+
+- Societal Ideas 2:
+  - Monthly Reform Progress Modifier: +15%
+
+- Societal Ideas 3:
+  - AE Impact: -10%
+
+- Societal Ideas 4:
+  - Yearly Corruption: -10%
+  - Female Advisor Chance: +25%
+
+- Societal Ideas 5:
+  - Global Institution Spread: +50%
+  - Embracement Cost: -15%
+
+- Societal Ideas 6:
+  - Advisor Pool: +1
+  - Advisor Cost: -10%
+
+- Societal Ideas 7:
+  - Global Rebel Suppression Efficiency: +25%
+
+- Bonus:
+  - All Power Cost: -3.75%
+
+#### Spy Ideas
+
+- Efficient Spies:
+  - Spy Offence: +1 → removed → moved to Blackmailing.
+  - Global Spy Defence: +50% → unchanged.
+
+- Agent Training:
+  - Warscore from Battles Modifier: +30% → removed.
+  - Assault Fort Ability: +25% → +15%.
+  - Movement Speed: +10% → added.
+  - Siege Ability: +10% → added.
+
+- Blackmailing:
+  - Monthly Favor Modifier: +0.5 → removed.
+  - Spy Offence: +1 → added here from Efficient Spies.
+  - Accept Vassalization Reasons: +25 → unchanged.
+  - Number of Pronoiars: +1 → unchanged.
+
+
+#### Aristocracy Ideas
+
+- Requirements:
+  - Debug mode can bypass the government requirement.
+  - Government attribute requirement otherwise unchanged.
+
+- Bonus:
+  - Max General Shock: +1 → added.
+  - General Cost: -10% → added.
+  - All other bonus effects unchanged.
+
+- Noble Resilience:
+  - Cavalry to Infantry Ratio: +10% → +15%.
+
+- International Nobility:
+  - Diplomats: +1 → removed.
+  - General Cost: -10% → moved to the bonus.
+  - Elite Guards Cavalry Force Limit: +5% → added.
+  - Enables Elite Guards Cavalry → added.
+
+- Local Nobility:
+  - Yearly Absolutism: +0.5 → moved to Rightful Conquest.
+  - Nobles Loyalty Modifier: +10% → added.
+
+- Rightful Conquest:
+  - Fabricate Claims Cost: -50% → removed.
+  - Unjustified Demands: -25% → removed.
+  - Yearly Absolutism: +0.5 → added.
+  - Max Absolutism: +10 → added.
+
+#### Defensive Ideas
+
+- Bonus:
+  - Hostile Attrition: +5 → removed.
+  - Max Hostile Attrition: +5 → removed.
+  - Own Territory Dice Roll Bonus: +1 → added.
+
+- Battlefield Commissions:
+  - Army Tradition from Battle: +1 → removed.
+  - Fire Damage Received: -5% → added.
+  - Shock Damage Received: -5% → added.
+
+- Military Drill:
+  - Land Morale: +10% → +7.5%.
+
+- Improved Maneuver:
+  - Leader Land Maneuver: +1 → removed.
+  - Movement Speed: +10% → added.
+
+- Defensive Mentality:
+  - Defensiveness: +25% → unchanged.
+  - Attack Bonus in Capital Terrain: +1 → removed.
+  - Fort Maintenance Modifier: -10% → added.
+
+- Supply Trains:
+  - Reinforce Speed: +30% → removed.
+  - Global Monthly Devastation: -0.1 → added.
+
+- Improved Foraging:
+  - Garrison Size: +33% → +50%.
+
+#### Horde Government Ideas
+
+- Requirements:
+  - Debug mode can bypass the government/horde requirement.
+  - Government attribute and Horde Unity requirements unchanged.
+
+- Mandate of the Khan:
+  - Religious Unity: +25% → +33%.
+
+- A Magnanimous Empire:
+  - Elite Guards Force Limit: +5% → added.
+  - Enables Elite Guards Cavalry → added.
+  - Number of Accepted Cultures: +2 → unchanged.
+
+#### Indigenous Ideas
+
+- Bonus:
+  - Embracement Cost: -25% → added.
+  - Global Institution Spread: +25% → unchanged.
+
+- Indigenous Bountiful Land:
+  - Development Cost: -5% → Development Cost Modifier: -5%.
+
+- Indigenous Irregular Warfare:
+  - Enables Elite Guards Infantry → added.
+  - Hostile Attrition: +1 → unchanged.
+
+- Indigenous Controlled Burns:
+  - Global Manpower Modifier: +15% → +33%.
+
+- Indigenous Treaties:
+  - Raze Power Gain: +33% → added.
+
+#### Leadership Ideas
+
+- Requirements:
+  - Debug mode can bypass the requirements.
+  - Must have either:
+    - Army Tradition: 65 or higher.
+    - Army Professionalism: 20% or higher.
+    - Military Academy country modifier.
+
+- Leadership Ideas 1:
+  - Leader Land Maneuver: +1
+
+- Leadership Ideas 2:
+  - Leader Naval Shock: +1
+
+- Leadership Ideas 3:
+  - Leader Naval Fire: +1
+
+- Leadership Ideas 4:
+  - Leader Cost: -7.5%
+
+- Leadership Ideas 5:
+  - Artillery Barrage Cost: -12.5%
+  - Global Naval Barrage Cost: -25%
+
+- Leadership Ideas 6:
+  - Leader Naval Maneuver: +1
+
+- Leadership Ideas 7:
+  - Leader Land Fire: +1
+
+- Bonus:
+  - Leader Siege: +1
+  - Leader Land Shock: +1
+
+#### Military Academy
+
+- Establishing:
+  - Costs 200 ducats.
+  - Requires either 65 Army Tradition or 20% Army Professionalism.
+  - Creates the Military Academy at level 0.
+  - The Academy gives:
+    - Global Tax Modifier: -5%
+    - Leader Cost: -5%
+    - Admiral Cost: -5%
+
+- Upgrading:
+  - Only available once Leadership Ideas are fully completed.
+  - Can be upgraded from level 0 to level 5.
+  - Each upgrade costs increasing amounts of ducats and Military Power:
+    - Level 0 → 1: 300 ducats + 20 MIL
+    - Level 1 → 2: 600 ducats + 60 MIL
+    - Level 2 → 3: 800 ducats + 80 MIL
+    - Level 3 → 4: 1,000 ducats + 100 MIL
+    - Level 4 → 5: 1,300 ducats + 20 MIL
+
+- Effects:
+  - The Academy progressively improves leader/admiral costs and increases leader statistics.
+  - At higher levels it also increases regiment costs, so the stronger Academy is not entirely free.
+  - Level 5 additionally gives:
+    - Global Tax Modifier: -30%
+    - Global Regiment Cost: +15%
+    - Leader Cost: -10%
+    - Admiral Cost: -10%
+    - Maximum General Siege: +1
+    - Maximum Admiral Siege: +1
+    - Maximum Admiral Fire: +1
+    - Maximum Admiral Shock: +1
+    - Maximum General Manoeuvre: +1
+    - Maximum General Shock: +1
+    - Maximum Admiral Manoeuvre: +1
+    - Maximum General Fire: +1
+    - Prestige: +0.5
+    - Prestige from Land: +0.25
+    - Prestige from Naval: +0.25
+    - Monthly Splendor: +1  
+
+- Disbanding:
+  - Costs 100 Prestige.
+  - Removes the Academy's bonuses.
+  - Applies a temporary 100-year penalty:
+    - Leader Cost: +10%
+    - Admiral Cost: +10%
+    - Prestige: -1
+  - Has a 50% chance to kill a random leader twice, plus additional 50% chances to kill a general and admiral for countries with sufficiently large land/naval force limits.
+  - The Academy cannot be immediately re-established for 3,600 days (about 10 years).
+
+#### Logistics Ideas
+
+- Requirements:
+  - No requirements.
+
+- Operational Reserves:
+  - Reserves Organisation: +25%
+
+- Strategic Mobility:
+  - Movement Speed: +25%
+  - Forced March: Enabled
+
+- Technical Genius:
+  - Land Force Limit Modifier: +20%
+
+- Sustained Warfare:
+  - Reinforce Cost Modifier: -33%
+  - Monthly War Exhaustion: -0.05
+
+- Supply Networks:
+  - Land Attrition: -33%
+  - Global Supply Limit Modifier: +50%
+
+- Replacement System:
+  - Reinforce Speed: +50%
+  - Regiment Manpower Usage: -10%
+
+- Rapid Deployment:
+  - Global Regiment Recruitment Speed: -20%
+  - Regiment Disembark Speed: +25%
+
+- Bonus:
+  - Free Forced March: Enabled
+
+#### Mercenary Ideas
+
+- Nation of War:
+  - Military Tech Cost Modifier: -10% → removed.
+  - Mercenary Discipline: +5% → added.
+
+- Seasoned Veterans:
+  - Mercenaries do not cost Army Professionalism.
+
+#### Militarism Ideas
+
+- Requirements:
+  - No requirements.
+
+- Militarism Ideas 1:
+  - Army Tradition: +0.5
+  - Monthly Militarized Society: +0.05
+  - Monthly Prussian Militarized Society 1: +0.05
+  - Monthly Prussian Militarized Society 2: +0.05
+  - Monthly Prussian Militarized Society 3: +0.05
+  - Monthly Hessian Militarization: +0.10
+
+- Militarism Ideas 2:
+  - Assault Fort Ability: +25%
+  - Assault Fort Cost Modifier: -50%
+
+- Militarism Ideas 3:
+  - Drill Decay Modifier: -45%
+  - Drill Gain Modifier: +25%
+
+- Militarism Ideas 4:
+  - Army Tradition Decay: -0.005
+
+- Militarism Ideas 5:
+  - Elite Guards Force Limit: +2.5%
+  - Global Regiment Cost: -5%
+  - Enables Elite Guards Infantry.
+  - Disables Elite Guards Infantry when removed.
+
+- Militarism Ideas 6:
+  - Elite Guards Force Limit: +2.5%
+  - Army Tradition from Battle: +1
+  - Enables Elite Guards Artillery.
+  - Disables Elite Guards Artillery when removed.
+
+- Militarism Ideas 7:
+  - Recover Army Morale Speed: +15%
+  - Manpower Recovery Speed: +5%
+
+- Bonus:
+  - Discipline: +5%
+
+#### Modernisation Ideas
+
+- Requirements:
+  - Debug mode can bypass the requirements.
+  - Otherwise, must have Military Technology 7 or higher and at least one of:
+    - Army Professionalism: 40% or higher.
+    - Military Technology: 12 or higher.
+    - Full Industrial Ideas.
+
+- Modernisation Ideas 1:
+  - Infantry Combat Ability: +7.5%
+
+- Modernisation Ideas 2:
+  - Artillery Cost: -15%
+
+- Modernisation Ideas 3:
+  - Reinforce Speed: +15%
+
+- Modernisation Ideas 4:
+  - Military Technology Cost Modifier: -10%
+
+- Modernisation Ideas 5:
+  - Artillery Levels Available vs Fort: +1
+
+- Modernisation Ideas 6:
+  - Elite Guards Force Limit: +5%
+  - Backrow Artillery Damage: +10%
+  - Enables Elite Guards Artillery.
+  - Disables Elite Guards Artillery when removed.
+
+- Modernisation Ideas 7:
+  - Military Tactics: +0.15
+  - Until Age of Reformation: Military Tactics: -0.10
+
+- Bonus:
+  - Yearly Army Professionalism: +0.2%
+
+#### Naval Ideas
+
+- Bonus:
+  - Global Naval Barrage Cost: -80% → removed.
+  - Global Naval Engagement Modifier: +10% → removed.
+  - Regiment Disembark Speed: +50% → added.
+  - Landing Penalty: -1 → added.
+
+- Boarding Parties:
+  - Regiment Disembark Speed: +50% → removed.
+  - Landing Penalty: -2 → removed.
+  - Allowed Marine Fraction: +5% → added.
+  - Permanent `aet_ideas_navalMarines` country modifier → added.
+
+- Improved Rams:
+  - Hull Size Modifier: +10% → removed.
+  - Sailors Recovery Speed: +25% → removed.
+  - Siege Blockade Progress: +1 → added.
+
+- Naval Cadets:
+  - Naval Leader Fire: +2 → removed.
+  - Maximum Admiral Fire: +2 → removed.
+  - Naval Leader Manoeuvre: +1 → added.
+  - Maximum Admiral Manoeuvre: +1 → added.
+
+- Naval Glory:
+  - Naval Leader Shock: +2 → removed.
+  - Maximum Admiral Shock: +2 → removed.
+  - Navy Tradition: +0.5 → added.
+
+- Professional Marines:
+  - Allowed Marine Fraction: +25% → +10%.
+  - Sailors Recovery Speed: +25% → added.
+
+- Oak Forests for Ships:
+  - Siege Blockade Progress: +1 → removed.
+  - Ship Durability: +20% → +5%.
+  - Naval Attrition: -15% → added.
+  - Transport Attrition: -25% → added.
+
+#### Offensive Ideas
+
+- Bonus:
+  - Recover Army Morale Speed: +10% → removed.
+  - Discipline: +5% → added.
+  - Qizilbash Loyalty Modifier: +10% → unchanged.
+
+- Bayonet Leaders:
+  - Leader Land Shock: +1 → removed.
+  - Maximum General Shock: +1 → removed.
+  - Reinforce Speed: +15% → added.
+  - War Taxes Cost Modifier: -100% → added.
+
+- National Conscripts:
+  - Global Regiment Recruitment Speed: -10% → removed.
+  - Maximum General Manoeuvre: +2 → removed.
+  - Shock Damage: +5% → added.
+  - Fire Damage: +5% → added.
+
+- Superior Firepower:
+  - Leader Land Fire: +1 → removed.
+  - Maximum General Fire: +1 → removed.
+  - War Exhaustion: -0.05 → added.
+
+- Glorious Arms:
+  - Reinforce Speed: +25% → removed.
+  - Province Warscore Cost: -10% → added.
+  - Number of Pronoiars: +1 → unchanged.
+
+- Grand Army:
+  - Land Force Limit Modifier: +15% → removed.
+  - Special Unit Cost Modifier: -20% → removed.
+  - Can Claim States → added.
+  - Autonomy Change Time: -33% → added.
+
+- Napoleonic Warfare:
+  - Discipline: +5% → removed.
+  - Can Recruit Rajputs → removed.
+  - Allowed Rajput Fraction: +20% → removed.
+  - Elite Guards Force Limit: +5% → added.
+  - Special Unit Force Limit: +10% → added.
+  - Enables Elite Guards Infantry → added.
+
+- Engineer Corps:
+  - No changes.
+
+#### Plutocracy Ideas
+
+- Bonus:
+  - Global Province Trade Power Modifier: +25% → removed.
+  - Burghers Loyalty Modifier: +10% → removed.
+  - Vaisyas Loyalty Modifier: +10% → removed.
+  - Burghers Privilege Slots: +1 → removed.
+  - Vaisyas Privilege Slots: +1 → removed.
+  - Ship Trade Power Modifier: +15% → added.
+  - Interest: -0.5 → added.
+
+- Requirements:
+  - Debug mode can bypass the government/republican requirement.
+
+- Tradition of Payment:
+  - Reinforce Cost Modifier: -10% → removed.
+  - General Cost: -10% → removed.
+  - Elite Guards Force Limit: +5% → added.
+  - Mercenary Maintenance Modifier: -15% → added.
+  - Enables Elite Guards Artillery → added.
+
+- Abolished Serfdom:
+  - Centralize State Cost: -10% → removed.
+  - Inflation Action Cost: -60% → -50%.
+  - Development Cost: -5% → added.
+
+- Free Merchants:
+  - Mercantilism Cost: -50% → removed.
+  - Placed Merchant Power: +10 → added.
+  - Placed Merchant Power Modifier: +33% → added.
+
+- Free Subjects:
+  - Forced March → removed.
+  - Reelection Cost: -20% → removed.
+  - Manpower Recovery Speed: +15% → added.
+  - Land Morale: +5% → added.
+  - Naval Morale: +5% → added.
+
+- Free Cities:
+  - Caravan Power: +25% → removed.
+  - Development Cost Modifier: -5% → removed.
+  - Province Trade Power Modifier: +10% → added.
+  - Burghers Privilege Slots: +1 → added.
+  - Burghers Loyalty Modifier: +10% → added.
+
+- Emancipation:
+  - Backrow Artillery Damage: +10% → removed.
+  - Candidate Random Bonus: +2 → unchanged.
+
+#### Quality Ideas
+
+- Private to Marshal:
+  - Infantry Power: +10% → +7.5%.
+
+- Finest of Horses:
+  - Cavalry Power: +10% → +7.5%.
+
+- Escort Ships:
+  - Ship Durability: +5% → +7.5%.
+
+- Naval Drill:
+  - Naval Morale: +10% → removed.
+  - Naval Morale Damage Received: -7.5% → added.
+  - Morale Damage Received: -7.5% → added.
+
+- Copper Bottoms:
+  - Naval Attrition: -25% → removed.
+  - Free Military Policy: +1 → added.
+
+- Massed Battery:
+  - Artillery Power: +10% → +7.5%.
+
+#### Quantity Ideas
+
+- Mass Army:
+  - Global Sailors Modifier: +20% → added.
+
+- The Young Can Serve:
+  - Sailors Recovery Speed: +12% → added.
+
+- Camp Followers:
+  - Global Supply Limit Modifier: +33% → removed.
+  - Global Regiment Recruitment Speed: -15% → added.
+
+- Reinforcement Drafts:
+  - Reinforce Cost Modifier: -33% → removed.
+  - Recover Army Morale Speed: +20% → added.
+  - Recover Navy Morale Speed: +12% → added.
+
+- The Old and Infirm:
+  - Land Maintenance Modifier: -5% → removed.
+  - Reserves Organisation: +25% → added.
+
+- Expanded Supply Trains:
+  - Land Attrition: -25% → removed.
+  - Reinforce Speed: +25% → added.
+
+#### Theocracy Government Ideas
+
+- Requirements:
+  - Debug mode can bypass the government/mechanic requirements.
+
+- By the Grace of God:
+  - Fire Damage Received: -10% → removed.
+  - Tolerance of the True Faith: +3 → added.
+
+- Conviction of Sin:
+  - Warscore Cost vs Other Religion: -12.5% → -15%.
+  - Global Heathen Missionary Strength: +3% → removed.
+
+- Martyrs:
+  - Manpower in True Faith Provinces: +10% → removed.
+  - Shock Damage Received: -10% → removed.
+  - Land Morale: +2.5% → added.
+  - Land Morale while at war with Herectics or Heathens: +5% → added.
+  - Shock / Fire Damage taken while at war with Heathens: -2.5% → added.
+  - Land Morale while at war with Heathens: +2.5% → added.
+
+- Flesh Is Weak:
+  - Morale Damage Received: -10% → removed.
+  - Manpower in True Faith Provinces: +15% → added.
+  - Leader Cost: -10% → added.
+
+- Alpha and Omega:
+  - Enforce Religion Cost: -50% → removed.
+  - Global Missionary Strength: +2% → added.
+  - Church Loyalty Modifier: +10% → added.
+
+
 ### Elite Guards
 
 - Repurposed Revolutionary Guards as Elite Guards 
- - Base Modifiers: 
-   - infantry_power = -2
-	- cavalry_power = -2
-	- artillery_power = -2
-	- drill_gain_modifier = 1
-	- shock_damage_received = -0.05
-	- fire_damage_received = -0.05
-	- land_maintenance_modifier = 0.25
+  - Base Modifiers: 
+    - infantry_power = -2
+    - cavalry_power = -2
+    - artillery_power = -2
+    - drill_gain_modifier = 1
+    - shock_damage_received = -0.05
+    - fire_damage_received = -0.05
+    - land_maintenance_modifier = 0.25
 - Provided an API to 'enable' each unit type seperately, and interact with them as if they were three different special units
 - Added Custom Modifiers interacting with the entire system:
- - aet_eliteGuards_forceLimit - De Iure Force Limit 
- - aet_eliteGuards_forceLimit_infGfx - gfx helper for ideas
- - aet_eliteGuards_forceLimit_cavGfx - gfx helper for ideas
- - aet_eliteGuards_forceLimit_artyGfx - gfx helper for ideas
- - aet_eliteGuards_forceLimit_infGfx - multiplier of scalable buffs (most of them)
+  - aet_eliteGuards_forceLimit - De Iure Force Limit 
+  - aet_eliteGuards_forceLimit_infGfx - gfx helper for ideas
+  - aet_eliteGuards_forceLimit_cavGfx - gfx helper for ideas
+  - aet_eliteGuards_forceLimit_artyGfx - gfx helper for ideas
+  - aet_eliteGuards_forceLimit_infGfx - multiplier of scalable buffs (most of them)
 - Added a nobility priviledge scaling with influence
- - while loyal provides reinforce speed and cost (up to 1, -1)
- - while disloyal provides reinforce speed and cost (up to -1, 1) as well as stability cost, land morale and stability cost to declare war (up to 1, -0.10, 2)
+  - while loyal provides reinforce speed and cost (up to 1, -1)
+  - while disloyal provides reinforce speed and cost (up to -1, 1) as well as stability cost, land morale and stability cost to declare war (up to 1, -0.10, 2)
 - Temporarily removed the GE Elite Guards priviledge and government reform (planned to be restored soon)
 
 #### On Actions
@@ -1468,8 +2162,52 @@ The cost of these modifiers is:
   - Elite Guards Forcelimit: +7.5%
 
 ### General Adjustments
-- Fixed a bug, where Totemist Ancestors did not apply their buffs properly
 - Fixed a bug, where Manpower reductions got applied chained multiplicatively, resulting in a manpower reduction to .25 of vanilla instead of the intended 0.5
+- Provided an API to a set of library functions (see zzz prefixed header files)
+- Reduced debuffs to dev cost from arctic, tropical and arid in line with other mp mods
+- Reverted supply limit at wartime to vanilla values
+- Made the Sailor reduction of the mod on par with the Manpower reduction (i.e. changed sailors per dev from 45 to 30)
+- Changed local_dev_cost per 10 dev per dev from 0.05 to 0.03 (like vanilla)
+- Added local_governing_cost 0.01 per 10 dev per dev
+- Removed the governing cost in capital city that does not work
+- Rebalanced Gov Cost in provinces to be more in line with usual gov cost in provinces behaviour
+- Reduced the buffs to unrest subjects get
+- Moved 3 Advisor Slots from a triggered modifier into base modifier
+- Added .5 liberty desire per point of inflation 
+- Added some war exhaustion decay (2.5%)
+- Added .10 caravel fraction to trade efficiency (compared to .25 voc indiamen)
+- Added 10% Prestige Decay to Prestige (so 15% decay at 100 prestige and 5% at 0)
+- Added 10% special unit forcelimit to Army Professionalism
+- Increased Free Leader gain from Forcelimit to 70 fl per leader from 80
+- Added 2% Noble Influence from Appanages (to balance out the 2% Loyalty from Appanages)
+- Added -5 LD while at Peace
+- Replaced the +50% dev cost from being a subject with 20% min autonomy
+- Reestablished Rajputs
+- Added more negative effect to being over Governing Cap:
+  -	global_tax_modifier = -0.2
+  -	production_efficiency = -0.2
+  -	trade_efficiency = -0.2
+  -	build_cost = 0.2
+  -	global_institution_spread = -0.2
+  -	reform_progress_growth = -0.4
+  -	global_unrest = 4.0
+  -	min_autonomy = 50
+- Added 5% min autonomy to reverse under gov cap 
+- Replaced the 20% all power cost in being under cov cap with dev cost and advisor cost
+- Added -5% min local autonomy to Expand Infrastructure 
+- Added 100% Centralise State Cost to Centralise State Effects 
+- Removed War Exhaustion from Slackening Recruitment
+- Reduced the Missionary Strength debuff from Gurus
+- Added 20% Governing Cost per 100% average subject liberty desire
+- Added 33% ld from dev and 10 ld scaling with average local autonomy 
+- Moved the Triggered Modifiers from Manpower into Manpower Scaling Modifier
+- Replicated the Manpower Modifiers for Sailors 
+- Moved Colonial Range from tech 3 into 5 and 6 
+- Fixed Some typos in triggered Modifiers
+- Removed the Defensiveness Debuff for Player Subjects
+- Opened up the Requirements for Crusader Teuton Missions
+- Added Cossacks to one of the last Crusader Teuton Missions
+- Burgundy starts with Lorraine, Nevers and Flanders annexed 
 
 #### Buildings
 - Added Custom Modifiers for Loc
@@ -1480,6 +2218,8 @@ The cost of these modifiers is:
 - Applied the same system used with Land Force Limit Buildings to Naval Force Limit Buildings
 - Added -5 min_local_autonomy to courthouses
 - Added -10 min_local_autonomy to town houses
+- Increased build cost by 25% 
+- Reduced build cost by 5% in coastal provinces 
 
 #### Defines
 - Reduced AI drilling budget to 0% of surplus 
@@ -1498,79 +2238,110 @@ The cost of these modifiers is:
 
 - Added a Strait from Dover to Calais 
 - Added a monument in dover called 'Cliffs of Dover'
- - Can be used by England, having been England, being british or gaelic 
- - Level 1: 
-  - local_defender_dice_roll_bonus = 1
-  - hostile_disembark_speed = 0.25
-  - local_defensiveness = 0.25
-  - Region: local_warscore_cost_modifier = 0.5
- - Level 2: 
-  - hostile_disembark_speed = 0.50
-  - local_defender_dice_roll_bonus = 2
-  - Area: local_defensiveness = 0.25
-  - Region: local_warscore_cost_modifier = 0.75
-  - Calais: local_defensiveness = 0.33
-  - Calais: local_assault_fort_ability = -0.75
- - Level 3: 
-  - local_defender_dice_roll_bonus = 1
-  - hostile_disembark_speed = 0.75
-  - hostile_fleet_attrition = 5
-  - Area: hostile_disembark_speed = 0.25
-  - Area: local_defender_dice_roll_bonus = 1
-  - Area: local_defensiveness = 0.33
-  - Region: local_warscore_cost_modifier = 1
-  - Calais: local_defensiveness = 0.33
-  - Calais: local_assault_fort_ability = -0.75
+  - Can be used by England, having been England, being british or gaelic 
+  - Level 1: 
+    - local_defender_dice_roll_bonus = 1
+    - hostile_disembark_speed = 0.25
+    - local_defensiveness = 0.25
+    - Region: local_warscore_cost_modifier = 0.5
+  - Level 2: 
+    - hostile_disembark_speed = 0.50
+    - local_defender_dice_roll_bonus = 2
+    - Area: local_defensiveness = 0.25
+    - Region: local_warscore_cost_modifier = 0.75
+    - Calais: local_defensiveness = 0.33
+    - Calais: local_assault_fort_ability = -0.75
+  - Level 3: 
+    - local_defender_dice_roll_bonus = 1
+    - hostile_disembark_speed = 0.75
+    - hostile_fleet_attrition = 5
+    - Area: hostile_disembark_speed = 0.25
+    - Area: local_defender_dice_roll_bonus = 1
+    - Area: local_defensiveness = 0.33
+    - Region: local_warscore_cost_modifier = 1
+    - Calais: local_defensiveness = 0.33
+    - Calais: local_assault_fort_ability = -0.75
 - Added a province tm to Normandy for England providing 7.5% morale of armies while England holds more than 5 provinces being in France or French 
 - Added a mercenary company unique to England to balance out French Vassals
+- The English consort now marries with 15 years instead of 16
 
 #### The Rock of Gibraltar 
 
 Altered the Rock of Gibraltar changing its identity from a defensive monument to a naval monument. 
 New Modifiers:
 - Tier 1
- - Province
-  - hostile_fleet_attrition = 2 
-  - blockade_force_required = 0.5 
- - Country 
-  - coast_raid_range = 1
-  - allowed_galleass_fraction = 0.05
-  - allowed_man_of_war_fraction = 0.05
-  - allowed_galleon_fraction = 0.05
+  - Province
+    - hostile_fleet_attrition = 2 
+    - blockade_force_required = 0.5 
+  - Country 
+    - coast_raid_range = 1
+    - allowed_galleass_fraction = 0.05
+    - allowed_man_of_war_fraction = 0.05
+    - allowed_galleon_fraction = 0.05
 - Tier 2 
- - Province
-  - hostile_fleet_attrition = 5
-  - block_slave_raid = yes 
-  - local_sailors_modifier = 0.33
- - Area 
-  - blockade_force_required = 0.5
- - Country 
-  - coast_raid_range = 2
-  - allowed_galleass_fraction = 0.10
-  - allowed_man_of_war_fraction = 0.10
-  - allowed_galleon_fraction = 0.10
+  - Province
+    - hostile_fleet_attrition = 5
+    - block_slave_raid = yes 
+    - local_sailors_modifier = 0.33
+  - Area 
+    - blockade_force_required = 0.5
+  - Country 
+    - coast_raid_range = 2
+    - allowed_galleass_fraction = 0.10
+    - allowed_man_of_war_fraction = 0.10
+    - allowed_galleon_fraction = 0.10
 - Tier 3 
- - Province 
-  - hostile_fleet_attrition = 10
-  - local_garrison_size = 0.5
-  - local_warscore_cost_modifier = 0.15
- - Area 
-  - blockade_force_required = 0.75
-  - block_slave_raid = yes
-  - local_sailors_modifier = 0.33
- - Country 
-  - coast_raid_range = 3
-  - number_of_cannons_modifier = 0.05
-  - allowed_galleass_fraction = 0.2
-  - allowed_man_of_war_fraction = 0.2
-  - allowed_galleon_fraction = 0.2
- - Spawns in Ships regardless of them being unlocked to the country   
-  - 5 light Man'o wars 
-  - 5 heavy Man'o wars
-  - 5 heavy Galleons `
+  - Province 
+    - hostile_fleet_attrition = 10
+    - local_garrison_size = 0.5
+    - local_warscore_cost_modifier = 0.15
+  - Area 
+    - blockade_force_required = 0.75
+    - block_slave_raid = yes
+    - local_sailors_modifier = 0.33
+  - Country 
+    - coast_raid_range = 3
+    - number_of_cannons_modifier = 0.05
+    - allowed_galleass_fraction = 0.2
+    - allowed_man_of_war_fraction = 0.2
+    - allowed_galleon_fraction = 0.2
+  - Spawns in Ships regardless of them being unlocked to the country   
+    - 5 light Man'o wars 
+    - 5 heavy Man'o wars
+    - 5 heavy Galleons `
 
 #### Hohenzollern Castle 
 Opened up the trigger slightly to nations usually having 'von Hohenzollern' dynasty. 
+
+#### Mercenary Companies
+
+- Added Holy Orders, mercenary companies only usable when at war with heretics or heathens. Most of them need divine ideas to be used
+- Reduced general Max Manpower of Mercenary Companies by 50% 
+- Removed Generic Mercenary Companies
+
+#### Native Rebels
+
+Added a new rebel type Native Rebels. These arebels for now have no natural spawn chance, however they spawn via event in the new world (For example by developing provinces via exploitation ideas). They have no artillery and 100% morale of nation they spawned off of. 
+
+Siege Won Effect 
+- +25 local autonomy
+- 10% chance for each type of dev to loose one dev 
+
+Can Enforce During War
+
+Enforce Effects:
+- Occupied Provinces get Decolonized
+- Occupied Provinces get 4 Ferocity
+- Occupied Provinces get 4 Hostileness
+- Occupied Provinces Spawn 500 Natives per dev
+- Occupied Provinces have a 20% chance to reduce one dev per mana type thrice 
+
+#### Religions 
+
+- Made the Pagan Center of Religion Manhattan (for some totemism stuff)
+- Moved Buddhist faiths into Buddhism Group
+- Fixed a bug, where Totemist Ancestors did not apply their buffs properly
+
 
 ### Development
 

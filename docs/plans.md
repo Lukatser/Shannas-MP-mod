@@ -46,9 +46,9 @@ These are updates of a size, that warrant a new high level version. Usually only
 
   Improving the Austrian mission tree, such that at least two thirds of it can be completed in an expected mp game.
 
-- **Building Cost Rebalance** - *Priority 6*
+- **Building Cost Rebalance** - *Priority 4* 
 
-  Increasing the cost of buildings, bringing them closer to the regular army nerfs. 
+  Increasing the cost of buildings, bringing them closer to the regular army nerfs. Reduced priority due to temporary fix in 4.0.0-rc.1
 
 - **Modularise the Country Renaming Better** - *Priority 2*
 
@@ -67,6 +67,5 @@ These are updates of a size, that warrant a new high level version. Usually only
 - **Reduction of minimal relations for Alliances** - *Priority 8*
 - **Remove dishonored CTA penalties** - *Priority 6*
 - **Rejectable Advisor Events** - *Priority 5*
-- **Scale the Naval FL like Land FL** - *Priority 8*
 - **remove dev cost if vassal (player only)** - *Priority 5*
-- **Fix Manpower Buildings** - *Priority 8*
+- **Fix Polish Elections not giving Heir Education** - *Priority 7* 
