@@ -1,0 +1,1271 @@
+#-676902045612657636
+aet_flBuildings_refresh_land_forcelimit = {
+	# Automatically generated function for a binary lookup table
+	# Parameters:
+	# 	Trigger Block:
+	# 	development = 5
+	# 	Effect Block: 
+	# 	if = {
+	# 		limit = {
+	# 			has_building = regimental_camp
+	# 		}
+	# 	
+	# 		add_province_modifier = {
+	# 			name = aet_flBuildings_land_forcelimit_5_0_p_T0
+	# 			duration = -1
+	# 			hidden = yes
+	# 		}
+	# 	
+	# 		remove_province_modifier = null
+	# 		remove_province_modifier = aet_flBuildings_land_forcelimit_10_0_p_T0
+	# 		remove_province_modifier = aet_flBuildings_land_forcelimit_5_0_p_T1
+	# 	} else_if = {
+	# 		limit = {
+	# 			has_building = conscription_center
+	# 		}
+	# 	
+	# 		add_province_modifier = {
+	# 			name = aet_flBuildings_land_forcelimit_5_0_p_T1
+	# 			duration = -1
+	# 			hidden = yes
+	# 		}
+	# 	
+	# 		remove_province_modifier = null
+	# 		remove_province_modifier = aet_flBuildings_land_forcelimit_10_0_p_T1
+	# 		remove_province_modifier = aet_flBuildings_land_forcelimit_5_0_p_T0
+	# 	} else = {
+	# 		aet_flBuildings_land_forcelimit_removeAllModifiers = yes
+	# 	}
+	# 
+	# 	Values: [5.000, 10.000, 15.000, 20.000, 25.000, 30.000, 35.000, 40.000, 45.000, 50.000, 55.000, 60.000, 65.000, 70.000, 75.000]
+	if = {
+		limit = {
+			development = 40
+		}
+		if = {
+			limit = {
+				development = 60
+			}
+			if = {
+				limit = {
+					development = 70
+				}
+				if = {
+					limit = {
+						development = 75
+					}
+					if = {
+						limit = {
+							has_building = regimental_camp
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_land_forcelimit_75_0_p_T0
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_land_forcelimit_70_0_p_T0
+						remove_province_modifier = null
+						remove_province_modifier = aet_flBuildings_land_forcelimit_75_0_p_T1
+					} else_if = {
+						limit = {
+							has_building = conscription_center
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_land_forcelimit_75_0_p_T1
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_land_forcelimit_70_0_p_T1
+						remove_province_modifier = null
+						remove_province_modifier = aet_flBuildings_land_forcelimit_75_0_p_T0
+					} else = {
+						aet_flBuildings_land_forcelimit_removeAllModifiers = yes
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							has_building = regimental_camp
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_land_forcelimit_70_0_p_T0
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_land_forcelimit_65_0_p_T0
+						remove_province_modifier = aet_flBuildings_land_forcelimit_75_0_p_T0
+						remove_province_modifier = aet_flBuildings_land_forcelimit_70_0_p_T1
+					} else_if = {
+						limit = {
+							has_building = conscription_center
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_land_forcelimit_70_0_p_T1
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_land_forcelimit_65_0_p_T1
+						remove_province_modifier = aet_flBuildings_land_forcelimit_75_0_p_T1
+						remove_province_modifier = aet_flBuildings_land_forcelimit_70_0_p_T0
+					} else = {
+						aet_flBuildings_land_forcelimit_removeAllModifiers = yes
+					}
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						development = 65
+					}
+					if = {
+						limit = {
+							has_building = regimental_camp
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_land_forcelimit_65_0_p_T0
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_land_forcelimit_60_0_p_T0
+						remove_province_modifier = aet_flBuildings_land_forcelimit_70_0_p_T0
+						remove_province_modifier = aet_flBuildings_land_forcelimit_65_0_p_T1
+					} else_if = {
+						limit = {
+							has_building = conscription_center
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_land_forcelimit_65_0_p_T1
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_land_forcelimit_60_0_p_T1
+						remove_province_modifier = aet_flBuildings_land_forcelimit_70_0_p_T1
+						remove_province_modifier = aet_flBuildings_land_forcelimit_65_0_p_T0
+					} else = {
+						aet_flBuildings_land_forcelimit_removeAllModifiers = yes
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							has_building = regimental_camp
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_land_forcelimit_60_0_p_T0
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_land_forcelimit_55_0_p_T0
+						remove_province_modifier = aet_flBuildings_land_forcelimit_65_0_p_T0
+						remove_province_modifier = aet_flBuildings_land_forcelimit_60_0_p_T1
+					} else_if = {
+						limit = {
+							has_building = conscription_center
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_land_forcelimit_60_0_p_T1
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_land_forcelimit_55_0_p_T1
+						remove_province_modifier = aet_flBuildings_land_forcelimit_65_0_p_T1
+						remove_province_modifier = aet_flBuildings_land_forcelimit_60_0_p_T0
+					} else = {
+						aet_flBuildings_land_forcelimit_removeAllModifiers = yes
+					}
+				}
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					development = 50
+				}
+				if = {
+					limit = {
+						development = 55
+					}
+					if = {
+						limit = {
+							has_building = regimental_camp
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_land_forcelimit_55_0_p_T0
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_land_forcelimit_50_0_p_T0
+						remove_province_modifier = aet_flBuildings_land_forcelimit_60_0_p_T0
+						remove_province_modifier = aet_flBuildings_land_forcelimit_55_0_p_T1
+					} else_if = {
+						limit = {
+							has_building = conscription_center
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_land_forcelimit_55_0_p_T1
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_land_forcelimit_50_0_p_T1
+						remove_province_modifier = aet_flBuildings_land_forcelimit_60_0_p_T1
+						remove_province_modifier = aet_flBuildings_land_forcelimit_55_0_p_T0
+					} else = {
+						aet_flBuildings_land_forcelimit_removeAllModifiers = yes
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							has_building = regimental_camp
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_land_forcelimit_50_0_p_T0
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_land_forcelimit_45_0_p_T0
+						remove_province_modifier = aet_flBuildings_land_forcelimit_55_0_p_T0
+						remove_province_modifier = aet_flBuildings_land_forcelimit_50_0_p_T1
+					} else_if = {
+						limit = {
+							has_building = conscription_center
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_land_forcelimit_50_0_p_T1
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_land_forcelimit_45_0_p_T1
+						remove_province_modifier = aet_flBuildings_land_forcelimit_55_0_p_T1
+						remove_province_modifier = aet_flBuildings_land_forcelimit_50_0_p_T0
+					} else = {
+						aet_flBuildings_land_forcelimit_removeAllModifiers = yes
+					}
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						development = 45
+					}
+					if = {
+						limit = {
+							has_building = regimental_camp
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_land_forcelimit_45_0_p_T0
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_land_forcelimit_40_0_p_T0
+						remove_province_modifier = aet_flBuildings_land_forcelimit_50_0_p_T0
+						remove_province_modifier = aet_flBuildings_land_forcelimit_45_0_p_T1
+					} else_if = {
+						limit = {
+							has_building = conscription_center
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_land_forcelimit_45_0_p_T1
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_land_forcelimit_40_0_p_T1
+						remove_province_modifier = aet_flBuildings_land_forcelimit_50_0_p_T1
+						remove_province_modifier = aet_flBuildings_land_forcelimit_45_0_p_T0
+					} else = {
+						aet_flBuildings_land_forcelimit_removeAllModifiers = yes
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							has_building = regimental_camp
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_land_forcelimit_40_0_p_T0
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_land_forcelimit_35_0_p_T0
+						remove_province_modifier = aet_flBuildings_land_forcelimit_45_0_p_T0
+						remove_province_modifier = aet_flBuildings_land_forcelimit_40_0_p_T1
+					} else_if = {
+						limit = {
+							has_building = conscription_center
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_land_forcelimit_40_0_p_T1
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_land_forcelimit_35_0_p_T1
+						remove_province_modifier = aet_flBuildings_land_forcelimit_45_0_p_T1
+						remove_province_modifier = aet_flBuildings_land_forcelimit_40_0_p_T0
+					} else = {
+						aet_flBuildings_land_forcelimit_removeAllModifiers = yes
+					}
+				}
+			}
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				development = 20
+			}
+			if = {
+				limit = {
+					development = 30
+				}
+				if = {
+					limit = {
+						development = 35
+					}
+					if = {
+						limit = {
+							has_building = regimental_camp
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_land_forcelimit_35_0_p_T0
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_land_forcelimit_30_0_p_T0
+						remove_province_modifier = aet_flBuildings_land_forcelimit_40_0_p_T0
+						remove_province_modifier = aet_flBuildings_land_forcelimit_35_0_p_T1
+					} else_if = {
+						limit = {
+							has_building = conscription_center
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_land_forcelimit_35_0_p_T1
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_land_forcelimit_30_0_p_T1
+						remove_province_modifier = aet_flBuildings_land_forcelimit_40_0_p_T1
+						remove_province_modifier = aet_flBuildings_land_forcelimit_35_0_p_T0
+					} else = {
+						aet_flBuildings_land_forcelimit_removeAllModifiers = yes
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							has_building = regimental_camp
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_land_forcelimit_30_0_p_T0
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_land_forcelimit_25_0_p_T0
+						remove_province_modifier = aet_flBuildings_land_forcelimit_35_0_p_T0
+						remove_province_modifier = aet_flBuildings_land_forcelimit_30_0_p_T1
+					} else_if = {
+						limit = {
+							has_building = conscription_center
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_land_forcelimit_30_0_p_T1
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_land_forcelimit_25_0_p_T1
+						remove_province_modifier = aet_flBuildings_land_forcelimit_35_0_p_T1
+						remove_province_modifier = aet_flBuildings_land_forcelimit_30_0_p_T0
+					} else = {
+						aet_flBuildings_land_forcelimit_removeAllModifiers = yes
+					}
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						development = 25
+					}
+					if = {
+						limit = {
+							has_building = regimental_camp
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_land_forcelimit_25_0_p_T0
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_land_forcelimit_20_0_p_T0
+						remove_province_modifier = aet_flBuildings_land_forcelimit_30_0_p_T0
+						remove_province_modifier = aet_flBuildings_land_forcelimit_25_0_p_T1
+					} else_if = {
+						limit = {
+							has_building = conscription_center
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_land_forcelimit_25_0_p_T1
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_land_forcelimit_20_0_p_T1
+						remove_province_modifier = aet_flBuildings_land_forcelimit_30_0_p_T1
+						remove_province_modifier = aet_flBuildings_land_forcelimit_25_0_p_T0
+					} else = {
+						aet_flBuildings_land_forcelimit_removeAllModifiers = yes
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							has_building = regimental_camp
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_land_forcelimit_20_0_p_T0
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_land_forcelimit_15_0_p_T0
+						remove_province_modifier = aet_flBuildings_land_forcelimit_25_0_p_T0
+						remove_province_modifier = aet_flBuildings_land_forcelimit_20_0_p_T1
+					} else_if = {
+						limit = {
+							has_building = conscription_center
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_land_forcelimit_20_0_p_T1
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_land_forcelimit_15_0_p_T1
+						remove_province_modifier = aet_flBuildings_land_forcelimit_25_0_p_T1
+						remove_province_modifier = aet_flBuildings_land_forcelimit_20_0_p_T0
+					} else = {
+						aet_flBuildings_land_forcelimit_removeAllModifiers = yes
+					}
+				}
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					development = 10
+				}
+				if = {
+					limit = {
+						development = 15
+					}
+					if = {
+						limit = {
+							has_building = regimental_camp
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_land_forcelimit_15_0_p_T0
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_land_forcelimit_10_0_p_T0
+						remove_province_modifier = aet_flBuildings_land_forcelimit_20_0_p_T0
+						remove_province_modifier = aet_flBuildings_land_forcelimit_15_0_p_T1
+					} else_if = {
+						limit = {
+							has_building = conscription_center
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_land_forcelimit_15_0_p_T1
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_land_forcelimit_10_0_p_T1
+						remove_province_modifier = aet_flBuildings_land_forcelimit_20_0_p_T1
+						remove_province_modifier = aet_flBuildings_land_forcelimit_15_0_p_T0
+					} else = {
+						aet_flBuildings_land_forcelimit_removeAllModifiers = yes
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							has_building = regimental_camp
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_land_forcelimit_10_0_p_T0
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_land_forcelimit_5_0_p_T0
+						remove_province_modifier = aet_flBuildings_land_forcelimit_15_0_p_T0
+						remove_province_modifier = aet_flBuildings_land_forcelimit_10_0_p_T1
+					} else_if = {
+						limit = {
+							has_building = conscription_center
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_land_forcelimit_10_0_p_T1
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_land_forcelimit_5_0_p_T1
+						remove_province_modifier = aet_flBuildings_land_forcelimit_15_0_p_T1
+						remove_province_modifier = aet_flBuildings_land_forcelimit_10_0_p_T0
+					} else = {
+						aet_flBuildings_land_forcelimit_removeAllModifiers = yes
+					}
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						has_building = regimental_camp
+					}
+				
+					add_province_modifier = {
+						name = aet_flBuildings_land_forcelimit_5_0_p_T0
+						duration = -1
+						hidden = yes
+					}
+				
+					remove_province_modifier = null
+					remove_province_modifier = aet_flBuildings_land_forcelimit_10_0_p_T0
+					remove_province_modifier = aet_flBuildings_land_forcelimit_5_0_p_T1
+				} else_if = {
+					limit = {
+						has_building = conscription_center
+					}
+				
+					add_province_modifier = {
+						name = aet_flBuildings_land_forcelimit_5_0_p_T1
+						duration = -1
+						hidden = yes
+					}
+				
+					remove_province_modifier = null
+					remove_province_modifier = aet_flBuildings_land_forcelimit_10_0_p_T1
+					remove_province_modifier = aet_flBuildings_land_forcelimit_5_0_p_T0
+				} else = {
+					aet_flBuildings_land_forcelimit_removeAllModifiers = yes
+				}
+			}
+		}
+	}
+}
+aet_flBuildings_land_forcelimit_removeAllModifiers = {
+	remove_province_modifier = aet_flBuildings_land_forcelimit_5_0_p_T0
+	remove_province_modifier = aet_flBuildings_land_forcelimit_5_0_p_T1
+	remove_province_modifier = aet_flBuildings_land_forcelimit_10_0_p_T0
+	remove_province_modifier = aet_flBuildings_land_forcelimit_10_0_p_T1
+	remove_province_modifier = aet_flBuildings_land_forcelimit_15_0_p_T0
+	remove_province_modifier = aet_flBuildings_land_forcelimit_15_0_p_T1
+	remove_province_modifier = aet_flBuildings_land_forcelimit_20_0_p_T0
+	remove_province_modifier = aet_flBuildings_land_forcelimit_20_0_p_T1
+	remove_province_modifier = aet_flBuildings_land_forcelimit_25_0_p_T0
+	remove_province_modifier = aet_flBuildings_land_forcelimit_25_0_p_T1
+	remove_province_modifier = aet_flBuildings_land_forcelimit_30_0_p_T0
+	remove_province_modifier = aet_flBuildings_land_forcelimit_30_0_p_T1
+	remove_province_modifier = aet_flBuildings_land_forcelimit_35_0_p_T0
+	remove_province_modifier = aet_flBuildings_land_forcelimit_35_0_p_T1
+	remove_province_modifier = aet_flBuildings_land_forcelimit_40_0_p_T0
+	remove_province_modifier = aet_flBuildings_land_forcelimit_40_0_p_T1
+	remove_province_modifier = aet_flBuildings_land_forcelimit_45_0_p_T0
+	remove_province_modifier = aet_flBuildings_land_forcelimit_45_0_p_T1
+	remove_province_modifier = aet_flBuildings_land_forcelimit_50_0_p_T0
+	remove_province_modifier = aet_flBuildings_land_forcelimit_50_0_p_T1
+	remove_province_modifier = aet_flBuildings_land_forcelimit_55_0_p_T0
+	remove_province_modifier = aet_flBuildings_land_forcelimit_55_0_p_T1
+	remove_province_modifier = aet_flBuildings_land_forcelimit_60_0_p_T0
+	remove_province_modifier = aet_flBuildings_land_forcelimit_60_0_p_T1
+	remove_province_modifier = aet_flBuildings_land_forcelimit_65_0_p_T0
+	remove_province_modifier = aet_flBuildings_land_forcelimit_65_0_p_T1
+	remove_province_modifier = aet_flBuildings_land_forcelimit_70_0_p_T0
+	remove_province_modifier = aet_flBuildings_land_forcelimit_70_0_p_T1
+	remove_province_modifier = aet_flBuildings_land_forcelimit_75_0_p_T0
+	remove_province_modifier = aet_flBuildings_land_forcelimit_75_0_p_T1
+}
+aet_flBuildings_refresh_naval_forcelimit = {
+	# Automatically generated function for a binary lookup table
+	# Parameters:
+	# 	Trigger Block:
+	# 	development = 5
+	# 	Effect Block: 
+	# 	if = {
+	# 		limit = {
+	# 			has_building = shipyard
+	# 		}
+	# 	
+	# 		add_province_modifier = {
+	# 			name = aet_flBuildings_naval_forcelimit_5_0_p_T0
+	# 			duration = -1
+	# 			hidden = yes
+	# 		}
+	# 	
+	# 		remove_province_modifier = null
+	# 		remove_province_modifier = aet_flBuildings_naval_forcelimit_10_0_p_T0
+	# 		remove_province_modifier = aet_flBuildings_naval_forcelimit_5_0_p_T1
+	# 	} else_if = {
+	# 		limit = {
+	# 			has_building = grand_shipyard
+	# 		}
+	# 	
+	# 		add_province_modifier = {
+	# 			name = aet_flBuildings_naval_forcelimit_5_0_p_T1
+	# 			duration = -1
+	# 			hidden = yes
+	# 		}
+	# 	
+	# 		remove_province_modifier = null
+	# 		remove_province_modifier = aet_flBuildings_naval_forcelimit_10_0_p_T1
+	# 		remove_province_modifier = aet_flBuildings_naval_forcelimit_5_0_p_T0
+	# 	} else = {
+	# 		aet_flBuildings_naval_forcelimit_removeAllModifiers = yes
+	# 	}
+	# 
+	# 	Values: [5.000, 10.000, 15.000, 20.000, 25.000, 30.000, 35.000, 40.000, 45.000, 50.000, 55.000, 60.000, 65.000, 70.000, 75.000]
+	if = {
+		limit = {
+			development = 40
+		}
+		if = {
+			limit = {
+				development = 60
+			}
+			if = {
+				limit = {
+					development = 70
+				}
+				if = {
+					limit = {
+						development = 75
+					}
+					if = {
+						limit = {
+							has_building = shipyard
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_naval_forcelimit_75_0_p_T0
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_70_0_p_T0
+						remove_province_modifier = null
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_75_0_p_T1
+					} else_if = {
+						limit = {
+							has_building = grand_shipyard
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_naval_forcelimit_75_0_p_T1
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_70_0_p_T1
+						remove_province_modifier = null
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_75_0_p_T0
+					} else = {
+						aet_flBuildings_naval_forcelimit_removeAllModifiers = yes
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							has_building = shipyard
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_naval_forcelimit_70_0_p_T0
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_65_0_p_T0
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_75_0_p_T0
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_70_0_p_T1
+					} else_if = {
+						limit = {
+							has_building = grand_shipyard
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_naval_forcelimit_70_0_p_T1
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_65_0_p_T1
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_75_0_p_T1
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_70_0_p_T0
+					} else = {
+						aet_flBuildings_naval_forcelimit_removeAllModifiers = yes
+					}
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						development = 65
+					}
+					if = {
+						limit = {
+							has_building = shipyard
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_naval_forcelimit_65_0_p_T0
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_60_0_p_T0
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_70_0_p_T0
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_65_0_p_T1
+					} else_if = {
+						limit = {
+							has_building = grand_shipyard
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_naval_forcelimit_65_0_p_T1
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_60_0_p_T1
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_70_0_p_T1
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_65_0_p_T0
+					} else = {
+						aet_flBuildings_naval_forcelimit_removeAllModifiers = yes
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							has_building = shipyard
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_naval_forcelimit_60_0_p_T0
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_55_0_p_T0
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_65_0_p_T0
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_60_0_p_T1
+					} else_if = {
+						limit = {
+							has_building = grand_shipyard
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_naval_forcelimit_60_0_p_T1
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_55_0_p_T1
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_65_0_p_T1
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_60_0_p_T0
+					} else = {
+						aet_flBuildings_naval_forcelimit_removeAllModifiers = yes
+					}
+				}
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					development = 50
+				}
+				if = {
+					limit = {
+						development = 55
+					}
+					if = {
+						limit = {
+							has_building = shipyard
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_naval_forcelimit_55_0_p_T0
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_50_0_p_T0
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_60_0_p_T0
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_55_0_p_T1
+					} else_if = {
+						limit = {
+							has_building = grand_shipyard
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_naval_forcelimit_55_0_p_T1
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_50_0_p_T1
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_60_0_p_T1
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_55_0_p_T0
+					} else = {
+						aet_flBuildings_naval_forcelimit_removeAllModifiers = yes
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							has_building = shipyard
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_naval_forcelimit_50_0_p_T0
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_45_0_p_T0
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_55_0_p_T0
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_50_0_p_T1
+					} else_if = {
+						limit = {
+							has_building = grand_shipyard
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_naval_forcelimit_50_0_p_T1
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_45_0_p_T1
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_55_0_p_T1
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_50_0_p_T0
+					} else = {
+						aet_flBuildings_naval_forcelimit_removeAllModifiers = yes
+					}
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						development = 45
+					}
+					if = {
+						limit = {
+							has_building = shipyard
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_naval_forcelimit_45_0_p_T0
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_40_0_p_T0
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_50_0_p_T0
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_45_0_p_T1
+					} else_if = {
+						limit = {
+							has_building = grand_shipyard
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_naval_forcelimit_45_0_p_T1
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_40_0_p_T1
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_50_0_p_T1
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_45_0_p_T0
+					} else = {
+						aet_flBuildings_naval_forcelimit_removeAllModifiers = yes
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							has_building = shipyard
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_naval_forcelimit_40_0_p_T0
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_35_0_p_T0
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_45_0_p_T0
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_40_0_p_T1
+					} else_if = {
+						limit = {
+							has_building = grand_shipyard
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_naval_forcelimit_40_0_p_T1
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_35_0_p_T1
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_45_0_p_T1
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_40_0_p_T0
+					} else = {
+						aet_flBuildings_naval_forcelimit_removeAllModifiers = yes
+					}
+				}
+			}
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				development = 20
+			}
+			if = {
+				limit = {
+					development = 30
+				}
+				if = {
+					limit = {
+						development = 35
+					}
+					if = {
+						limit = {
+							has_building = shipyard
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_naval_forcelimit_35_0_p_T0
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_30_0_p_T0
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_40_0_p_T0
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_35_0_p_T1
+					} else_if = {
+						limit = {
+							has_building = grand_shipyard
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_naval_forcelimit_35_0_p_T1
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_30_0_p_T1
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_40_0_p_T1
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_35_0_p_T0
+					} else = {
+						aet_flBuildings_naval_forcelimit_removeAllModifiers = yes
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							has_building = shipyard
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_naval_forcelimit_30_0_p_T0
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_25_0_p_T0
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_35_0_p_T0
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_30_0_p_T1
+					} else_if = {
+						limit = {
+							has_building = grand_shipyard
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_naval_forcelimit_30_0_p_T1
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_25_0_p_T1
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_35_0_p_T1
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_30_0_p_T0
+					} else = {
+						aet_flBuildings_naval_forcelimit_removeAllModifiers = yes
+					}
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						development = 25
+					}
+					if = {
+						limit = {
+							has_building = shipyard
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_naval_forcelimit_25_0_p_T0
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_20_0_p_T0
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_30_0_p_T0
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_25_0_p_T1
+					} else_if = {
+						limit = {
+							has_building = grand_shipyard
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_naval_forcelimit_25_0_p_T1
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_20_0_p_T1
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_30_0_p_T1
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_25_0_p_T0
+					} else = {
+						aet_flBuildings_naval_forcelimit_removeAllModifiers = yes
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							has_building = shipyard
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_naval_forcelimit_20_0_p_T0
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_15_0_p_T0
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_25_0_p_T0
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_20_0_p_T1
+					} else_if = {
+						limit = {
+							has_building = grand_shipyard
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_naval_forcelimit_20_0_p_T1
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_15_0_p_T1
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_25_0_p_T1
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_20_0_p_T0
+					} else = {
+						aet_flBuildings_naval_forcelimit_removeAllModifiers = yes
+					}
+				}
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					development = 10
+				}
+				if = {
+					limit = {
+						development = 15
+					}
+					if = {
+						limit = {
+							has_building = shipyard
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_naval_forcelimit_15_0_p_T0
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_10_0_p_T0
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_20_0_p_T0
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_15_0_p_T1
+					} else_if = {
+						limit = {
+							has_building = grand_shipyard
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_naval_forcelimit_15_0_p_T1
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_10_0_p_T1
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_20_0_p_T1
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_15_0_p_T0
+					} else = {
+						aet_flBuildings_naval_forcelimit_removeAllModifiers = yes
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							has_building = shipyard
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_naval_forcelimit_10_0_p_T0
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_5_0_p_T0
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_15_0_p_T0
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_10_0_p_T1
+					} else_if = {
+						limit = {
+							has_building = grand_shipyard
+						}
+					
+						add_province_modifier = {
+							name = aet_flBuildings_naval_forcelimit_10_0_p_T1
+							duration = -1
+							hidden = yes
+						}
+					
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_5_0_p_T1
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_15_0_p_T1
+						remove_province_modifier = aet_flBuildings_naval_forcelimit_10_0_p_T0
+					} else = {
+						aet_flBuildings_naval_forcelimit_removeAllModifiers = yes
+					}
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						has_building = shipyard
+					}
+				
+					add_province_modifier = {
+						name = aet_flBuildings_naval_forcelimit_5_0_p_T0
+						duration = -1
+						hidden = yes
+					}
+				
+					remove_province_modifier = null
+					remove_province_modifier = aet_flBuildings_naval_forcelimit_10_0_p_T0
+					remove_province_modifier = aet_flBuildings_naval_forcelimit_5_0_p_T1
+				} else_if = {
+					limit = {
+						has_building = grand_shipyard
+					}
+				
+					add_province_modifier = {
+						name = aet_flBuildings_naval_forcelimit_5_0_p_T1
+						duration = -1
+						hidden = yes
+					}
+				
+					remove_province_modifier = null
+					remove_province_modifier = aet_flBuildings_naval_forcelimit_10_0_p_T1
+					remove_province_modifier = aet_flBuildings_naval_forcelimit_5_0_p_T0
+				} else = {
+					aet_flBuildings_naval_forcelimit_removeAllModifiers = yes
+				}
+			}
+		}
+	}
+}
+aet_flBuildings_naval_forcelimit_removeAllModifiers = {
+	remove_province_modifier = aet_flBuildings_naval_forcelimit_5_0_p_T0
+	remove_province_modifier = aet_flBuildings_naval_forcelimit_5_0_p_T1
+	remove_province_modifier = aet_flBuildings_naval_forcelimit_10_0_p_T0
+	remove_province_modifier = aet_flBuildings_naval_forcelimit_10_0_p_T1
+	remove_province_modifier = aet_flBuildings_naval_forcelimit_15_0_p_T0
+	remove_province_modifier = aet_flBuildings_naval_forcelimit_15_0_p_T1
+	remove_province_modifier = aet_flBuildings_naval_forcelimit_20_0_p_T0
+	remove_province_modifier = aet_flBuildings_naval_forcelimit_20_0_p_T1
+	remove_province_modifier = aet_flBuildings_naval_forcelimit_25_0_p_T0
+	remove_province_modifier = aet_flBuildings_naval_forcelimit_25_0_p_T1
+	remove_province_modifier = aet_flBuildings_naval_forcelimit_30_0_p_T0
+	remove_province_modifier = aet_flBuildings_naval_forcelimit_30_0_p_T1
+	remove_province_modifier = aet_flBuildings_naval_forcelimit_35_0_p_T0
+	remove_province_modifier = aet_flBuildings_naval_forcelimit_35_0_p_T1
+	remove_province_modifier = aet_flBuildings_naval_forcelimit_40_0_p_T0
+	remove_province_modifier = aet_flBuildings_naval_forcelimit_40_0_p_T1
+	remove_province_modifier = aet_flBuildings_naval_forcelimit_45_0_p_T0
+	remove_province_modifier = aet_flBuildings_naval_forcelimit_45_0_p_T1
+	remove_province_modifier = aet_flBuildings_naval_forcelimit_50_0_p_T0
+	remove_province_modifier = aet_flBuildings_naval_forcelimit_50_0_p_T1
+	remove_province_modifier = aet_flBuildings_naval_forcelimit_55_0_p_T0
+	remove_province_modifier = aet_flBuildings_naval_forcelimit_55_0_p_T1
+	remove_province_modifier = aet_flBuildings_naval_forcelimit_60_0_p_T0
+	remove_province_modifier = aet_flBuildings_naval_forcelimit_60_0_p_T1
+	remove_province_modifier = aet_flBuildings_naval_forcelimit_65_0_p_T0
+	remove_province_modifier = aet_flBuildings_naval_forcelimit_65_0_p_T1
+	remove_province_modifier = aet_flBuildings_naval_forcelimit_70_0_p_T0
+	remove_province_modifier = aet_flBuildings_naval_forcelimit_70_0_p_T1
+	remove_province_modifier = aet_flBuildings_naval_forcelimit_75_0_p_T0
+	remove_province_modifier = aet_flBuildings_naval_forcelimit_75_0_p_T1
+}

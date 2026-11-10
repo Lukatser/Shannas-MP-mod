@@ -1,0 +1,292 @@
+country_decisions = {
+	aet_debug_toggleSemTests = {
+		potential = {
+			aet_is_debug = yes
+		}
+
+		allow = {
+			
+		}
+
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = aet_debug_semTest 
+				}
+				clr_global_flag = aet_debug_semTest 
+			} else = {
+				set_global_flag = aet_debug_semTest
+			}
+
+		}
+	}
+	aet_debug_vassal_tax_test = {
+		potential = {
+			aet_is_debug = yes 
+			has_global_flag = aet_debug_semTest
+		}
+		
+		allow = { # UI I guess 
+			aet_is_debug = yes 
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = vassal_tax_test
+				duration = -1
+			}
+		}
+	}
+	
+	aet_debug_rural_goods_test = {
+		potential = {
+			aet_is_debug = yes 
+			has_global_flag = aet_debug_semTest
+		}
+		
+		allow = { # UI I guess 
+			aet_is_debug = yes 
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = rural_goods_test
+				duration = -1
+			}
+		}
+	}
+	
+	aet_debug_urban_goods_test = {
+		potential = {
+			aet_is_debug = yes 
+			has_global_flag = aet_debug_semTest
+		}
+		
+		allow = { # UI I guess 
+			aet_is_debug = yes 
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = urban_goods_test
+				duration = -1
+			}
+		}
+	}
+	
+	aet_debug_mining_goods_test = {
+		potential = {
+			aet_is_debug = yes 
+			has_global_flag = aet_debug_semTest
+		}
+		
+		allow = { # UI I guess 
+			aet_is_debug = yes 
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = mining_goods_test
+				duration = -1
+			}
+		}
+	}
+	
+	aet_debug_plantage_goods_test = {
+		potential = {
+			aet_is_debug = yes 
+			has_global_flag = aet_debug_semTest
+		}
+		
+		allow = { # UI I guess 
+			aet_is_debug = yes 
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = plantage_goods_test
+				duration = -1
+			}
+		}
+	}
+
+	aet_debug_toggleGuardsTest = {
+		potential = {
+			aet_is_debug = yes 
+		}
+		
+		allow = { # UI I guess 
+			aet_is_debug = yes 
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = aet_debug_guardsTest 
+				}
+				clr_global_flag = aet_debug_guardsTest 
+			} else = {
+				set_global_flag = aet_debug_guardsTest
+			}
+		}
+	}	
+
+	aet_debug_mercHire_05 = {
+		potential = {
+			aet_is_debug = yes 
+			has_global_flag = aet_debug_guardsTest
+		}
+		
+		allow = { # UI I guess 
+			aet_is_debug = yes 
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					has_country_modifier = aet_mercHireTest_05
+				}
+				remove_country_modifier = aet_mercHireTest_05
+			} else = {
+				add_country_modifier = {
+					name = aet_mercHireTest_05
+					duration = -1
+				}
+			}
+		}
+	}			
+	aet_debug_mercHire_1 = {
+		potential = {
+			aet_is_debug = yes 
+			has_global_flag = aet_debug_guardsTest
+		}
+		
+		allow = { # UI I guess 
+			aet_is_debug = yes 
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					has_country_modifier = aet_mercHireTest_1
+				}
+				remove_country_modifier = aet_mercHireTest_1
+			} else = {
+				add_country_modifier = {
+					name = aet_mercHireTest_1
+					duration = -1
+				}
+			}
+		}
+	}		
+	aet_debug_mercMain_05 = {
+		potential = {
+			aet_is_debug = yes 
+			has_global_flag = aet_debug_guardsTest
+		}
+		
+		allow = { # UI I guess 
+			aet_is_debug = yes 
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					has_country_modifier = aet_mercMaintenanceTest_05
+				}
+				remove_country_modifier = aet_mercMaintenanceTest_05
+			} else = {
+				add_country_modifier = {
+					name = aet_mercMaintenanceTest_05
+					duration = -1
+				}
+			}
+		}
+	}		
+	aet_debug_mercMain_1 = {
+		potential = {
+			aet_is_debug = yes 
+			has_global_flag = aet_debug_guardsTest
+		}
+		
+		allow = { # UI I guess 
+			aet_is_debug = yes 
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					has_country_modifier = aet_mercMaintenanceTest_1
+				}
+				remove_country_modifier = aet_mercMaintenanceTest_1
+			} else = {
+				add_country_modifier = {
+					name = aet_mercMaintenanceTest_1
+					duration = -1
+				}
+			}
+		}
+	}		
+	aet_debug_eliteBuff = {
+		potential = {
+			aet_is_debug = yes 
+			has_global_flag = aet_debug_guardsTest
+		}
+		
+		allow = { # UI I guess 
+			aet_is_debug = yes 
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					has_country_modifier = aet_eliteBuffTest
+				}
+				remove_country_modifier = aet_eliteBuffTest
+			} else = {
+				add_country_modifier = {
+					name = aet_eliteBuffTest
+					duration = -1
+				}
+			}
+		}
+	}		
+	aet_debug_eliteBuff_neg = {
+		potential = {
+			aet_is_debug = yes 
+			has_global_flag = aet_debug_guardsTest
+		}
+		
+		allow = { # UI I guess 
+			aet_is_debug = yes 
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					has_country_modifier = aet_eliteBuffTest_bad
+				}
+				remove_country_modifier = aet_eliteBuffTest_bad
+			} else = {
+				add_country_modifier = {
+					name = aet_eliteBuffTest_bad
+					duration = -1
+				}
+			}
+		}
+	}		
+	aet_debug_eliteBuff_forceReload = {
+		potential = {
+			aet_is_debug = yes 
+			has_global_flag = aet_debug_guardsTest
+		}
+		
+		allow = { # UI I guess 
+			aet_is_debug = yes 
+		}
+		
+		effect = {
+			aet_eliteGuards_refreshScaledModifiers = yes
+		}
+	}			
+}

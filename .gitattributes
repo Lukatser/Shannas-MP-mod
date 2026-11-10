@@ -1,2 +1,23 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+*.txt text eol=crlf
+*.csv text eol=crlf
+*.yml text eol=crlf
+*.yaml text eol=crlf
+*.mod text eol=crlf
+*.gui text eol=crlf
+*.gfx text eol=crlf
+*.asset text eol=crlf
+*.dds binary
+*.sh eol=lf
+*.vdf eol=lf
+
+#
+# https://help.github.com/articles/dealing-with-line-endings/
+#
+# Linux start script should use lf
+/gradlew        text eol=lf
+
+# These are Windows script files and should use crlf
+*.bat           text eol=crlf
+
+# Binary files should be left untouched
+*.jar           binary

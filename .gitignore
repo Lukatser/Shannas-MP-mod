@@ -1,2 +1,11 @@
-descriptor.mod
+/.cwtools
+/.vscode
 /.idea
+.vscode/settings.json
+
+# Ignore Gradle project-specific cache directory
+java_util/.gradle
+
+# Ignore Gradle build output directory
+java_util/build
+java_util/build

@@ -1,0 +1,50 @@
+aet_englandAngevinBuffs = {
+	potential = {
+		ENG = {
+			not = { has_country_flag = eng_took_gbr_branch }
+		}
+	}
+
+	trigger = {
+		owner = {
+			num_of_owned_provinces_with = {
+				OR = {
+					region = france_region
+					culture_group = french
+				}
+				value = 5
+			}
+		}
+	}
+
+	land_morale = 0.05
+}
+aet_cliffsOfDover = {
+	potential = {
+
+	}
+
+	trigger = {
+		235 = {
+			has_great_project = {
+				type = any
+				tier = 2
+			}
+		}
+
+		controller = {
+			owns = 235
+
+			OR = {
+				tag = ENG 
+				was_tag = ENG 
+				culture_group = british
+				culture_group = gaelic
+			}			
+		}
+	}
+
+	local_defender_dice_roll_bonus = 1
+	local_defensiveness = 0.33
+	local_assault_fort_ability = -0.75
+}

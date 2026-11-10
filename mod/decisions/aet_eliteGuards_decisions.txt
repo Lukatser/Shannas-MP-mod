@@ -1,0 +1,1004 @@
+country_decisions = {
+	aet_eliteGuards_hideAll = {
+		color = { 128 0 64 }
+		potential = {
+			aet_eliteGuards_baseDecisionTrigger = yes
+		}
+
+		allow = {
+			
+		}
+
+		effect = {
+			set_country_flag = aet_eliteGuards_hideDecisions
+
+			custom_tooltip = aet_eliteGuards_hideAll_tt
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	aet_eliteGuards_showAll = {
+		color = { 128 0 64 }
+		potential = {
+			aet_eliteGuards_anyEnabled = yes
+			has_country_flag = aet_eliteGuards_hideDecisions
+		}
+
+		allow = {
+			
+		}
+
+		effect = {
+			clr_country_flag = aet_eliteGuards_hideDecisions
+
+			custom_tooltip = aet_eliteGuards_showAll_tt
+		}
+
+		ai_will_do = {
+			factor = 400
+		}	
+	}	
+	aet_eliteGuards_infoEvent = {
+		color = { 128 0 64 }
+		potential = {
+			aet_eliteGuards_anyEnabled = yes
+		}
+
+		allow = {
+			
+		}
+
+		effect = {
+			country_event = {
+				id = aet_eliteGuards.1
+			}
+		}
+
+		ai_will_do = {
+			factor = 400
+		}	
+	}		
+	aet_eliteGuards_preloadActionCosts = {
+		color = { 128 0 64 }
+		potential = {
+			aet_eliteGuards_baseDecisionTrigger = yes
+		}
+
+		allow = {
+			
+		}
+
+		effect = {
+			custom_tooltip = aet_eliteGuards_preloadActionCosts_tt
+
+			hidden_effect = {
+				aet_eliteGuards_preloadActionCosts = yes
+			}
+		}
+	}
+	aet_eliteGuards_increaseFL = {
+		color = { 128 0 64 }
+		potential = {
+			aet_eliteGuards_baseDecisionTrigger = yes
+		}
+
+		allow = {
+			aet_applyVar = {
+				left = mil_power
+				var = aet_eliteGuards_halfcost
+			}
+			NOT = {
+				has_country_modifier = aet_eliteGuardsFL_39
+			}
+		}
+
+		effect = {
+			aet_eliteGuards_takeHalfAction = yes
+
+			custom_tooltip = aet_eliteGuards_increaseFL_tt
+			hidden_effect = {
+				aet_eliteGuards_increase_FL = yes
+			}
+		}
+
+		ai_will_do = {
+			factor = 400
+
+			modifier = {
+				factor = 0.0
+
+				NOT = {
+					has_country_modifier = aet_eliteGuards_FLbelow50_c
+					has_country_modifier = aet_eliteGuards_FLbelow70_c
+					has_country_modifier = aet_eliteGuards_FLbelow80_c
+				}
+			}			
+		}
+	}
+
+	aet_eliteGuards_decreaseFL = {
+		color = { 128 0 64 }
+		potential = {
+			aet_eliteGuards_baseDecisionTrigger = yes
+		}
+
+		allow = {
+			aet_applyVar = {
+				left = mil_power
+				var = aet_eliteGuards_halfcost
+			}			
+			NOT = {
+				has_country_modifier = aet_eliteGuardsFL_0
+			}
+		}
+
+		effect = {
+			aet_eliteGuards_takeHalfAction = yes
+
+			custom_tooltip = aet_eliteGuards_decreaseFL_tt
+			hidden_effect = {
+				aet_eliteGuards_reduce_FL = yes
+			}
+		}
+
+		ai_will_do = {
+			factor = 400
+
+			modifier = {
+				factor = 0.0
+
+				NOT = {
+					has_country_modifier = aet_eliteGuards_FLabove200_c
+					has_country_modifier = aet_eliteGuards_FLabove175_c
+					has_country_modifier = aet_eliteGuards_FLabove150_c
+					has_country_modifier = aet_eliteGuards_FLabove135_c
+					has_country_modifier = aet_eliteGuards_FLabove125_c
+				}
+			}
+		}		
+	}
+
+	aet_eliteGuards_HeavyCav = {
+		color = { 128 0 64 }
+		potential = {
+			aet_eliteGuards_upgradeTrigger_cav = {
+				modifier = aet_eliteGuards_heavyCavalry_specialisation
+			}
+		}
+		
+		allow = {
+			aet_eliteGuards_upgradeTrigger_cav_allow = {
+				modifier = aet_eliteGuards_heavyCavalry_specialisation
+			}
+			custom_trigger_tooltip = {
+				tooltip = aet_eliteGuards_mutualExclusionCavFocus_tt
+				NOT = {
+					has_country_flag = aet_eliteGuards_heavyCavalry_specialisation
+					has_country_flag = aet_eliteGuards_lightCavalry_specialisation
+					has_country_flag = aet_eliteGuards_horseArcher_specialisation
+				}
+			}
+
+			aet_eliteGuard_heavyCavPersistentRequirements = yes 
+		}
+		
+		effect = {
+			aet_eliteGuards_takeFullAction = yes
+
+			aet_eliteGuards_addCountryModifier = {
+				name = aet_eliteGuards_heavyCavalry_specialisation
+				
+			}
+			add_country_modifier = {
+				name = aet_eliteGuards_heavyCavalry_specialisation_country
+				duration = -1
+			}
+		}
+
+		ai_will_do = {
+			factor = 400
+
+			modifier = {
+				factor = 0.0
+				aet_eliteGuard_cavArcherPersistentRequirements = yes
+			}
+		}
+	}
+	aet_eliteGuards_HeavyCav_remove = {
+		color = { 128 0 64 }
+		potential = {
+			aet_eliteGuards_baseDecisionTrigger = yes 
+			has_country_flag = aet_eliteGuards_heavyCavalry_specialisation
+		}
+		
+		allow = {
+
+		}
+		
+		effect = {
+			aet_eliteGuards_takeFullAction = yes
+
+			aet_eliteGuards_removeCountryModifier = { name = aet_eliteGuards_heavyCavalry_specialisation }
+			remove_country_modifier = aet_eliteGuards_heavyCavalry_specialisation_country
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	aet_eliteGuards_LightCav = {
+		color = { 128 0 64 }
+		potential = {
+			aet_eliteGuards_upgradeTrigger_cav = {
+				modifier = aet_eliteGuards_lightCavalry_specialisation
+			}
+		}
+		
+		allow = {
+			aet_eliteGuards_upgradeTrigger_cav_allow = {
+				modifier = aet_eliteGuards_lightCavalry_specialisation
+			}
+			custom_trigger_tooltip = {
+				tooltip = aet_eliteGuards_mutualExclusionCavFocus_tt
+				NOT = {
+					has_country_flag = aet_eliteGuards_heavyCavalry_specialisation
+					has_country_flag = aet_eliteGuards_lightCavalry_specialisation
+					has_country_flag = aet_eliteGuards_horseArcher_specialisation
+				}
+			}
+			aet_eliteGuard_lightCavPersistentRequirements = yes 
+		}
+		
+		effect = {
+			aet_eliteGuards_takeFullAction = yes
+
+			aet_eliteGuards_addCountryModifier = {
+				name = aet_eliteGuards_lightCavalry_specialisation
+				
+			}
+			add_country_modifier = {
+				name = aet_eliteGuards_lightCavalry_country
+				duration = -1
+			}
+		}
+
+		ai_will_do = {
+			factor = 400
+
+			modifier = {
+				factor = 0.0
+				aet_eliteGuard_cavArcherPersistentRequirements = yes
+			}
+		}		
+	}
+
+	aet_eliteGuards_LightCavCossack = {
+		color = { 128 0 64 }
+		potential = {
+			aet_eliteGuards_baseDecisionTrigger = yes 
+			NOT = {
+				has_country_flag = aet_eliteGuards_lightCavalryCossack_specialisation
+			}				
+			OR = {
+				aet_is_debug = yes 
+
+				check_variable = {
+					which = aet_eliteGuards_cav_enable
+					value = 1
+				}
+			}
+		}
+		
+		allow = { 
+			aet_applyVar = {
+				left = mil_power
+				var = aet_eliteGuards_fullcost
+			}
+			has_country_flag = aet_eliteGuards_lightCavalry_specialisation
+			aet_eliteGuard_lightCavCossackPersistentRequirements = yes 
+			cossacks_percentage = 0.20
+			estate_influence = {
+				estate = estate_cossacks
+				influence = 60
+			}
+			estate_loyalty = {
+				estate = estate_cossacks
+				loyalty = 60
+			}
+		}
+		
+		effect = {
+			aet_eliteGuards_takeFullAction = yes
+
+			aet_eliteGuards_addCountryModifier = {
+				name = aet_eliteGuards_lightCavalryCossack_specialisation
+				
+			}
+			add_country_modifier = {
+				name = aet_eliteGuards_lightCavalryCossack_country
+				duration = -1 
+			}
+		}
+	}
+
+	aet_eliteGuards_LightCav_remove = {
+		color = { 128 0 64 }
+		potential = {
+			aet_eliteGuards_baseDecisionTrigger = yes 
+			has_country_flag = aet_eliteGuards_lightCavalry_specialisation
+		}
+		
+		allow = {
+
+		}
+		
+		effect = {
+			aet_eliteGuards_takeFullAction = yes
+
+			aet_eliteGuards_removeCountryModifier = { name = aet_eliteGuards_lightCavalry_specialisation }
+			remove_country_modifier = aet_eliteGuards_lightCavalry_country
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+
+	aet_eliteGuards_HorseArchers = {
+		color = { 128 0 64 }
+		potential = {
+			aet_eliteGuards_upgradeTrigger_cav = {
+				modifier = aet_eliteGuards_horseArcher_specialisation
+			}
+		}
+		
+		allow = { 
+			aet_eliteGuards_upgradeTrigger_cav_allow = {
+				modifier = aet_eliteGuards_lightCavalry_specialisation
+			}
+			custom_trigger_tooltip = {
+				tooltip = aet_eliteGuards_mutualExclusionCavFocus_tt
+				NOT = {
+					has_country_flag = aet_eliteGuards_heavyCavalry_specialisation
+					has_country_flag = aet_eliteGuards_lightCavalry_specialisation
+					has_country_flag = aet_eliteGuards_horseArcher_specialisation
+				}
+			}
+			aet_eliteGuard_cavArcherPersistentRequirements = yes 			
+		}
+		
+		effect = {
+			aet_eliteGuards_takeFullAction = yes
+
+			aet_eliteGuards_addCountryModifier = {
+				name = aet_eliteGuards_horseArcher_specialisation
+				
+			}
+			add_country_modifier = {
+				name = aet_eliteGuards_horseArcher_country
+				duration = -1
+			}			
+		}
+
+		ai_importance = 400
+
+		ai_will_do = {
+			factor = 400
+		}
+	}
+
+	aet_eliteGuards_HorseArchers_remove = {
+		color = { 128 0 64 }
+		potential = {
+			aet_eliteGuards_baseDecisionTrigger = yes 
+			has_country_flag = aet_eliteGuards_horseArcher_specialisation
+		}
+		
+		allow = {
+
+		}
+		
+		effect = {
+			aet_eliteGuards_takeFullAction = yes
+
+			aet_eliteGuards_removeCountryModifier = { name = aet_eliteGuards_horseArcher_specialisation }
+			remove_country_modifier = aet_eliteGuards_horseArcher_country
+			aet_eliteGuards_removeCountryModifier = { name = aet_eliteGuards_horseArcher_horde }
+			remove_country_modifier = aet_eliteGuards_horseArcher_horde_country
+		}
+
+		ai_will_do = {
+			factor = 0
+		}		
+	}	
+
+	aet_eliteGuards_HorseArchers_nomadic = {
+		color = { 128 0 64 }
+		potential = {
+			aet_eliteGuards_baseDecisionTrigger = yes 
+			NOT = {
+				has_country_flag = aet_eliteGuards_horseArcher_horde
+			}
+			OR = {
+				aet_is_debug = yes 
+
+				check_variable = {
+					which = aet_eliteGuards_cav_enable
+					value = 1
+				}
+			}
+		}
+		
+		allow = { 
+			aet_applyVar = {
+				left = mil_power
+				var = aet_eliteGuards_fullcost
+			}
+			has_country_flag = aet_eliteGuards_horseArcher_specialisation
+			NOT = {
+				has_country_flag = aet_eliteGuards_horseArcher_horde
+			}
+			aet_eliteGuard_cavArcherNomadPersistentRequirements = yes 
+		}
+		
+		effect = {
+			aet_eliteGuards_takeFullAction = yes
+
+			aet_eliteGuards_addCountryModifier = {
+				name = aet_eliteGuards_horseArcher_horde
+				
+			}
+
+			add_country_modifier = {
+				name = aet_eliteGuards_horseArcher_horde_country
+				duration = -1
+			}			
+		}
+
+		ai_importance = 400
+
+		ai_will_do = {
+			factor = 400
+		}				
+	}
+
+	aet_eliteGuards_plutoMoraleDamage = {
+		color = { 128 0 64 }
+		potential = {
+			aet_eliteGuards_upgradeTrigger = {
+				modifier = aet_eliteGuards_plutoMoraleDamage
+			}
+		}
+		
+		allow = { 
+			aet_applyVar = {
+				left = mil_power
+				var = aet_eliteGuards_fullcost
+			}
+			NOT = {
+				has_country_flag = aet_eliteGuards_plutoMoraleDamage
+			}
+			aet_eliteGuards_plutoPersistentRequirements = yes 
+		}
+		
+		effect = {
+			aet_eliteGuards_takeFullAction = yes
+
+			aet_eliteGuards_addCountryModifier = {
+				name = aet_eliteGuards_plutoMoraleDamage
+				
+			}	
+
+			hidden_effect = {
+				aet_eliteGuards_removePlutoCost = yes 
+				aet_eliteGuards_getPlutoCost = yes				
+			}
+		}
+
+		ai_importance = 400
+
+		ai_will_do = {
+			factor = 400
+		}		
+	}
+
+	aet_eliteGuards_plutoMoraleDamage_remove = {
+		color = { 128 0 64 }
+		potential = {
+			aet_eliteGuards_baseDecisionTrigger = yes 
+			has_country_flag = aet_eliteGuards_plutoMoraleDamage
+
+			OR = {
+				aet_is_debug = yes 
+
+				check_variable = {
+					which = aet_eliteGuards_inf_enable
+					value = 1
+				}
+			}
+		}
+		
+		allow = { 
+			aet_applyVar = {
+				left = mil_power
+				var = aet_eliteGuards_fullcost
+			}
+			has_country_flag = aet_eliteGuards_plutoMoraleDamage
+			aet_eliteGuards_plutoPersistentRequirements = yes 
+		}
+		
+		effect = {
+			aet_eliteGuards_takeFullAction = yes
+
+			aet_eliteGuards_removeCountryModifier = { name = aet_eliteGuards_plutoMoraleDamage }
+
+			hidden_effect = {
+				aet_eliteGuards_removePlutoCost = yes 
+				aet_eliteGuards_getPlutoCost = yes				
+			}
+		}
+
+		ai_importance = 0
+
+		ai_will_do = {
+			factor = 0
+		}		
+	}	
+
+	aet_eliteGuards_plutoMoraleDamageReceived = {
+		color = { 128 0 64 }
+		potential = {
+			aet_eliteGuards_upgradeTrigger = {
+				modifier = aet_eliteGuards_plutoMoraleDamageReceived
+			}
+		}		
+		
+		allow = { 
+			aet_applyVar = {
+				left = mil_power
+				var = aet_eliteGuards_fullcost
+			}
+			NOT = {
+				has_country_flag = aet_eliteGuards_plutoMoraleDamageReceived
+			}
+			aet_eliteGuards_plutoPersistentRequirements = yes 
+		}
+		
+		effect = {
+			aet_eliteGuards_takeFullAction = yes
+
+			aet_eliteGuards_addCountryModifier = {
+				name = aet_eliteGuards_plutoMoraleDamageReceived
+				
+			}	
+
+			hidden_effect = {
+				aet_eliteGuards_removePlutoCost = yes 
+				aet_eliteGuards_getPlutoCost = yes				
+			}
+		}
+
+		ai_importance = 400
+
+		ai_will_do = {
+			factor = 400
+		}		
+	}
+
+	aet_eliteGuards_plutoMoraleDamageReceived_remove = {
+		color = { 128 0 64 }
+		potential = {
+			aet_eliteGuards_baseDecisionTrigger = yes 
+			has_country_flag = aet_eliteGuards_plutoMoraleDamageReceived
+
+			OR = {
+				aet_is_debug = yes 
+
+				check_variable = {
+					which = aet_eliteGuards_inf_enable
+					value = 1
+				}
+			}
+		}
+		
+		allow = { 
+			aet_applyVar = {
+				left = mil_power
+				var = aet_eliteGuards_fullcost
+			}
+			has_country_flag = aet_eliteGuards_plutoMoraleDamageReceived
+			aet_eliteGuards_plutoPersistentRequirements = yes 
+		}
+		
+		effect = {
+			aet_eliteGuards_takeFullAction = yes
+
+			aet_eliteGuards_removeCountryModifier = { name = aet_eliteGuards_plutoMoraleDamageReceived }
+
+			hidden_effect = {
+				aet_eliteGuards_removePlutoCost = yes 
+				aet_eliteGuards_getPlutoCost = yes				
+			}
+		}
+
+		ai_importance = 0
+
+		ai_will_do = {
+			factor = 0
+		}		
+	}	
+	
+	aet_eliteGuards_plutoManpower = {
+		color = { 128 0 64 }
+		potential = {
+			aet_eliteGuards_upgradeTrigger = {
+				modifier = aet_eliteGuards_plutoManpowerUsage
+			}
+		}			
+		
+		allow = { 
+			aet_applyVar = {
+				left = mil_power
+				var = aet_eliteGuards_fullcost
+			}
+			NOT = {
+				has_country_flag = aet_eliteGuards_plutoManpowerUsage
+			}
+			aet_eliteGuards_plutoPersistentRequirements = yes 
+		}
+		
+		effect = {
+			aet_eliteGuards_takeFullAction = yes
+
+			aet_eliteGuards_addCountryModifier = {
+				name = aet_eliteGuards_plutoManpowerUsage
+				
+			}	
+
+			hidden_effect = {
+				aet_eliteGuards_removePlutoCost = yes 
+				aet_eliteGuards_getPlutoCost = yes				
+			}
+		}
+
+		ai_importance = 400
+
+		ai_will_do = {
+			factor = 400
+		}		
+	}
+
+	aet_eliteGuards_plutoManpower_remove = {
+		color = { 128 0 64 }
+		potential = {
+			aet_eliteGuards_baseDecisionTrigger = yes 
+			has_country_flag = aet_eliteGuards_plutoManpowerUsage
+
+			OR = {
+				aet_is_debug = yes 
+
+				check_variable = {
+					which = aet_eliteGuards_inf_enable
+					value = 1
+				}
+			}
+		}
+		
+		allow = { 
+			aet_applyVar = {
+				left = mil_power
+				var = aet_eliteGuards_fullcost
+			}
+			has_country_flag = aet_eliteGuards_plutoManpowerUsage
+			aet_eliteGuards_plutoPersistentRequirements = yes 
+		}
+		
+		effect = {
+			aet_eliteGuards_takeFullAction = yes
+
+			aet_eliteGuards_removeCountryModifier = { name = aet_eliteGuards_plutoManpowerUsage }
+
+			hidden_effect = {
+				aet_eliteGuards_removePlutoCost = yes 
+				aet_eliteGuards_getPlutoCost = yes				
+			}
+		}
+
+		ai_importance = 0
+
+		ai_will_do = {
+			factor = 0
+		}		
+	}		
+
+
+
+	aet_eliteGuards_offensiveShock = {
+		color = { 128 0 64 }
+		potential = {
+			aet_eliteGuards_upgradeTrigger_inf = {
+				modifier = aet_eliteGuards_offensiveShockDealt
+			}
+		}			
+		
+		allow = { 
+			aet_applyVar = {
+				left = mil_power
+				var = aet_eliteGuards_fullcost
+			}
+			NOT = {
+				has_country_flag = aet_eliteGuards_offensiveShockDealt
+				has_country_flag = aet_eliteGuards_offensiveFireDealt
+			}
+			aet_eliteGuards_offensivePersistentRequirements = yes 
+		}
+		
+		effect = {
+			aet_eliteGuards_takeFullAction = yes
+
+			aet_eliteGuards_addCountryModifier = {
+				name = aet_eliteGuards_offensiveShockDealt
+				
+			}	
+		}
+
+		ai_importance = 400
+
+		ai_will_do = {
+			factor = 400
+		}		
+	}
+
+	aet_eliteGuards_offensiveShock_remove = {
+		color = { 128 0 64 }
+		potential = {
+			aet_eliteGuards_baseDecisionTrigger = yes 
+			has_country_flag = aet_eliteGuards_offensiveShockDealt
+
+			OR = {
+				aet_is_debug = yes 
+
+				check_variable = {
+					which = aet_eliteGuards_inf_enable
+					value = 1
+				}
+			}
+		}
+		
+		allow = { 
+			aet_applyVar = {
+				left = mil_power
+				var = aet_eliteGuards_fullcost
+			}
+			has_country_flag = aet_eliteGuards_offensiveShockDealt
+			aet_eliteGuards_offensivePersistentRequirements = yes 
+		}
+		
+		effect = {
+			aet_eliteGuards_takeFullAction = yes
+
+			aet_eliteGuards_removeCountryModifier = { name = aet_eliteGuards_offensiveShockDealt }
+		}
+
+		ai_importance = 0
+
+		ai_will_do = {
+			factor = 0
+		}		
+	}	
+
+	aet_eliteGuards_offensiveFire = {
+		color = { 128 0 64 }
+		potential = {
+			aet_eliteGuards_upgradeTrigger_inf = {
+				modifier = aet_eliteGuards_offensiveFireDealt
+			}
+		}		
+		
+		allow = { 
+			aet_applyVar = {
+				left = mil_power
+				var = aet_eliteGuards_fullcost
+			}
+			NOT = {
+				has_country_flag = aet_eliteGuards_offensiveShockDealt
+				has_country_flag = aet_eliteGuards_offensiveFireDealt
+			}
+			aet_eliteGuards_offensivePersistentRequirements = yes 
+		}
+		
+		effect = {
+			aet_eliteGuards_takeFullAction = yes
+
+			aet_eliteGuards_addCountryModifier = {
+				name = aet_eliteGuards_offensiveFireDealt
+				
+			}	
+		}
+
+		ai_importance = 400
+
+		ai_will_do = {
+			factor = 400
+		}		
+	}
+
+	aet_eliteGuards_offensiveFire_remove = {
+		color = { 128 0 64 }
+		potential = {
+			aet_eliteGuards_baseDecisionTrigger = yes 
+			has_country_flag = aet_eliteGuards_offensiveFireDealt
+
+			OR = {
+				aet_is_debug = yes 
+
+				check_variable = {
+					which = aet_eliteGuards_inf_enable
+					value = 1
+				}
+			}
+		}
+		
+		allow = { 
+			aet_applyVar = {
+				left = mil_power
+				var = aet_eliteGuards_fullcost
+			}
+			has_country_flag = aet_eliteGuards_offensiveFireDealt
+			aet_eliteGuards_offensivePersistentRequirements = yes 
+		}
+		
+		effect = {
+			aet_eliteGuards_takeFullAction = yes
+
+			aet_eliteGuards_removeCountryModifier = { name = aet_eliteGuards_offensiveFireDealt }
+		}
+
+		ai_importance = 0
+
+		ai_will_do = {
+			factor = 0
+		}		
+	}	
+	
+	aet_eliteGuards_offensiveAssault = {
+		color = { 128 0 64 }
+		potential = {
+			aet_eliteGuards_upgradeTrigger_inf = {
+				modifier = aet_eliteGuards_offensiveAssaultAbility
+			}
+		}			
+		
+		allow = { 
+			aet_applyVar = {
+				left = mil_power
+				var = aet_eliteGuards_fullcost
+			}
+			NOT = {
+				has_country_flag = aet_eliteGuards_offensiveAssaultAbility
+			}
+			aet_eliteGuards_offensivePersistentRequirements = yes 
+		}
+		
+		effect = {
+			aet_eliteGuards_takeFullAction = yes
+
+			aet_eliteGuards_addCountryModifier = {
+				name = aet_eliteGuards_offensiveAssaultAbility
+				
+			}	
+		}
+
+		ai_importance = 400
+
+		ai_will_do = {
+			factor = 400
+		}		
+	}
+
+	aet_eliteGuards_offensiveAssault_remove = {
+		color = { 128 0 64 }
+		potential = {
+			aet_eliteGuards_baseDecisionTrigger = yes 
+			has_country_flag = aet_eliteGuards_offensiveAssaultAbility
+
+			OR = {
+				aet_is_debug = yes 
+
+				check_variable = {
+					which = aet_eliteGuards_offensiveAssaultAbility
+					value = 1
+				}
+			}
+		}
+		
+		allow = { 
+			aet_applyVar = {
+				left = mil_power
+				var = aet_eliteGuards_fullcost
+			}
+			has_country_flag = aet_eliteGuards_offensiveAssaultAbility
+			aet_eliteGuards_offensivePersistentRequirements = yes 
+		}
+		
+		effect = {
+			aet_eliteGuards_takeFullAction = yes
+
+			aet_eliteGuards_removeCountryModifier = { name = aet_eliteGuards_offensiveAssaultAbility }
+		}
+
+		ai_importance = 0
+
+		ai_will_do = {
+			factor = 0
+		}		
+	}
+
+	aet_eliteGuards_quantitySize = {
+		color = { 128 0 64 }
+		potential = {
+			aet_eliteGuards_upgradeTrigger = {
+				modifier = aet_eliteGuards_quantitySize
+			}
+		}			
+		
+		allow = { 
+			aet_applyVar = {
+				left = mil_power
+				var = aet_eliteGuards_fullcost
+			}
+			NOT = {
+				has_country_modifier = aet_eliteGuards_quantitySize
+			}
+			aet_eliteGuards_quantityPersistentRequirements = yes 
+		}
+		
+		effect = {
+			aet_eliteGuards_takeFullAction = yes
+
+			add_country_modifier = {
+				name = aet_eliteGuards_quantitySize
+				duration = -1
+			}	
+		}
+
+		ai_importance = 400
+
+		ai_will_do = {
+			factor = 400
+		}		
+	}
+
+	aet_eliteGuards_quantitySize_remove = {
+		color = { 128 0 64 }
+		potential = {
+			aet_eliteGuards_baseDecisionTrigger = yes 
+			has_country_modifier = aet_eliteGuards_quantitySize
+		}
+		
+		allow = { 
+			aet_applyVar = {
+				left = mil_power
+				var = aet_eliteGuards_fullcost
+			}
+			has_country_modifier = aet_eliteGuards_quantitySize
+			aet_eliteGuards_quantityPersistentRequirements = yes 
+		}
+		
+		effect = {
+			aet_eliteGuards_takeFullAction = yes
+
+			remove_country_modifier = aet_eliteGuards_quantitySize
+		}
+
+		ai_importance = 0
+
+		ai_will_do = {
+			factor = 0
+		}		
+	}		
+}

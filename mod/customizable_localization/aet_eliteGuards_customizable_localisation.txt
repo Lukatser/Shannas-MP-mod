@@ -1,0 +1,156 @@
+defined_text = {
+    name = GetEliteGuardsShortDescription
+	random = no
+
+    text = {
+        localisation_key = aet_eliteGuards_shortDesc
+        trigger = {
+			always = yes 
+        }
+    }
+}
+
+defined_text = {
+    name = GetEliteGuardsLongDescription
+	random = no
+
+    text = {
+        localisation_key = aet_eliteGuards_longDesc
+        trigger = {
+			always = yes 
+        }
+    }
+}
+
+defined_text = {
+    name = GetEliteGuardsActionDesc
+	random = no
+
+    text = {
+        localisation_key = aet_eliteGuards_actionDesc
+        trigger = {
+			always = yes 
+        }
+    }
+}
+
+defined_text = {
+    name = GetEliteGuardsForcelimitDesc
+	random = no
+
+    text = {
+        localisation_key = aet_eliteGuards_forceLimitDesc
+        trigger = {
+			always = yes 
+        }
+    }
+}
+
+defined_text = {
+    name = GetEliteGuardsForcelimitDesc05
+	random = no
+
+    text = {
+        localisation_key = aet_eliteGuards_forceLimitDesc05
+        trigger = {
+			always = yes 
+        }
+    }
+}
+
+defined_text = {
+    name = GetEliteGuardsForcelimitDesc07
+	random = no
+
+    text = {
+        localisation_key = aet_eliteGuards_forceLimitDesc07
+        trigger = {
+			always = yes 
+        }
+    }
+}
+
+defined_text = {
+    name = GetEliteGuardsForcelimitDesc08
+	random = no
+
+    text = {
+        localisation_key = aet_eliteGuards_forceLimitDesc08
+        trigger = {
+			always = yes 
+        }
+    }
+}
+
+defined_text = {
+    name = GetEliteGuardsForcelimitDesc135
+	random = no
+
+    text = {
+        localisation_key = aet_eliteGuards_forceLimitDesc135
+        trigger = {
+			always = yes 
+        }
+    }
+}
+
+defined_text = {
+    name = GetEliteGuardsForcelimitDesc15
+	random = no
+
+    text = {
+        localisation_key = aet_eliteGuards_forceLimitDesc15
+        trigger = {
+			always = yes 
+        }
+    }
+}
+
+defined_text = {
+    name = GetEliteGuardsForcelimitDesc175
+	random = no
+
+    text = {
+        localisation_key = aet_eliteGuards_forceLimitDesc175
+        trigger = {
+			always = yes 
+        }
+    }
+}
+
+defined_text = {
+    name = GetEliteGuardsForcelimitDesc2
+	random = no
+
+    text = {
+        localisation_key = aet_eliteGuards_forceLimitDesc2
+        trigger = {
+			always = yes 
+        }
+    }
+}
+
+
+defined_text = {
+    name = GetEliteGuardsForcelimitDescinf
+	random = no
+
+    text = {
+        localisation_key = aet_eliteGuards_forceLimitDescinf
+        trigger = {
+			always = yes 
+        }
+    }
+}
+
+defined_text = {
+    name = GetEliteGuardsModifierDesc
+	random = no
+
+    text = {
+        localisation_key = aet_eliteGuards_modifierDesc
+        trigger = {
+			always = yes 
+        }
+    }
+}

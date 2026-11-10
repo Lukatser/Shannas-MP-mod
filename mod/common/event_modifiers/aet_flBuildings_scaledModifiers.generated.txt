@@ -1,0 +1,181 @@
+#-676902045612657636
+aet_flBuildings_land_forcelimit_5_0_p_T0 = {
+	land_forcelimit = 0.250
+}
+aet_flBuildings_land_forcelimit_5_0_p_T1 = {
+	land_forcelimit = 0.500
+}
+aet_flBuildings_land_forcelimit_10_0_p_T0 = {
+	land_forcelimit = 0.500
+}
+aet_flBuildings_land_forcelimit_10_0_p_T1 = {
+	land_forcelimit = 1.000
+}
+aet_flBuildings_land_forcelimit_15_0_p_T0 = {
+	land_forcelimit = 0.750
+}
+aet_flBuildings_land_forcelimit_15_0_p_T1 = {
+	land_forcelimit = 1.500
+}
+aet_flBuildings_land_forcelimit_20_0_p_T0 = {
+	land_forcelimit = 1.000
+}
+aet_flBuildings_land_forcelimit_20_0_p_T1 = {
+	land_forcelimit = 2.000
+}
+aet_flBuildings_land_forcelimit_25_0_p_T0 = {
+	land_forcelimit = 1.250
+}
+aet_flBuildings_land_forcelimit_25_0_p_T1 = {
+	land_forcelimit = 2.500
+}
+aet_flBuildings_land_forcelimit_30_0_p_T0 = {
+	land_forcelimit = 1.500
+}
+aet_flBuildings_land_forcelimit_30_0_p_T1 = {
+	land_forcelimit = 3.000
+}
+aet_flBuildings_land_forcelimit_35_0_p_T0 = {
+	land_forcelimit = 1.750
+}
+aet_flBuildings_land_forcelimit_35_0_p_T1 = {
+	land_forcelimit = 3.500
+}
+aet_flBuildings_land_forcelimit_40_0_p_T0 = {
+	land_forcelimit = 2.000
+}
+aet_flBuildings_land_forcelimit_40_0_p_T1 = {
+	land_forcelimit = 4.000
+}
+aet_flBuildings_land_forcelimit_45_0_p_T0 = {
+	land_forcelimit = 2.250
+}
+aet_flBuildings_land_forcelimit_45_0_p_T1 = {
+	land_forcelimit = 4.500
+}
+aet_flBuildings_land_forcelimit_50_0_p_T0 = {
+	land_forcelimit = 2.500
+}
+aet_flBuildings_land_forcelimit_50_0_p_T1 = {
+	land_forcelimit = 5.000
+}
+aet_flBuildings_land_forcelimit_55_0_p_T0 = {
+	land_forcelimit = 2.750
+}
+aet_flBuildings_land_forcelimit_55_0_p_T1 = {
+	land_forcelimit = 5.500
+}
+aet_flBuildings_land_forcelimit_60_0_p_T0 = {
+	land_forcelimit = 3.000
+}
+aet_flBuildings_land_forcelimit_60_0_p_T1 = {
+	land_forcelimit = 6.000
+}
+aet_flBuildings_land_forcelimit_65_0_p_T0 = {
+	land_forcelimit = 3.250
+}
+aet_flBuildings_land_forcelimit_65_0_p_T1 = {
+	land_forcelimit = 6.500
+}
+aet_flBuildings_land_forcelimit_70_0_p_T0 = {
+	land_forcelimit = 3.500
+}
+aet_flBuildings_land_forcelimit_70_0_p_T1 = {
+	land_forcelimit = 7.000
+}
+aet_flBuildings_land_forcelimit_75_0_p_T0 = {
+	land_forcelimit = 3.750
+}
+aet_flBuildings_land_forcelimit_75_0_p_T1 = {
+	land_forcelimit = 7.500
+}
+aet_flBuildings_naval_forcelimit_5_0_p_T0 = {
+	naval_forcelimit = 0.500
+}
+aet_flBuildings_naval_forcelimit_5_0_p_T1 = {
+	naval_forcelimit = 1.000
+}
+aet_flBuildings_naval_forcelimit_10_0_p_T0 = {
+	naval_forcelimit = 1.000
+}
+aet_flBuildings_naval_forcelimit_10_0_p_T1 = {
+	naval_forcelimit = 2.000
+}
+aet_flBuildings_naval_forcelimit_15_0_p_T0 = {
+	naval_forcelimit = 1.500
+}
+aet_flBuildings_naval_forcelimit_15_0_p_T1 = {
+	naval_forcelimit = 3.000
+}
+aet_flBuildings_naval_forcelimit_20_0_p_T0 = {
+	naval_forcelimit = 2.000
+}
+aet_flBuildings_naval_forcelimit_20_0_p_T1 = {
+	naval_forcelimit = 4.000
+}
+aet_flBuildings_naval_forcelimit_25_0_p_T0 = {
+	naval_forcelimit = 2.500
+}
+aet_flBuildings_naval_forcelimit_25_0_p_T1 = {
+	naval_forcelimit = 5.000
+}
+aet_flBuildings_naval_forcelimit_30_0_p_T0 = {
+	naval_forcelimit = 3.000
+}
+aet_flBuildings_naval_forcelimit_30_0_p_T1 = {
+	naval_forcelimit = 6.000
+}
+aet_flBuildings_naval_forcelimit_35_0_p_T0 = {
+	naval_forcelimit = 3.500
+}
+aet_flBuildings_naval_forcelimit_35_0_p_T1 = {
+	naval_forcelimit = 7.000
+}
+aet_flBuildings_naval_forcelimit_40_0_p_T0 = {
+	naval_forcelimit = 4.000
+}
+aet_flBuildings_naval_forcelimit_40_0_p_T1 = {
+	naval_forcelimit = 8.000
+}
+aet_flBuildings_naval_forcelimit_45_0_p_T0 = {
+	naval_forcelimit = 4.500
+}
+aet_flBuildings_naval_forcelimit_45_0_p_T1 = {
+	naval_forcelimit = 9.000
+}
+aet_flBuildings_naval_forcelimit_50_0_p_T0 = {
+	naval_forcelimit = 5.000
+}
+aet_flBuildings_naval_forcelimit_50_0_p_T1 = {
+	naval_forcelimit = 10.000
+}
+aet_flBuildings_naval_forcelimit_55_0_p_T0 = {
+	naval_forcelimit = 5.500
+}
+aet_flBuildings_naval_forcelimit_55_0_p_T1 = {
+	naval_forcelimit = 11.000
+}
+aet_flBuildings_naval_forcelimit_60_0_p_T0 = {
+	naval_forcelimit = 6.000
+}
+aet_flBuildings_naval_forcelimit_60_0_p_T1 = {
+	naval_forcelimit = 12.000
+}
+aet_flBuildings_naval_forcelimit_65_0_p_T0 = {
+	naval_forcelimit = 6.500
+}
+aet_flBuildings_naval_forcelimit_65_0_p_T1 = {
+	naval_forcelimit = 13.000
+}
+aet_flBuildings_naval_forcelimit_70_0_p_T0 = {
+	naval_forcelimit = 7.000
+}
+aet_flBuildings_naval_forcelimit_70_0_p_T1 = {
+	naval_forcelimit = 14.000
+}
+aet_flBuildings_naval_forcelimit_75_0_p_T0 = {
+	naval_forcelimit = 7.500
+}
+aet_flBuildings_naval_forcelimit_75_0_p_T1 = {
+	naval_forcelimit = 15.000
+}

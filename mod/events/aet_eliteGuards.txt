@@ -1,0 +1,112 @@
+namespace = aet_eliteGuards
+
+country_event = {
+	id = aet_eliteGuards.1
+	title = aet_eliteGuards.1.t
+	desc = aet_eliteGuards.1.desc
+
+	is_triggered_only = yes 
+
+	option = {
+		name = aet_eliteGuards.1.a
+
+		country_event = {
+			id = aet_eliteGuards.2
+		}
+	}
+	option = {
+		name = aet_eliteGuards.1.b
+
+		country_event = {
+			id = aet_eliteGuards.3
+		}		
+	}
+	option = {
+		name = aet_eliteGuards.1.c
+	}		
+}
+
+country_event = {
+	id = aet_eliteGuards.2
+	title = aet_eliteGuards.2.t
+	desc = aet_eliteGuards.2.desc
+
+	is_triggered_only = yes 
+
+	option = {
+		name = aet_eliteGuards.2.a
+
+		country_event = {
+			id = aet_eliteGuards.1
+		}
+	}
+	option = {
+		name = aet_eliteGuards.2.b
+
+		country_event = {
+			id = aet_eliteGuards.3
+		}		
+	}
+	option = {
+		name = aet_eliteGuards.2.c
+	}		
+}
+
+country_event = {
+	id = aet_eliteGuards.3
+	title = aet_eliteGuards.3.t
+	desc = aet_eliteGuards.3.desc
+
+	is_triggered_only = yes 
+
+	option = {
+		name = aet_eliteGuards.3.a
+
+		country_event = {
+			id = aet_eliteGuards.1
+		}
+	}
+	option = {
+		name = aet_eliteGuards.3.b
+
+		country_event = {
+			id = aet_eliteGuards.2
+		}		
+	}
+	option = {
+		name = aet_eliteGuards.3.c
+
+		country_event = {
+			id = aet_eliteGuards.4
+		}
+	}		
+	option = {
+		name = aet_eliteGuards.3.d
+	}			
+}
+
+country_event = {
+	id = aet_eliteGuards.4
+	title = aet_eliteGuards.4.t
+	desc = aet_eliteGuards.4.desc
+
+	is_triggered_only = yes 
+
+	option = {
+		name = aet_eliteGuards.4.a
+
+		country_event = {
+			id = aet_eliteGuards.1
+		}
+	}
+	option = {
+		name = aet_eliteGuards.4.b
+
+		country_event = {
+			id = aet_eliteGuards.2
+		}		
+	}
+	option = {
+		name = aet_eliteGuards.4.c
+	}		
+}
