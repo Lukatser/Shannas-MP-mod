@@ -2349,3 +2349,4 @@ Enforce Effects:
 - Established formal versioning.
 - Changed the versioning model from **commit = version** to **publication = version**.
 - Moved changelogs into this file 
+- Added a Java Pipeline for some generated Code 
