@@ -80,3 +80,8 @@
  dev_to_fl_40_50_2: "Conscription center forcelimit"
  dev_to_fl_50+: "Regimental camp forcelimit"
  dev_to_fl_50+_2: "Conscription center forcelimit"
+ force_tributary_action_button_thingy_I_guess: "Fabricate tributary"
+ force_tributary_action_button_thingy_I_guess_title: "Fabricate tributary"
+ force_tributary_action_button_thingy_I_guess_desc: "Use this to create a force tributary cb."
+ force_tributary_action_button_thingy_I_guess_tooltip: "Use this to create a force tributary cb."
+ force_tributary_action_button_thingy_I_guess_action_tooltip: "Fabricate tributary"
