@@ -717,6 +717,11 @@ province;red;green;blue;x;x
 716;102;56;64;Tannu Tuva;x
 717;230;58;128;Selenge;x
 718;102;60;192;Govi Altay;x
+719;230;62;255;Khangai;x
+720;102;64;0;Dorno Govi;x
+721;231;66;64;Dornod;x
+722;103;68;128;Chahar;x
+723;231;70;192;Xilin Gol;x
 724;103;72;255;Yakesa;x
 725;231;74;0;Hinggan;x
 726;103;76;64;Liaodong;x
@@ -2107,8 +2112,10 @@ province;red;green;blue;x;x
 2111;199;223;102;Hetu Ala;x
 2112;115;210;143;Andong;x
 2113;193;133;132;Gaizhou;x
+2114;106;172;160;Ereen;x
 2115;107;180;224;Chahar;x
 2116;108;206;240;Ih Huree;x
+2117;219;224;124;Zasagt;x
 2118;116;102;240;Urzhar;x
 2119;114;56;64;Chuguchak;x
 2120;114;115;55;Ili;x
@@ -2181,6 +2188,8 @@ province;red;green;blue;x;x
 2187;106;164;96;Sartu;x
 2188;100;102;176;Alchuka;x
 2189;110;220;160;Tsetserleg;x
+2190;205;158;124;Qaraqorum;x
+2191;108;196;160;Ejin;x
 2192;217;220;84;Korla;x
 2193;96;42;80;Govi;x
 2194;113;106;26;Kunlun;x
@@ -2736,6 +2745,7 @@ province;red;green;blue;x;x
 2744;122;48;97;Nyeongbyeon;x
 2745;134;53;105;West Gyeongsang;x
 2746;213;38;84;Vidin;x
+2747;106;186;80;Khara Narin Ula;x
 2748;80;32;128;Jianchang;x
 2749;37;208;234;Tikhvin;x
 2750;234;227;107;Plovdiv;x
@@ -4034,18 +4044,38 @@ province;red;green;blue;x;x
 4043;171;67;109;Phangwa;x
 4044;219;159;183;Ngonde;x
 4045;44;123;42;Tumbuka;x
+4046;106;189;104;Lala;x
 4047;33;220;28;Nsenga;x
 4048;225;80;159;Lomwe;x
 4049;123;127;208;Ibo;x
+4050;210;164;53;Luangwa;x
 4051;46;174;176;Ewaso Ngiro;x
 4052;28;134;135;Dawa;x
+4053;208;113;137;Turkana;x
+4054;57;112;35;Kuria;x
 4055;169;127;77;Shamba;x
+4056;234;32;70;Gogo;x
+4057;78;126;60;Nyatura;x
 4058;30;188;53;Zigua;x
 4059;215;196;132;Shaga;x
 4060;215;17;73;Kikuyu;x
+4061;141;193;135;Buzinza;x
 4062;57;208;42;Basoga;x
 4063;203;160;93;Karagwe;x
 4064;172;118;32;Buganda;x
+4065;220;52;0;Bunyoro;x
+4066;187;203;173;Ndorwe;x
+4067;133;213;62;Nduga;x
+4068;97;177;26;Buzozo;x
+4069;28;191;70;Bushubi;x
+4070;219;44;196;Nkoma;x
+4071;207;205;37;Buyogoma;x
+4072;181;113;48;Ruguru;x
+4073;227;125;26;Hehe;x
+4074;239;192;146;Pubungo;x
+4075;191;117;46;Lango;x
+4076;53;152;36;Muhambwe;x
+4077;145;76;136;Rukwa;x
 4078;219;94;40;Mayumba;x
 4079;220;158;209;Ngoyo;x
 4080;120;115;207;Soyo;x
@@ -4063,9 +4093,21 @@ province;red;green;blue;x;x
 4092;140;15;150;Rund;x
 4093;150;15;175;Lwena;x
 4094;160;15;200;Chokwe;x
+4095;170;15;100;Ishindi;x
 4096;180;15;150;Kalundwe;x
+4097;190;15;175;Luba;x
+4098;200;15;200;Upemba;x
+4099;210;15;100;Hemba;x
 4100;220;15;150;Luapala;x
 4101;230;15;175;Lualaba;x
+4102;240;15;200;Bemba;x
+4103;250;15;100;Tabwa;x
+4104;207;15;150;Lamba;x
+4105;207;15;175;Kusu;x
+4106;207;15;200;Lenje;x
+4107;197;15;100;Kanongesha;x
+4108;207;15;100;Kaonde;x
+4109;197;15;150;Lega;x
 4110;231;127;43;Sutherland;x
 4111;119;212;150;Saintonge;x
 4112;157;124;213;Aurilac;x
@@ -4177,6 +4219,7 @@ province;red;green;blue;x;x
 4218;69;105;171;Buteha;x
 4219;117;42;41;Bayan Tumen;x
 4220;44;113;137;Khiagt;x
+4221;148;144;46;Dundgovi;x
 4222;50;81;144;Ulaangom;x
 4223;209;115;2;Hetao;x
 4224;36;150;179;Tokai Sea;x
@@ -4624,10 +4667,18 @@ province;red;green;blue;x;x
 4666;147;155;192;South Hulunbur;x
 4667;209;189;232;North Setsen;x
 4668;206;72;139;West Ih Huree;x
+4669;137;60;168;East Dornogovi;x
+4670;1;153;63;West Khara Narin Ula;x
+4671;55;94;80;East Ereen;x
 4672;43;141;219;North Ju Ud;x
+4673;221;36;225;East Xilin Gol;x
 4674;77;35;96;North Jirem;x
 4675;122;140;89;Central Jirem;x
+4676;27;169;8;West Alxa;x
+4677;248;107;18;East Govi;x
+4678;147;150;150;East Qaraqorum;x
 4679;236;42;149;North Tsetserleg;x
+4680;3;38;13;East Zagast;x
 4681;215;140;255;North Kobdo;x
 4682;106;90;108;South Kobdo;x
 4683;186;144;83;East Hoboskar;x
@@ -4891,7 +4942,7 @@ province;red;green;blue;x;x
 4941;30;216;201;Lake Cahuilla;x
 4942;255;12;160;Hongkong;x
 4943;150;17;95;Cayman Islands;x
-4944;45;0;211;St. Barthï¿½lemy;x
+4944;45;0;211;St. Barthélemy;x
 4945;130;137;120;Madang;x
 4946;227;142;173;Oregon;x
 4947;99;144;32;Nevada;x

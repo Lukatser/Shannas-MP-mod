@@ -1,11 +1,11 @@
-# No previous file for KBO
+# No previous file for Yao
 
-owner = KBO
-controller = KBO
-add_core = KBO
+owner = YAO
+controller = YAO
+add_core = YAO
 culture = bilala 
 religion = sunni
-capital = "KBO"
+capital = "Yao"
 trade_goods = grain
 hre = no
 base_tax = 3 

@@ -12,7 +12,6 @@ base_production = 3
 trade_goods = grain
 base_manpower = 3
 add_core = BUR
-add_core = PRO
 fort_15th = yes
 
 

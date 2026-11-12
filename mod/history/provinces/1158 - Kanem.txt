@@ -1,8 +1,8 @@
 #1158 - Kanem
 
-owner = KBO
-controller = KBO
-add_core = KBO
+owner = YAO
+controller = YAO
+add_core = YAO
 add_core = KBO
 culture = kanuri
 religion = sunni

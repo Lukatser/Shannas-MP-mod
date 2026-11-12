@@ -1,7 +1,7 @@
 #593 - Nakhon Si Thammarat
 
-owner = AYU
-controller = AYU
+owner = LIG
+controller = LIG
 culture = central_thai
 religion = buddhism
 capital = "Nakhon Si Thammarat"

@@ -1,7 +1,7 @@
 #2391 - Thalang
 
-owner = AYU
-controller = AYU
+owner = LIG
+controller = LIG
 culture = malayan
 religion = sunni
 capital = "Thalang"

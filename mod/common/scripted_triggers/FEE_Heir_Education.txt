@@ -70,7 +70,6 @@ government_does_not_use_hereditary_heir = {
 		has_reform = states_general_reform
 		has_reform = mamluk_government
 		has_reform = elective_monarchy
-		has_reform = polish_elective_monarchy
 		has_reform = crown_of_saint_wenceslaus ###Governments Expanded
 		has_reform = empire_of_japan_reform ###Governments Expanded
 		has_reform = rum_eagle_reform ###Governments Expanded

@@ -1,8 +1,8 @@
 
 
-owner = KNG
-controller = KNG
-add_core = KNG
+owner = BON
+controller = BON
+add_core = BON
 is_city = yes
 culture = aka 
 religion = shamanism #Fetishism

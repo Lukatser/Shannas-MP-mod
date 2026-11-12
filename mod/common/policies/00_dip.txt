@@ -2868,15 +2868,15 @@ admin_exploitation = {
 	monarch_power = DIP
 
 	potential = {
-		has_idea_group = administrative_ideas
+		has_idea_group = admin_ideas
 		has_idea_group = exploitation_ideas
 	}
 	allow = {
-		full_idea_group = administrative_ideas
+		full_idea_group = admin_ideas
 		full_idea_group = exploitation_ideas
 	}
 	
-	reduced_liberty_desire_on_other_continent = 15
+	reduced_liberty_desire_on_other_continent = -0.15
 
 	effect = {}
 	removed_effect = {}

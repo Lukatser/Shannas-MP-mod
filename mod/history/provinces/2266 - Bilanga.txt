@@ -1,8 +1,8 @@
 # No previous file for Bilanga
 
-owner = KNG
-controller = KNG
-add_core = KNG
+owner = WGD
+controller = WGD
+add_core = WGD
 is_city = yes
 culture = mossi 
 religion = shamanism #Fetishism

@@ -555,21 +555,21 @@ grandeur_ideas_6_4 = {
 }
 
 aet_ideas_nationalismProvinceModifier_0_controlled = {
-	local_defensiveness = 0.5
+	defensiveness = 0.5
 	local_tax_modifier = 0.35
 }
 aet_ideas_nationalismProvinceModifier_0_uncontrolled = {
-	local_defensiveness = -0.33
+	defensiveness = -0.33
 	local_tax_modifier = 0.35
 }
 aet_ideas_nationalismProvinceModifier_1_controlled = {
-	local_defensiveness = 0.5
+	defensiveness = 0.5
 	local_hostile_movement_speed = -0.25
 	local_tax_modifier = 0.35
 	trade_goods_size_modifier = 0.35
 }
 aet_ideas_nationalismProvinceModifier_1_uncontrolled = {
-	local_defensiveness = -0.33
+	defensiveness = -0.33
 	local_hostile_movement_speed = 0.25
 	local_tax_modifier = 0.35
 	trade_goods_size_modifier = 0.35

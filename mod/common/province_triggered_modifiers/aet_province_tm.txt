@@ -1,10 +1,7 @@
 aet_englandAngevinBuffs = {
 	potential = {
-		owner = {
-			OR = {
-				tag = ENG
-				was_tag = ENG 
-			}
+		ENG = {
+			not = { has_country_flag = eng_took_gbr_branch }
 		}
 	}
 

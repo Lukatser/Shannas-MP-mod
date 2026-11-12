@@ -16,7 +16,6 @@ on_bankruptcy = {
 on_yearly_pulse = {
 	if = {
 		limit = {
-			ai = no 
 			has_idea_group = grandeur_ideas
 		}
 
@@ -81,15 +80,11 @@ on_colonial_liberation = {
 }
 
 on_dip_tech_taken = {
-	if = {
-		limit = {
-			ai = no 
-		}
-		aet_ideas_applyTradeRangeModifier = yes
-	}
+	aet_ideas_applyTradeRangeModifier = yes 
 }
 
 on_loan_repaid = {
+	on_loan_repaid_estate_privileges_effect = yes
 	if = {
 		limit = { 
 			THIS = {
@@ -102,52 +97,17 @@ on_loan_repaid = {
 
 # There might be some duplication here 
 on_province_culture_changed = {
-	if = {
-		limit = {
-			owner = {
-				has_idea_group = nationalism_ideas
-			}
-		}
-		aet_ideas_applyNationalismModifier = yes
-	}
+	aet_ideas_applyNationalismModifier = yes
 }
 on_province_culture_converted = {
-	if = {
-		limit = {
-			owner = {
-				has_idea_group = nationalism_ideas
-			}
-		}
-		aet_ideas_applyNationalismModifier = yes
-	}
+	aet_ideas_applyNationalismModifier = yes
 }
 on_province_owner_change = {
-	if = {
-		limit = {
-			owner = {
-				has_idea_group = nationalism_ideas
-			}
-		}
-		aet_ideas_applyNationalismModifier = yes
-	}
+	aet_ideas_applyNationalismModifier = yes
 }
 on_siege_lost_province = {
-	if = {
-		limit = {
-			owner = {
-				has_idea_group = nationalism_ideas
-			}
-		}
-		aet_ideas_applyNationalismModifier = yes
-	}
+	aet_ideas_applyNationalismModifier = yes
 }
 on_siege_won_province = {
-	if = {
-		limit = {
-			owner = {
-				has_idea_group = nationalism_ideas
-			}
-		}
-		aet_ideas_applyNationalismModifier = yes
-	}
+	aet_ideas_applyNationalismModifier = yes
 }

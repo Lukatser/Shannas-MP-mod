@@ -1,8 +1,8 @@
 # No previous file for Tenkodogo
 
-owner = KNG
-controller = KNG
-add_core = KNG
+owner = WGD
+controller = WGD
+add_core = WGD
 add_core = TEN
 is_city = yes
 culture = mossi 

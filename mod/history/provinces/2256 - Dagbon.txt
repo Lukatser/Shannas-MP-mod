@@ -1,8 +1,8 @@
 # No previous file for Dagbon
 
-owner = OYO
-controller = OYO
-add_core = OYO
+owner = DGB
+controller = DGB
+add_core = DGB
 is_city = yes
 culture = dagomba
 religion = shamanism #Fetishism
