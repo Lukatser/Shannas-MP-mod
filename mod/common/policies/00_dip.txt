@@ -2050,6 +2050,31 @@ the_education_act = {
 	}
 }
 
+nationalism_infrastructure = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = nationalism_ideas
+		has_idea_group = infrastructure_ideas
+	}
+	allow = {
+		full_idea_group = nationalism_ideas
+		full_idea_group = infrastructure_ideas
+	}
+	
+	build_cost = -0.15
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { production_income_percentage = 0.1 }
+		}					
+	}
+}
+
 grandeur_humanist = {
 	monarch_power = DIP
 
@@ -2868,15 +2893,15 @@ admin_exploitation = {
 	monarch_power = DIP
 
 	potential = {
-		has_idea_group = admin_ideas
+		has_idea_group = administrative_ideas
 		has_idea_group = exploitation_ideas
 	}
 	allow = {
-		full_idea_group = admin_ideas
+		full_idea_group = administrative_ideas
 		full_idea_group = exploitation_ideas
 	}
 	
-	reduced_liberty_desire_on_other_continent = -0.15
+	reduced_liberty_desire_on_other_continent = 15
 
 	effect = {}
 	removed_effect = {}

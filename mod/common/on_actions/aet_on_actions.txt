@@ -1,6 +1,22 @@
+on_startup = {
+	if = {
+		limit = {
+			NOT = { is_year = 1445 }
+		}
+		aet_removeUselessTags = yes 
+
+		if = {
+			limit = {
+				BUR = { ai = yes }
+			}
+			aet_burgundianRestoration = yes 
+		}
+	}
+}
 on_yearly_pulse = {
 	if = {
 		limit = {
+			ai = no 
 			has_country_flag = aet_eliteGuards_commonSetupDone
 			NOT = { check_variable = {
 				which = aet_eliteGuards_actions_bank
@@ -40,6 +56,7 @@ on_monthly_pulse = {
 on_five_year_pulse = {
 	if = {
 		limit = {
+			ai = no 
 			aet_eliteGuards_anyEnabled = yes 
 		}
 		aet_eliteGuards_refreshAll = yes 
@@ -48,48 +65,93 @@ on_five_year_pulse = {
 
 
 on_five_year_pulse_2 = {
-	every_owned_province = {
-		aet_flBuildings_land_forcelimit_removeAllModifiers = yes
-		aet_flBuildings_refresh_land_forcelimit = yes
-		aet_flBuildings_naval_force_limit_removeAllModifiers = yes
-		aet_flBuildings_refresh_naval_forcelimit = yes
+	if = {
+		limit = {
+			ai = no 
+		}
+		every_owned_province = {
+			aet_flBuildings_land_forcelimit_removeAllModifiers = yes
+			aet_flBuildings_refresh_land_forcelimit = yes
+			aet_flBuildings_naval_force_limit_removeAllModifiers = yes
+			aet_flBuildings_refresh_naval_forcelimit = yes
+		}		
 	}
 }
 
 on_concentrate_development = {
-	aet_flBuildings_refresh_land_forcelimit = yes 
-	aet_flBuildings_refresh_naval_forcelimit = yes
+	if = {
+		limit = {
+			owner = { ai = no }
+		}
+		aet_flBuildings_refresh_land_forcelimit = yes 
+		aet_flBuildings_refresh_naval_forcelimit = yes		
+	}
 }
 
 on_dip_development = {
-	aet_flBuildings_refresh_land_forcelimit = yes 
-	aet_flBuildings_refresh_naval_forcelimit = yes
+	if = {
+		limit = {
+			owner = { ai = no }
+		}
+		aet_flBuildings_refresh_land_forcelimit = yes 
+		aet_flBuildings_refresh_naval_forcelimit = yes		
+	}
 }
 on_dip_exploited = {
-	aet_flBuildings_refresh_land_forcelimit = yes 
-	aet_flBuildings_refresh_naval_forcelimit = yes
+	if = {
+		limit = {
+			owner = { ai = no }
+		}
+		aet_flBuildings_refresh_land_forcelimit = yes 
+		aet_flBuildings_refresh_naval_forcelimit = yes		
+	}
 }
 
 on_mil_development = {
-	aet_flBuildings_refresh_land_forcelimit = yes 
-	aet_flBuildings_refresh_naval_forcelimit = yes
+	if = {
+		limit = {
+			owner = { ai = no }
+		}
+		aet_flBuildings_refresh_land_forcelimit = yes 
+		aet_flBuildings_refresh_naval_forcelimit = yes		
+	}
 }
 on_mil_exploited = {
-	aet_flBuildings_refresh_land_forcelimit = yes 
-	aet_flBuildings_refresh_naval_forcelimit = yes
+	if = {
+		limit = {
+			owner = { ai = no }
+		}
+		aet_flBuildings_refresh_land_forcelimit = yes 
+		aet_flBuildings_refresh_naval_forcelimit = yes		
+	}
 }
 
 on_adm_development = {
-	aet_flBuildings_refresh_land_forcelimit = yes 
-	aet_flBuildings_refresh_naval_forcelimit = yes
+	if = {
+		limit = {
+			owner = { ai = no }
+		}
+		aet_flBuildings_refresh_land_forcelimit = yes 
+		aet_flBuildings_refresh_naval_forcelimit = yes		
+	}
 }
 on_adm_exploited = {
-	aet_flBuildings_refresh_land_forcelimit = yes 
-	aet_flBuildings_refresh_naval_forcelimit = yes
+	if = {
+		limit = {
+			owner = { ai = no }
+		}
+		aet_flBuildings_refresh_land_forcelimit = yes 
+		aet_flBuildings_refresh_naval_forcelimit = yes		
+	}
 }
 
 on_yearly_pulse_2 = {
-	aet_ages_refreshPulse = yes 
+	if = {
+		limit = {
+			ai = no 
+		}
+		aet_ages_refreshPulse = yes 
+	}
 }
 
 on_new_age = {
