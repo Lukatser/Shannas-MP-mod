@@ -1,9 +1,9 @@
 #1137 - Wagadugi
 
 #Senior of the Mossi Kingdoms centered here
-owner = WGD
-controller = WGD
-add_core = WGD
+owner = KNG
+controller = KNG
+add_core = KNG
 is_city = yes
 culture = mossi #mossi
 religion = shamanism #Fetishism

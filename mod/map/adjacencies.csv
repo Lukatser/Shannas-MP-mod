@@ -112,4 +112,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 3190;667;sea;1371;-1;-1;-1;-1;Hong Kong-Canton
 3190;668;sea;1371;-1;-1;-1;-1;Hong Kong-Macau
 235;87;sea;1271;-1;-1;-1;-1;Dover Calais
+4100;4044;land;4101;-1;-1;-1;-1;Kongo to Nortern East Africa
+4100;1190;land;4101;-1;-1;-1;-1;Kongo to Southern East Africa
+4100;4090;land;4101;-1;-1;-1;-1;Kongo to Nortern Kongo
+4100;4094;land;4101;-1;-1;-1;-1;Kongo to Southern Kongo
 -1;-1;;-1;-1;-1;-1;-1;-1;

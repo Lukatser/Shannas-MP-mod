@@ -1,8 +1,8 @@
 #1136 - Gurma
 
-owner = GUR
-controller = GUR
-add_core = GUR
+owner = OYO
+controller = OYO
+add_core = OYO
 is_city = yes
 culture = mossi #mossi
 religion = shamanism #Fetishism

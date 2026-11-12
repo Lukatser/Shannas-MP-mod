@@ -1,8 +1,8 @@
 # No previous file for Haayre
 
-owner = YAT
-controller = YAT
-add_core = YAT
+owner = SON
+controller = SON
+add_core = SON
 is_city = yes
 culture = bozo 
 religion = shamanism #Fetishism
@@ -16,7 +16,3 @@ base_manpower = 1
 
 
 discovered_by = sub_saharan
-
-
-1484.1.1 = { owner = SON controller = SON add_core = SON } #Conquered by Sunni Ali Ber of Songhai
-1591.3.15 = { owner = YAT controller = YAT add_core = YAT } #Collapse of Songhai in the wake of Tondibi

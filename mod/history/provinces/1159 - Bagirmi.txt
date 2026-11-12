@@ -1,8 +1,8 @@
 #1159 - Bagirmi
 
-owner = YAO
-controller = YAO
-add_core = YAO
+owner = KBO
+controller = KBO
+add_core = KBO
 culture = bilala #bagirmi
 religion = shamanism #Fetishism
 capital = "Massenya"

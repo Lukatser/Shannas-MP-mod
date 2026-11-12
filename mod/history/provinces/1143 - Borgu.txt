@@ -1,8 +1,8 @@
 #1143 - Borgu
 
-owner = GUR
-controller = GUR
-add_core = GUR
+owner = OYO
+controller = OYO
+add_core = OYO
 is_city = yes
 culture = dagomba 
 religion = shamanism #Fetishism

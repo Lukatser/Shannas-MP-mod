@@ -2772,7 +2772,7 @@ xilin_gol_area = {
 
 altai_sayan_area = { #3
 	color = { 203 84 84 }
-	718 2117 4222 4680 4682
+	718 4222 4682
 }
 
 tannu_uriankhai_area = {#3

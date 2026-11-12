@@ -1,8 +1,8 @@
 # 2265 - Liptako
 
-owner = YAT
-controller = YAT
-add_core = YAT
+owner = SON
+controller = SON
+add_core = SON
 add_core = ZND
 is_city = yes
 culture = mossi
