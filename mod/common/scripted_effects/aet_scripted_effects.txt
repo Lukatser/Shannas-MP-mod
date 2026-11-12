@@ -2402,6 +2402,27 @@ aet_unifyAICultureGroup = {
 		}
 	}
 }
+aet_unifyAICulture = {
+	if = {
+		limit = {
+			NOT = {
+				any_country = {
+					culture = $culture$
+					ai = no
+				}
+			}
+		}
+		every_country = {
+			limit = {
+				culture_group = $culture$
+			}
+			every_owned_province = {
+				cede_province = $tag$
+				add_core = $tag$
+			}
+		}
+	}
+}
 aet_burgundianRestoration = {
 	BUR = {
 		release = LUX

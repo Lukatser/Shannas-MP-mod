@@ -2363,6 +2363,7 @@ Enforce Effects:
 - Fixed a bug where low crownland only applied overseas liberty desire 
 - Fixed a localisation error in the Elite Guards short description 
 - Fixed a legacy bug where polish rulers did not have any education 
+- Fixed multiple bugs regarding policies
 
 ### Performance
 

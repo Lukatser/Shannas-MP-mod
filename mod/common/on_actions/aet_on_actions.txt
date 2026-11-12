@@ -3,7 +3,7 @@ on_startup = {
 		limit = {
 			NOT = { is_year = 1445 }
 		}
-		aet_removeUselessTags = yes 
+		#aet_removeUselessTags = yes 
 
 		if = {
 			limit = {

@@ -289,4 +289,18 @@ country_decisions = {
 			aet_eliteGuards_refreshScaledModifiers = yes
 		}
 	}			
+	aet_debug_removeUselessTags = {
+		potential = {
+			ai = no 
+			NOT = { is_year = 1445 }
+		}
+
+		allow = {
+			NOT = { is_year = 1445 }
+		}
+
+		effect = {
+			aet_removeUselessTags = yes 
+		}
+	}
 }
