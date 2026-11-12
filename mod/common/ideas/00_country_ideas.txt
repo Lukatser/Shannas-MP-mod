@@ -1670,7 +1670,7 @@ BRA_ideas = {
 
 POR_ideas = {
 	start = {
-		colonists = 1
+		movement_speed_in_fleet_modifier = 1
 		infantry_power = 0.2
 	}
 	
@@ -1684,7 +1684,7 @@ POR_ideas = {
 	free = yes		#will be added at load.
 	
 	legacy_of_the_navigator = {
-		movement_speed_in_fleet_modifier = 1
+		naval_morale = 0.1
 		range = 0.20
 	}
 	afonsine_ordinances = {
@@ -1696,6 +1696,7 @@ POR_ideas = {
 	}
 	land_before_faith = {
 		global_colonial_growth = 15
+		colonists = 1
 	}
 	the_bandeirantes = {
 		trade_efficiency = 0.15
