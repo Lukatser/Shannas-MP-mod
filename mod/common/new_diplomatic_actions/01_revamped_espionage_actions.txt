@@ -120,10 +120,16 @@ infiltrate_treasury_action = {
 	is_allowed = { 
 		FROM = {
 			NOT = { has_country_modifier = lockdown_national_treasury }
+			OR = {
+				had_country_flag = { flag = esp_treasury_target_cd days = 3650 }
+				NOT = {
+					has_country_flag = esp_treasury_target_cd
+				}
+			}
 		} 
 		has_spy_network_in = { who = FROM value = 45 } 
 		dip_power = 100  
-		spy_ideas = 2
+		full_idea_group = spy_ideas
 		ROOT = { 
 			OR = { 
 				had_country_flag = { flag = esp_treasury_cd days = 1825 }
@@ -136,6 +142,10 @@ infiltrate_treasury_action = {
 	}
 	on_accept = { 
 		hidden_effect = {
+			FROM = {
+				clr_country_flag = esp_treasury_target_cd
+				set_country_flag = esp_treasury_target_cd
+			}
 			FROM = { set_country_flag = esp_treasury_target save_global_event_target_as = esp_treasury_pending_target }
 			country_event = { id = revamped_espionage.207 }
 			ROOT = { clr_country_flag = esp_treasury_cd set_country_flag = esp_treasury_cd }

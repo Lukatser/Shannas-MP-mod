@@ -64,8 +64,8 @@ These are updates of a size, that warrant a new high level version. Usually only
 
 ## Patches
 
-- **Reduction of minimal relations for Alliances** - *Priority 8*
 - **Remove dishonored CTA penalties** - *Priority 6*
 - **Rejectable Advisor Events** - *Priority 5*
 - **remove dev cost if vassal (player only)** - *Priority 5*
-- **Fix Polish Elections not giving Heir Education** - *Priority 7* 
+- **Easter Egg for disbanded Byzantine Navy** - *Priority 1* 
+- **Fix Revolution Handling of Elite Guards** - *Priority 7* 

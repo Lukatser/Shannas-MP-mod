@@ -116,3 +116,7 @@ aet_executeInEventTarget = {
 aet_eliteGuards_refreshScaledModifiers = {}
 aet_eliteGuards_removeBuffModifiers = {}
 aet_eliteGuards_cleanUpBuffFlags = {}
+aet_flBuildings_land_forcelimit_removeAllModifiers = {}
+aet_flBuildings_refresh_land_forcelimit = {}
+aet_flBuildings_naval_force_limit_removeAllModifiers = {}
+aet_flBuildings_refresh_naval_forcelimit = {}

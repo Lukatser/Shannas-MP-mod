@@ -3307,7 +3307,7 @@ modernisation_ideas = {
 			aet_is_debug = yes
 			AND = {
 				OR = {
-					army_professionalism = 0.4
+					army_professionalism = 0.2
 					mil_tech = 12
 					full_idea_group = economic_ideas
 				}

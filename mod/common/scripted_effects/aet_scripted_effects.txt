@@ -2337,3 +2337,118 @@ aet_ages_removeAgeTimedModifiers_age_of_revolutions = {
 	remove_country_modifier = aet_ages_aorv_russianEmpire
 	remove_country_modifier = aet_ages_aorv_universities
 }
+
+aet_removeUselessTags = {
+	aet_removeNonPlayerRegion = { region = manchuria_region }
+	aet_removeNonPlayerRegion = { region = mongolia_region }
+	aet_removeNonPlayerRegion = { region = east_siberia_region }
+	aet_removeNonPlayerRegion = { region = west_siberia_region }
+	aet_removeNonPlayerRegion = { region = oceanea_region }
+	aet_removeNonPlayerRegion = { region = australia_region }
+	aet_removeNonPlayerRegion = { region = moluccas_region }
+	aet_removeNonPlayerRegion = { region = ural_area }
+	aet_removeNonPlayerRegion = { region = aqmola_area }
+	aet_removeNonPlayerRegion = { region = hokkaido_area }
+	aet_removeNonPlayerRegion = { region = tay_nguyen_area }
+	aet_removeNonPlayerRegion = { region = central_africa_region }
+	aet_unifyAICultureGroup = {
+		culture_group = andean_group
+		tag = CSU
+	}
+	aet_unifyAICultureGroup = {
+		culture_group = kongo_group
+		tag = KON
+	}
+	aet_unifyAICultureGroup = {
+		culture_group = japanese_g
+		tag = ASK
+	}			
+}
+aet_removeNonPlayerRegion = {
+	if = {
+		limit = {
+			NOT = {
+				$region$ = {
+					owner = {
+						ai = no 
+					}
+				}
+			}
+		}
+
+		$region$ = {
+			decolonize = yes
+		}
+	}
+}
+aet_unifyAICultureGroup = {
+	if = {
+		limit = {
+			NOT = {
+				any_country = {
+					culture_group = $culture_group$
+					ai = no
+				}
+			}
+		}
+		every_country = {
+			limit = {
+				culture_group = $culture_group$
+			}
+			every_owned_province = {
+				cede_province = $tag$
+				add_core = $tag$
+			}
+		}
+	}
+}
+aet_unifyAICulture = {
+	if = {
+		limit = {
+			NOT = {
+				any_country = {
+					culture = $culture$
+					ai = no
+				}
+			}
+		}
+		every_country = {
+			limit = {
+				culture_group = $culture$
+			}
+			every_owned_province = {
+				cede_province = $tag$
+				add_core = $tag$
+			}
+		}
+	}
+}
+aet_burgundianRestoration = {
+	BUR = {
+		release = LUX
+		release = NEV 
+		release = HAI 
+		release = FLA
+
+		create_subject = {
+			subject_type = vassal
+			subject = LUX 
+		}
+		create_subject = {
+			subject_type = vassal
+			subject = NEV  
+		}
+		create_subject = {
+			subject_type = vassal
+			subject = HAI 
+		}
+		create_subject = {
+			subject_type = personal_union
+			subject = FLA 
+		}				
+
+		189 = { cede_province = LOR }
+		187 = { cede_province = PRO }
+		4766 = { cede_province = PRO }
+	}
+}

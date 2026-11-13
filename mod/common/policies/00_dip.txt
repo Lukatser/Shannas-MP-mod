@@ -2075,31 +2075,6 @@ nationalism_infrastructure = {
 	}
 }
 
-grandeur_humanist = {
-	monarch_power = DIP
-
-	potential = {
-		has_idea_group = grandeur_ideas
-		has_idea_group = humanist_ideas
-	}
-	allow = {
-		full_idea_group = grandeur_ideas
-		full_idea_group = humanist_ideas
-	}
-	
-	num_accepted_cultures = 2
-
-	effect = {}
-	removed_effect = {}
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = { production_income_percentage = 0.1 }
-		}					
-	}
-}
-
 grandeur_expansion = {
 	monarch_power = DIP
 
@@ -2265,32 +2240,6 @@ decentralised_grandeur = {
 	
 	diplomatic_upkeep = 1
 	diplomatic_reputation = 1
-
-	effect = {}
-	removed_effect = {}
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = { production_income_percentage = 0.1 }
-		}			
-	}
-}
-
-decentralised_nationalism = {
-	monarch_power = DIP
-
-	potential = {
-		has_idea_group = decentralised_ideas
-		has_idea_group = nationalism_ideas
-	}
-	allow = {
-		full_idea_group = decentralised_ideas
-		full_idea_group = nationalism_ideas
-	}
-	
-	relation_with_same_culture = 25
-	relation_with_same_culture_group = 25
 
 	effect = {}
 	removed_effect = {}
@@ -2893,15 +2842,15 @@ admin_exploitation = {
 	monarch_power = DIP
 
 	potential = {
-		has_idea_group = admin_ideas
+		has_idea_group = administrative_ideas
 		has_idea_group = exploitation_ideas
 	}
 	allow = {
-		full_idea_group = admin_ideas
+		full_idea_group = administrative_ideas
 		full_idea_group = exploitation_ideas
 	}
 	
-	reduced_liberty_desire_on_other_continent = -0.15
+	reduced_liberty_desire_on_other_continent = 15
 
 	effect = {}
 	removed_effect = {}
@@ -2953,31 +2902,6 @@ expansion_exploitation = {
 	
 	vassal_forcelimit_bonus = 0.2
 	vassal_naval_forcelimit_bonus 0.2
-
-	effect = {}
-	removed_effect = {}
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = { production_income_percentage = 0.1 }
-		}			
-	}
-}
-
-expansion_grandeur = {
-	monarch_power = DIP
-
-	potential = {
-		has_idea_group = expansion_ideas
-		has_idea_group = grandeur_ideas
-	}
-	allow = {
-		full_idea_group = expansion_ideas
-		full_idea_group = grandeur_ideas
-	}
-	
-	colonist_placement_chance = 0.05
 
 	effect = {}
 	removed_effect = {}

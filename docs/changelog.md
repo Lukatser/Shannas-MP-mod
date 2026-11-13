@@ -6,6 +6,7 @@ There have been tries to establish proper changelogs before but those usually we
 Changelogs are also seperately saved in the folder changelogs. These are merely provided as utility for the discord server, and might be shorter than the changelogs in this file. 
 
 Versions contained in this file (descending):
+ - [v4.0.0-rc.2](#v400-rc2--back-to-top) *(12.11.2026)*
  - [v4.0.0-rc.1](#v400-rc1--back-to-top) *(08.11.2026)*
  - [v3.25.2](#v3252--back-to-top) *(22.10.2026)*
  - [v3.25.1](#v3251--back-to-top) *(06.10.2026)*
@@ -672,6 +673,8 @@ New options:
 
 
 ## v4.0.0-rc.1 <small>[↑ Back to top](#changelogs)</small>
+
+> Addendum: There was no changelog for versions 4.0.0-alpha.0 to 4.0.0-alpha.6
 
 ### Ideas Rework
 
@@ -2350,3 +2353,29 @@ Enforce Effects:
 - Changed the versioning model from **commit = version** to **publication = version**.
 - Moved changelogs into this file 
 - Added a Java Pipeline for some generated Code 
+
+## v4.0.0-rc.2 <small>[↑ Back to top](#changelogs)</small>
+
+### Bugfixes 
+
+- Fixed a bug where nationalism ideas applied global modifiers instead of local modifiers 
+- Fixed a bug where some England specific buffs got applied to not England 
+- Fixed a bug where low crownland only applied overseas liberty desire 
+- Fixed a localisation error in the Elite Guards short description 
+- Fixed a legacy bug where polish rulers did not have any education 
+- Fixed multiple bugs regarding policies
+
+### Performance
+
+- Made AI not tick some scripts it doesn't need 
+- Increased the size of some wastelands
+- Removed some tags when the entire region is AI led
+- Consolidated some tags when the entire region / culture group is AI led 
+
+### Adjustments 
+
+- Removed the Stalemate Decisions 
+- Reestablished old Burgundy when AI led 
+- Changed some values / triggers within the steal money spy action 
+- Slightly Nerfed Nationalism Ideas 
+- Nerfed Portuguese Ideas by reordering them  
