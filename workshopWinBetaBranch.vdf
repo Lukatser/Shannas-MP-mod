@@ -2,8 +2,8 @@
 {
     "appid"              "236850"
     "publishedfileid"    "3706222082"
-    "contentfolder"      "E:\\github\\Lukat-MP-mod\\mod"
-    "previewfile"        "E:\\github\\Lukat-MP-mod\\mod\\thumbnail.png"
+    "contentfolder"      "C:\\Users\\Simon\\Documents\\Paradox Interactive\\Europa Universalis IV\\mod\\shannaMod\\mod"
+    "previewfile"        "C:\\Users\\Simon\\Documents\\Paradox Interactive\\Europa Universalis IV\\mod\\shannaMod\\mod\\thumbnail.png"
     "title"              "Shanna mp beta"
     "description"        "Beta version of the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3342829622]Shanna's mp mod[/url]."
     "changenote"         "see docs/changelogs.md"
