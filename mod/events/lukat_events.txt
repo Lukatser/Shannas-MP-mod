@@ -1023,6 +1023,21 @@ country_event = {
 		override_country_name = BRITANICA_NAME
 	}
 	option = {
+		name = rename_country_england.a
+		trigger = { tag = ENG }
+		override_country_name = KINGDOM_OF_ENGELOND_NAME
+	}
+	option = {
+		name = rename_country_england.b
+		trigger = { tag = ENG }
+		override_country_name = REGNUM_ANGLIAE_NAME
+	}
+	option = {
+		name = rename_country_england.c
+		trigger = { tag = ENG }
+		override_country_name = REALME_DENGLETERRE_NAME
+	}
+	option = {
 		name = rename_country_holy_roman_empire.c
 		trigger = { tag = HLR }
 		override_country_name = HOLY_ROMAN_REPUBLIC_NAME
@@ -1086,6 +1101,16 @@ country_event = {
 		name = rename_country_poland.c
 		trigger = { tag = POL }
 		override_country_name = DESOLATE_EASTERN_KINGDOM_NAME
+	}
+	option = {
+		name = rename_country_poland.d
+		trigger = { tag = POL }
+		override_country_name = RZECZPOSPOLITA_OBOJGA_NARODOW_NAME
+	}
+	option = {
+		name = rename_country_poland.e
+		trigger = { tag = POL }
+		override_country_name = SLASK_NAME
 	}
 	option = {
 		name = rename_country_commonwealth.a
@@ -1873,6 +1898,16 @@ country_event = {
 		override_country_name = REGNUM_PORTUGALLIAE_ET_ALGARBIAE_NAME
 	}
 	option = {
+		name = rename_country_portugal.g
+		trigger = { tag = POR }
+		override_country_name = IMPERIO_PORTUGUES_E_BRASILEIRO_NAME
+	}
+	option = {
+		name = rename_country_portugal.h
+		trigger = { tag = POR }
+		override_country_name = THE_ISLAMIC_KINGDOM_IN_PORTUGAL_NAME
+	}
+	option = {
 		name = rename_country_prussia.a
 		trigger = { tag = PRU }
 		override_country_name = BRANDENBURG_PREUSSen_NAME
@@ -1976,6 +2011,26 @@ country_event = {
 		name = rename_country_morocco.f
 		trigger = { tag = MOR }
 		override_country_name = DAR_AL_MAGHRIB_NAME
+	}
+	option = {
+		name = rename_country_morocco.g
+		trigger = { tag = MOR }
+		override_country_name = MOROCCA_COLA_NAME
+	}
+	option = {
+		name = rename_country_morocco.h
+		trigger = { tag = MOR }
+		override_country_name = AL_MOROCC_QAEDA_NAME
+	}
+	option = {
+		name = rename_country_morocco.i
+		trigger = { tag = MOR }
+		override_country_name = UWU_MAYYAD_CALIPHATE_NAME
+	}
+	option = {
+		name = rename_country_morocco.j
+		trigger = { tag = MOR }
+		override_country_name = THE_TRANS_SAHARAN_EMPIRE_NAME
 	}
 	option = {
 		name = rename_country_bavaria.a
