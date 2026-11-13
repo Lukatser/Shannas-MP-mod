@@ -2377,3 +2377,5 @@ Enforce Effects:
 - Removed the Stalemate Decisions 
 - Reestablished old Burgundy when AI led 
 - Changed some values / triggers within the steal money spy action 
+- Slightly Nerfed Nationalism Ideas 
+- Nerfed Portuguese Ideas by reordering them  
