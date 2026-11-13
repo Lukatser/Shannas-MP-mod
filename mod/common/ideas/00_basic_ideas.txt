@@ -2291,8 +2291,18 @@ nationalism_ideas = {
 	}
 
 	nationalism_ideas_1 = {
-		culture_conversion_cost = -0.25
 		culture_conversion_time = -0.4
+		effect = {
+			hidden_effect = {
+				aet_ideas_applyNationalismModifierGlobal = yes 
+			}
+		}
+
+		removed_effect = {
+			hidden_effect = {
+				aet_ideas_applyNationalismModifierGlobal = yes 
+			}
+		}		
 	}
 
 	nationalism_ideas_2 = {

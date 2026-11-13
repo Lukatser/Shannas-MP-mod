@@ -137,7 +137,7 @@
  nationalism_ideas_0:0 "National Resilience"
  nationalism_ideas_0_desc:0 "A people united by a common national identity can endure hardships that would break a less cohesive society. The strength of our national spirit allows us to recover from the exhaustion of war more quickly."
  nationalism_ideas_1:0 "Cultural Unity"
- nationalism_ideas_1_desc:0 "The nation must possess a common identity if it is to remain united. Promoting our national culture and integrating territories inhabited by other cultures can be accomplished with less expense and in less time."
+ nationalism_ideas_1_desc:0 "The nation must possess a common identity if it is to remain united. Promoting our national culture and integrating territories inhabited by other cultures can be accomplished with less expense and in less time.\n\nIn Primary Culture Group Provinces:\n    - Culture Conversion Cost: §G-25%§!"
  nationalism_ideas_2:0 "National Mobilisation"
  nationalism_ideas_2_desc:0 "Every citizen has a role to play in defending the nation. A strong sense of national duty allows us to maintain our armed forces at a lower cost."
  nationalism_ideas_3:0 "Defence of the Homeland"

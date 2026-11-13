@@ -575,6 +575,11 @@ aet_ideas_nationalismProvinceModifier_1_uncontrolled = {
 	trade_goods_size_modifier = 0.35
 }
 
+aet_ideas_nationalismCultureGroup = {
+	local_culture_conversion_cost = -0.25
+	local_culture_conversion_time = -0.15
+}
+
 harmonized_buddhism_group = {
 	infantry_power = 0.10
 	idea_cost = -0.10

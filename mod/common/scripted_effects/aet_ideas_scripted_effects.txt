@@ -1311,6 +1311,18 @@ aet_ideas_grandeurRemoveAll = {
 }
 
 aet_ideas_applyNationalismModifier = {
+	remove_province_modifier = aet_ideas_nationalismCultureGroup
+	if = {
+		limit = {
+			culture_group = owner
+			NOT = { culture = owner }
+			owner = { has_idea = nationalism_ideas_1 }
+		}
+		add_province_modifier = {
+			name = aet_ideas_nationalismCultureGroup
+			duration = -1 
+		}
+	}
 	if = {
 		limit = {
 			culture = owner
@@ -1342,7 +1354,7 @@ aet_ideas_applyNationalismModifierBasedOnIdea = {
 	[[controlled]
 			if = {
 				limit = {
-					controller = {
+					owner = {
 						has_idea = nationalism_ideas_4
 					}
 				}
@@ -1353,7 +1365,7 @@ aet_ideas_applyNationalismModifierBasedOnIdea = {
 				}
 			} else_if = {
 				limit = {
-					controller = {
+					owner = {
 						has_idea = nationalism_ideas_3
 					}
 				}
@@ -1376,7 +1388,7 @@ aet_ideas_applyNationalismModifierBasedOnIdea = {
 
 			if = {
 				limit = {
-					controller = {
+					owner = {
 						has_idea = nationalism_ideas_4
 					}
 				}
@@ -1387,7 +1399,7 @@ aet_ideas_applyNationalismModifierBasedOnIdea = {
 				}
 			} else_if = {
 				limit = {
-					controller = {
+					owner = {
 						has_idea = nationalism_ideas_3
 					}
 				}
